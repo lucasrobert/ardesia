@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Ardesia
 {
-    public partial class Form2 : Form
+    public partial class FormEmpleado : Form
     {
-        public Form2()
+        public FormEmpleado()
         {
             InitializeComponent();
+        }
+
+        private void FormEmpleado_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
