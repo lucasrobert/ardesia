@@ -118,7 +118,7 @@
             this.deleteButton.Name = "deleteButton";
             this.deleteButton.Size = new System.Drawing.Size(75, 23);
             this.deleteButton.TabIndex = 2;
-            this.deleteButton.Text = "Borrar";
+            this.deleteButton.Text = "&Borrar";
             this.deleteButton.UseVisualStyleBackColor = true;
             // 
             // editButton
@@ -128,7 +128,7 @@
             this.editButton.Name = "editButton";
             this.editButton.Size = new System.Drawing.Size(75, 23);
             this.editButton.TabIndex = 1;
-            this.editButton.Text = "Editar";
+            this.editButton.Text = "&Editar";
             this.editButton.UseVisualStyleBackColor = true;
             // 
             // addButton
@@ -138,7 +138,7 @@
             this.addButton.Name = "addButton";
             this.addButton.Size = new System.Drawing.Size(75, 23);
             this.addButton.TabIndex = 0;
-            this.addButton.Text = "Agregar";
+            this.addButton.Text = "&Agregar";
             this.addButton.UseVisualStyleBackColor = true;
             this.addButton.Click += new System.EventHandler(this.addButton_Click);
             // 
