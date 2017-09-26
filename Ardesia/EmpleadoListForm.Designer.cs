@@ -1,6 +1,6 @@
 ﻿namespace Ardesia
 {
-    partial class FormEmpleado
+    partial class EmpleadoListForm
     {
         /// <summary>
         /// Required designer variable.
@@ -37,9 +37,9 @@
             this.ColumnCiudad = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.ColumnProvincia = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.addButton = new System.Windows.Forms.Button();
-            this.editButton = new System.Windows.Forms.Button();
             this.deleteButton = new System.Windows.Forms.Button();
+            this.editButton = new System.Windows.Forms.Button();
+            this.addButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -99,6 +99,9 @@
             // 
             // panel1
             // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.Controls.Add(this.deleteButton);
             this.panel1.Controls.Add(this.editButton);
             this.panel1.Controls.Add(this.addButton);
@@ -106,27 +109,11 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(751, 29);
             this.panel1.TabIndex = 1;
-            // 
-            // addButton
-            // 
-            this.addButton.Location = new System.Drawing.Point(511, 3);
-            this.addButton.Name = "addButton";
-            this.addButton.Size = new System.Drawing.Size(75, 23);
-            this.addButton.TabIndex = 0;
-            this.addButton.Text = "Agregar";
-            this.addButton.UseVisualStyleBackColor = true;
-            // 
-            // editButton
-            // 
-            this.editButton.Location = new System.Drawing.Point(592, 3);
-            this.editButton.Name = "editButton";
-            this.editButton.Size = new System.Drawing.Size(75, 23);
-            this.editButton.TabIndex = 1;
-            this.editButton.Text = "Editar";
-            this.editButton.UseVisualStyleBackColor = true;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // deleteButton
             // 
+            this.deleteButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.deleteButton.Location = new System.Drawing.Point(673, 3);
             this.deleteButton.Name = "deleteButton";
             this.deleteButton.Size = new System.Drawing.Size(75, 23);
@@ -134,14 +121,35 @@
             this.deleteButton.Text = "Borrar";
             this.deleteButton.UseVisualStyleBackColor = true;
             // 
-            // FormEmpleado
+            // editButton
+            // 
+            this.editButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.editButton.Location = new System.Drawing.Point(592, 3);
+            this.editButton.Name = "editButton";
+            this.editButton.Size = new System.Drawing.Size(75, 23);
+            this.editButton.TabIndex = 1;
+            this.editButton.Text = "Editar";
+            this.editButton.UseVisualStyleBackColor = true;
+            // 
+            // addButton
+            // 
+            this.addButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.addButton.Location = new System.Drawing.Point(511, 3);
+            this.addButton.Name = "addButton";
+            this.addButton.Size = new System.Drawing.Size(75, 23);
+            this.addButton.TabIndex = 0;
+            this.addButton.Text = "Agregar";
+            this.addButton.UseVisualStyleBackColor = true;
+            this.addButton.Click += new System.EventHandler(this.addButton_Click);
+            // 
+            // EmpleadoListForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(775, 380);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dataGridView1);
-            this.Name = "FormEmpleado";
+            this.Name = "EmpleadoListForm";
             this.Text = "Empleados";
             this.Load += new System.EventHandler(this.FormEmpleado_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

@@ -46,25 +46,34 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EmpleadoEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmpleadoEditorForm.Designer.cs">
+      <DependentUpon>EmpleadoEditorForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormPrincipal.Designer.cs">
       <DependentUpon>FormPrincipal.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormEmpleado.cs">
+    <Compile Include="EmpleadoListForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormEmpleado.Designer.cs">
-      <DependentUpon>FormEmpleado.cs</DependentUpon>
+    <Compile Include="EmpleadoListForm.Designer.cs">
+      <DependentUpon>EmpleadoListForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="EmpleadoEditorForm.resx">
+      <DependentUpon>EmpleadoEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormPrincipal.resx">
       <DependentUpon>FormPrincipal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormEmpleado.resx">
-      <DependentUpon>FormEmpleado.cs</DependentUpon>
+    <EmbeddedResource Include="EmpleadoListForm.resx">
+      <DependentUpon>EmpleadoListForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
