@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.ColumnId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1 = new System.Windows.Forms.Panel();
             this.deleteButton = new System.Windows.Forms.Button();
             this.editButton = new System.Windows.Forms.Button();
             this.addButton = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.ColumnId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -51,18 +51,6 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(751, 301);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // ColumnId
-            // 
-            this.ColumnId.HeaderText = "ID";
-            this.ColumnId.Name = "ColumnId";
-            this.ColumnId.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.ColumnId.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // ColumnNombre
-            // 
-            this.ColumnNombre.HeaderText = "Nombre";
-            this.ColumnNombre.Name = "ColumnNombre";
             // 
             // panel1
             // 
@@ -122,6 +110,18 @@
             this.label1.Size = new System.Drawing.Size(32, 13);
             this.label1.TabIndex = 4;
             this.label1.Text = "Filtro:";
+            // 
+            // ColumnId
+            // 
+            this.ColumnId.HeaderText = "ID";
+            this.ColumnId.Name = "ColumnId";
+            this.ColumnId.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.ColumnId.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // ColumnNombre
+            // 
+            this.ColumnNombre.HeaderText = "Nombre";
+            this.ColumnNombre.Name = "ColumnNombre";
             // 
             // SectorListForm
             // 

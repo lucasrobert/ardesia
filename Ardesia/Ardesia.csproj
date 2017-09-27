@@ -71,17 +71,17 @@
     <Compile Include="PaisEditorForm.Designer.cs">
       <DependentUpon>PaisEditorForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="SiloListForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SiloListForm.Designer.cs">
-      <DependentUpon>SiloListForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="SectorListForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="SectorListForm.Designer.cs">
       <DependentUpon>SectorListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SiloListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SiloListForm.Designer.cs">
+      <DependentUpon>SiloListForm.cs</DependentUpon>
     </Compile>
     <Compile Include="PaisListForm.cs">
       <SubType>Form</SubType>
@@ -157,11 +157,11 @@
     <EmbeddedResource Include="PaisEditorForm.resx">
       <DependentUpon>PaisEditorForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SiloListForm.resx">
-      <DependentUpon>SiloListForm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="SectorListForm.resx">
       <DependentUpon>SectorListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SiloListForm.resx">
+      <DependentUpon>SiloListForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PaisListForm.resx">
       <DependentUpon>PaisListForm.cs</DependentUpon>
