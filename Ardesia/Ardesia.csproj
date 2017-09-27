@@ -47,6 +47,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ProvinciaListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProvinciaListForm.Designer.cs">
+      <DependentUpon>ProvinciaListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProvinciaEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProvinciaEditorForm.Designer.cs">
+      <DependentUpon>ProvinciaEditorForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="CiudadEditorForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +103,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ProvinciaListForm.resx">
+      <DependentUpon>ProvinciaListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProvinciaEditorForm.resx">
+      <DependentUpon>ProvinciaEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CiudadEditorForm.resx">
       <DependentUpon>CiudadEditorForm.cs</DependentUpon>
     </EmbeddedResource>
