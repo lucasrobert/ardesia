@@ -47,6 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="TamboListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TamboListForm.Designer.cs">
+      <DependentUpon>TamboListForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="ProveedorEditorForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -151,6 +157,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="TamboListForm.resx">
+      <DependentUpon>TamboListForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ProveedorEditorForm.resx">
       <DependentUpon>ProveedorEditorForm.cs</DependentUpon>
     </EmbeddedResource>
