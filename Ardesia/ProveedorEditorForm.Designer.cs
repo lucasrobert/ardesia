@@ -43,6 +43,10 @@
             this.idLabel = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.calleLabel = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.numeroLabel = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -52,7 +56,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.Controls.Add(this.editButton);
             this.panel1.Controls.Add(this.saveButton);
-            this.panel1.Location = new System.Drawing.Point(12, 153);
+            this.panel1.Location = new System.Drawing.Point(12, 139);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(560, 30);
             this.panel1.TabIndex = 3;
@@ -81,7 +85,7 @@
             // 
             this.paisComboBox.Enabled = false;
             this.paisComboBox.FormattingEnabled = true;
-            this.paisComboBox.Location = new System.Drawing.Point(442, 116);
+            this.paisComboBox.Location = new System.Drawing.Point(439, 101);
             this.paisComboBox.Name = "paisComboBox";
             this.paisComboBox.Size = new System.Drawing.Size(130, 21);
             this.paisComboBox.TabIndex = 29;
@@ -89,7 +93,7 @@
             // paisLabel
             // 
             this.paisLabel.AutoSize = true;
-            this.paisLabel.Location = new System.Drawing.Point(405, 119);
+            this.paisLabel.Location = new System.Drawing.Point(406, 104);
             this.paisLabel.Name = "paisLabel";
             this.paisLabel.Size = new System.Drawing.Size(30, 13);
             this.paisLabel.TabIndex = 28;
@@ -99,7 +103,7 @@
             // 
             this.provinciaComboBox.Enabled = false;
             this.provinciaComboBox.FormattingEnabled = true;
-            this.provinciaComboBox.Location = new System.Drawing.Point(265, 116);
+            this.provinciaComboBox.Location = new System.Drawing.Point(265, 101);
             this.provinciaComboBox.Name = "provinciaComboBox";
             this.provinciaComboBox.Size = new System.Drawing.Size(127, 21);
             this.provinciaComboBox.TabIndex = 27;
@@ -107,7 +111,7 @@
             // provinciaLlabel
             // 
             this.provinciaLlabel.AutoSize = true;
-            this.provinciaLlabel.Location = new System.Drawing.Point(205, 119);
+            this.provinciaLlabel.Location = new System.Drawing.Point(205, 104);
             this.provinciaLlabel.Name = "provinciaLlabel";
             this.provinciaLlabel.Size = new System.Drawing.Size(54, 13);
             this.provinciaLlabel.TabIndex = 26;
@@ -116,7 +120,7 @@
             // ciudadComboBox
             // 
             this.ciudadComboBox.FormattingEnabled = true;
-            this.ciudadComboBox.Location = new System.Drawing.Point(61, 116);
+            this.ciudadComboBox.Location = new System.Drawing.Point(61, 101);
             this.ciudadComboBox.Name = "ciudadComboBox";
             this.ciudadComboBox.Size = new System.Drawing.Size(127, 21);
             this.ciudadComboBox.TabIndex = 25;
@@ -124,7 +128,7 @@
             // ciudadLabel
             // 
             this.ciudadLabel.AutoSize = true;
-            this.ciudadLabel.Location = new System.Drawing.Point(12, 119);
+            this.ciudadLabel.Location = new System.Drawing.Point(12, 104);
             this.ciudadLabel.Name = "ciudadLabel";
             this.ciudadLabel.Size = new System.Drawing.Size(43, 13);
             this.ciudadLabel.TabIndex = 24;
@@ -132,7 +136,7 @@
             // 
             // nombreTextBox
             // 
-            this.nombreTextBox.Location = new System.Drawing.Point(265, 35);
+            this.nombreTextBox.Location = new System.Drawing.Point(265, 39);
             this.nombreTextBox.Name = "nombreTextBox";
             this.nombreTextBox.Size = new System.Drawing.Size(127, 20);
             this.nombreTextBox.TabIndex = 20;
@@ -140,7 +144,7 @@
             // nombreLabel
             // 
             this.nombreLabel.AutoSize = true;
-            this.nombreLabel.Location = new System.Drawing.Point(205, 38);
+            this.nombreLabel.Location = new System.Drawing.Point(205, 41);
             this.nombreLabel.Name = "nombreLabel";
             this.nombreLabel.Size = new System.Drawing.Size(47, 13);
             this.nombreLabel.TabIndex = 17;
@@ -164,7 +168,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(61, 35);
+            this.textBox1.Location = new System.Drawing.Point(61, 38);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(127, 20);
             this.textBox1.TabIndex = 31;
@@ -172,17 +176,54 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 38);
+            this.label1.Location = new System.Drawing.Point(12, 42);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(35, 13);
             this.label1.TabIndex = 30;
             this.label1.Text = "CUIT:";
             // 
+            // calleLabel
+            // 
+            this.calleLabel.AutoSize = true;
+            this.calleLabel.Location = new System.Drawing.Point(12, 72);
+            this.calleLabel.Name = "calleLabel";
+            this.calleLabel.Size = new System.Drawing.Size(33, 13);
+            this.calleLabel.TabIndex = 32;
+            this.calleLabel.Text = "Calle:";
+            this.calleLabel.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(61, 69);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(127, 20);
+            this.textBox2.TabIndex = 33;
+            // 
+            // numeroLabel
+            // 
+            this.numeroLabel.AutoSize = true;
+            this.numeroLabel.Location = new System.Drawing.Point(205, 72);
+            this.numeroLabel.Name = "numeroLabel";
+            this.numeroLabel.Size = new System.Drawing.Size(47, 13);
+            this.numeroLabel.TabIndex = 34;
+            this.numeroLabel.Text = "Número:";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(265, 69);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(63, 20);
+            this.textBox3.TabIndex = 35;
+            // 
             // ProveedorEditorForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(584, 195);
+            this.ClientSize = new System.Drawing.Size(584, 181);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.numeroLabel);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.calleLabel);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.paisComboBox);
@@ -221,5 +262,9 @@
         private System.Windows.Forms.Button saveButton;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label calleLabel;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label numeroLabel;
+        private System.Windows.Forms.TextBox textBox3;
     }
 }
