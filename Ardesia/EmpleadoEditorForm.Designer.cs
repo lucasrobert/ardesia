@@ -200,9 +200,9 @@
             // calleComboBox
             // 
             this.calleComboBox.FormattingEnabled = true;
-            this.calleComboBox.Location = new System.Drawing.Point(62, 59);
+            this.calleComboBox.Location = new System.Drawing.Point(51, 59);
             this.calleComboBox.Name = "calleComboBox";
-            this.calleComboBox.Size = new System.Drawing.Size(326, 21);
+            this.calleComboBox.Size = new System.Drawing.Size(337, 21);
             this.calleComboBox.TabIndex = 13;
             // 
             // label2
