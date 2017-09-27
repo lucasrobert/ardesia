@@ -47,6 +47,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ProveedorEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProveedorEditorForm.Designer.cs">
+      <DependentUpon>ProveedorEditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SiloEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SiloEditorForm.Designer.cs">
+      <DependentUpon>SiloEditorForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="SectorEditorForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,6 +70,12 @@
     </Compile>
     <Compile Include="PaisEditorForm.Designer.cs">
       <DependentUpon>PaisEditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SiloListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SiloListForm.Designer.cs">
+      <DependentUpon>SiloListForm.cs</DependentUpon>
     </Compile>
     <Compile Include="SectorListForm.cs">
       <SubType>Form</SubType>
@@ -127,11 +145,20 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ProveedorEditorForm.resx">
+      <DependentUpon>ProveedorEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SiloEditorForm.resx">
+      <DependentUpon>SiloEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SectorEditorForm.resx">
       <DependentUpon>SectorEditorForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PaisEditorForm.resx">
       <DependentUpon>PaisEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SiloListForm.resx">
+      <DependentUpon>SiloListForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SectorListForm.resx">
       <DependentUpon>SectorListForm.cs</DependentUpon>
