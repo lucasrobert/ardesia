@@ -109,7 +109,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(751, 29);
             this.panel1.TabIndex = 1;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // deleteButton
             // 
@@ -140,7 +139,6 @@
             this.addButton.TabIndex = 0;
             this.addButton.Text = "&Agregar";
             this.addButton.UseVisualStyleBackColor = true;
-            this.addButton.Click += new System.EventHandler(this.addButton_Click);
             // 
             // EmpleadoListForm
             // 
@@ -151,7 +149,6 @@
             this.Controls.Add(this.dataGridView1);
             this.Name = "EmpleadoListForm";
             this.Text = "Empleados";
-            this.Load += new System.EventHandler(this.FormEmpleado_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
