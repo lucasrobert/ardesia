@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SiloEditorForm));
             this.panel1 = new System.Windows.Forms.Panel();
             this.editButton = new System.Windows.Forms.Button();
             this.saveButton = new System.Windows.Forms.Button();
@@ -37,6 +39,7 @@
             this.idLabel = new System.Windows.Forms.Label();
             this.capacidadTextBox = new System.Windows.Forms.TextBox();
             this.capacidadLabel = new System.Windows.Forms.Label();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -54,21 +57,29 @@
             // editButton
             // 
             this.editButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.editButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.editButton.ImageKey = "door--arrow.png";
+            this.editButton.ImageList = this.imageList1;
             this.editButton.Location = new System.Drawing.Point(478, 3);
             this.editButton.Name = "editButton";
             this.editButton.Size = new System.Drawing.Size(75, 23);
             this.editButton.TabIndex = 3;
             this.editButton.Text = "&Salir";
+            this.editButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.editButton.UseVisualStyleBackColor = true;
             // 
             // saveButton
             // 
             this.saveButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.saveButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.saveButton.ImageIndex = 0;
+            this.saveButton.ImageList = this.imageList1;
             this.saveButton.Location = new System.Drawing.Point(397, 3);
             this.saveButton.Name = "saveButton";
             this.saveButton.Size = new System.Drawing.Size(75, 23);
             this.saveButton.TabIndex = 2;
             this.saveButton.Text = "&Guardar";
+            this.saveButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.saveButton.UseVisualStyleBackColor = true;
             // 
             // nombreTextBox
@@ -121,6 +132,13 @@
             this.capacidadLabel.Text = "Capacidad:";
             this.capacidadLabel.Click += new System.EventHandler(this.label1_Click);
             // 
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "disk.png");
+            this.imageList1.Images.SetKeyName(1, "door--arrow.png");
+            // 
             // SiloEditorForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -152,5 +170,6 @@
         private System.Windows.Forms.Button saveButton;
         private System.Windows.Forms.TextBox capacidadTextBox;
         private System.Windows.Forms.Label capacidadLabel;
+        private System.Windows.Forms.ImageList imageList1;
     }
 }
