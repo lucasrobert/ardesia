@@ -59,6 +59,12 @@
     <Compile Include="EmpleadoEditorForm.Designer.cs">
       <DependentUpon>EmpleadoEditorForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="CalleListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CalleListForm.Designer.cs">
+      <DependentUpon>CalleListForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,6 +84,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="EmpleadoEditorForm.resx">
       <DependentUpon>EmpleadoEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalleListForm.resx">
+      <DependentUpon>CalleListForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormPrincipal.resx">
       <DependentUpon>FormPrincipal.cs</DependentUpon>
