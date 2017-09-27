@@ -1,6 +1,6 @@
 ﻿namespace Ardesia
 {
-    partial class CalleEditorForm
+    partial class CiudadEditorForm
     {
         /// <summary>
         /// Required designer variable.
@@ -37,7 +37,7 @@
             this.provinciaComboBox = new System.Windows.Forms.ComboBox();
             this.provinciaLlabel = new System.Windows.Forms.Label();
             this.ciudadComboBox = new System.Windows.Forms.ComboBox();
-            this.ciudadLabel = new System.Windows.Forms.Label();
+            this.cpLabel = new System.Windows.Forms.Label();
             this.nombreTextBox = new System.Windows.Forms.TextBox();
             this.nombreLabel = new System.Windows.Forms.Label();
             this.idTextBox = new System.Windows.Forms.TextBox();
@@ -54,13 +54,13 @@
             this.panel1.Controls.Add(this.addButton);
             this.panel1.Location = new System.Drawing.Point(12, 68);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(560, 30);
+            this.panel1.Size = new System.Drawing.Size(542, 30);
             this.panel1.TabIndex = 3;
             // 
             // deleteButton
             // 
             this.deleteButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.deleteButton.Location = new System.Drawing.Point(482, 4);
+            this.deleteButton.Location = new System.Drawing.Point(464, 4);
             this.deleteButton.Name = "deleteButton";
             this.deleteButton.Size = new System.Drawing.Size(75, 23);
             this.deleteButton.TabIndex = 2;
@@ -70,7 +70,7 @@
             // editButton
             // 
             this.editButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.editButton.Location = new System.Drawing.Point(401, 4);
+            this.editButton.Location = new System.Drawing.Point(383, 4);
             this.editButton.Name = "editButton";
             this.editButton.Size = new System.Drawing.Size(75, 23);
             this.editButton.TabIndex = 1;
@@ -80,7 +80,7 @@
             // addButton
             // 
             this.addButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.addButton.Location = new System.Drawing.Point(320, 4);
+            this.addButton.Location = new System.Drawing.Point(302, 4);
             this.addButton.Name = "addButton";
             this.addButton.Size = new System.Drawing.Size(75, 23);
             this.addButton.TabIndex = 0;
@@ -107,7 +107,6 @@
             // 
             // provinciaComboBox
             // 
-            this.provinciaComboBox.Enabled = false;
             this.provinciaComboBox.FormattingEnabled = true;
             this.provinciaComboBox.Location = new System.Drawing.Point(72, 32);
             this.provinciaComboBox.Name = "provinciaComboBox";
@@ -126,19 +125,19 @@
             // ciudadComboBox
             // 
             this.ciudadComboBox.FormattingEnabled = true;
-            this.ciudadComboBox.Location = new System.Drawing.Point(443, 6);
+            this.ciudadComboBox.Location = new System.Drawing.Point(424, 6);
             this.ciudadComboBox.Name = "ciudadComboBox";
             this.ciudadComboBox.Size = new System.Drawing.Size(130, 21);
             this.ciudadComboBox.TabIndex = 25;
             // 
-            // ciudadLabel
+            // cpLabel
             // 
-            this.ciudadLabel.AutoSize = true;
-            this.ciudadLabel.Location = new System.Drawing.Point(394, 9);
-            this.ciudadLabel.Name = "ciudadLabel";
-            this.ciudadLabel.Size = new System.Drawing.Size(43, 13);
-            this.ciudadLabel.TabIndex = 24;
-            this.ciudadLabel.Text = "Ciudad:";
+            this.cpLabel.AutoSize = true;
+            this.cpLabel.Location = new System.Drawing.Point(394, 9);
+            this.cpLabel.Name = "cpLabel";
+            this.cpLabel.Size = new System.Drawing.Size(24, 13);
+            this.cpLabel.TabIndex = 24;
+            this.cpLabel.Text = "CP:";
             // 
             // nombreTextBox
             // 
@@ -172,24 +171,24 @@
             this.idLabel.TabIndex = 16;
             this.idLabel.Text = "ID:";
             // 
-            // CalleEditorForm
+            // CiudadEditorForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(584, 110);
+            this.ClientSize = new System.Drawing.Size(566, 110);
             this.Controls.Add(this.paisComboBox);
             this.Controls.Add(this.paisLabel);
             this.Controls.Add(this.provinciaComboBox);
             this.Controls.Add(this.provinciaLlabel);
             this.Controls.Add(this.ciudadComboBox);
-            this.Controls.Add(this.ciudadLabel);
+            this.Controls.Add(this.cpLabel);
             this.Controls.Add(this.nombreTextBox);
             this.Controls.Add(this.nombreLabel);
             this.Controls.Add(this.idTextBox);
             this.Controls.Add(this.idLabel);
             this.Controls.Add(this.panel1);
-            this.Name = "CalleEditorForm";
-            this.Text = "Calle";
+            this.Name = "CiudadEditorForm";
+            this.Text = "Ciudad";
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -207,7 +206,7 @@
         private System.Windows.Forms.ComboBox provinciaComboBox;
         private System.Windows.Forms.Label provinciaLlabel;
         private System.Windows.Forms.ComboBox ciudadComboBox;
-        private System.Windows.Forms.Label ciudadLabel;
+        private System.Windows.Forms.Label cpLabel;
         private System.Windows.Forms.TextBox nombreTextBox;
         private System.Windows.Forms.Label nombreLabel;
         private System.Windows.Forms.TextBox idTextBox;

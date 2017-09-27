@@ -47,11 +47,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CiudadEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CiudadEditorForm.Designer.cs">
+      <DependentUpon>CiudadEditorForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="CalleEditorForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="CalleEditorForm.Designer.cs">
       <DependentUpon>CalleEditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CiudadListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CiudadListForm.Designer.cs">
+      <DependentUpon>CiudadListForm.cs</DependentUpon>
     </Compile>
     <Compile Include="EmpleadoEditorForm.cs">
       <SubType>Form</SubType>
@@ -79,8 +91,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CiudadEditorForm.resx">
+      <DependentUpon>CiudadEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CalleEditorForm.resx">
       <DependentUpon>CalleEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CiudadListForm.resx">
+      <DependentUpon>CiudadListForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EmpleadoEditorForm.resx">
       <DependentUpon>EmpleadoEditorForm.cs</DependentUpon>

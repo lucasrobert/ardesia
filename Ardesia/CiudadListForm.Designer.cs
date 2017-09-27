@@ -1,6 +1,6 @@
 ﻿namespace Ardesia
 {
-    partial class CalleListForm
+    partial class CiudadListForm
     {
         /// <summary>
         /// Required designer variable.
@@ -33,13 +33,13 @@
             this.deleteButton = new System.Windows.Forms.Button();
             this.editButton = new System.Windows.Forms.Button();
             this.addButton = new System.Windows.Forms.Button();
-            this.ColumnId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnCiudad = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.ColumnProvincia = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.paisColumn = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.ColumnId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnCP = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.ColumnProvincia = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.paisColumn = new System.Windows.Forms.DataGridViewComboBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -50,7 +50,7 @@
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ColumnId,
             this.ColumnNombre,
-            this.ColumnCiudad,
+            this.ColumnCP,
             this.ColumnProvincia,
             this.paisColumn});
             this.dataGridView1.Location = new System.Drawing.Point(12, 32);
@@ -101,35 +101,6 @@
             this.addButton.Text = "&Agregar";
             this.addButton.UseVisualStyleBackColor = true;
             // 
-            // ColumnId
-            // 
-            this.ColumnId.HeaderText = "ID";
-            this.ColumnId.Name = "ColumnId";
-            this.ColumnId.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.ColumnId.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // ColumnNombre
-            // 
-            this.ColumnNombre.HeaderText = "Nombre";
-            this.ColumnNombre.Name = "ColumnNombre";
-            // 
-            // ColumnCiudad
-            // 
-            this.ColumnCiudad.HeaderText = "Ciudad";
-            this.ColumnCiudad.Name = "ColumnCiudad";
-            // 
-            // ColumnProvincia
-            // 
-            this.ColumnProvincia.HeaderText = "Provincia";
-            this.ColumnProvincia.Name = "ColumnProvincia";
-            // 
-            // paisColumn
-            // 
-            this.paisColumn.HeaderText = "Pais";
-            this.paisColumn.Name = "paisColumn";
-            this.paisColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.paisColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            // 
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(50, 6);
@@ -146,7 +117,36 @@
             this.label1.TabIndex = 4;
             this.label1.Text = "Filtro:";
             // 
-            // CalleListForm
+            // ColumnId
+            // 
+            this.ColumnId.HeaderText = "ID";
+            this.ColumnId.Name = "ColumnId";
+            this.ColumnId.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.ColumnId.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // ColumnNombre
+            // 
+            this.ColumnNombre.HeaderText = "Nombre";
+            this.ColumnNombre.Name = "ColumnNombre";
+            // 
+            // ColumnCP
+            // 
+            this.ColumnCP.HeaderText = "CP";
+            this.ColumnCP.Name = "ColumnCP";
+            // 
+            // ColumnProvincia
+            // 
+            this.ColumnProvincia.HeaderText = "Provincia";
+            this.ColumnProvincia.Name = "ColumnProvincia";
+            // 
+            // paisColumn
+            // 
+            this.paisColumn.HeaderText = "Pais";
+            this.paisColumn.Name = "paisColumn";
+            this.paisColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.paisColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
+            // CiudadListForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -155,8 +155,8 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dataGridView1);
-            this.Name = "CalleListForm";
-            this.Text = "Calles";
+            this.Name = "CiudadListForm";
+            this.Text = "Ciudades";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -171,12 +171,12 @@
         private System.Windows.Forms.Button deleteButton;
         private System.Windows.Forms.Button editButton;
         private System.Windows.Forms.Button addButton;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnId;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnNombre;
-        private System.Windows.Forms.DataGridViewComboBoxColumn ColumnCiudad;
-        private System.Windows.Forms.DataGridViewComboBoxColumn ColumnProvincia;
-        private System.Windows.Forms.DataGridViewComboBoxColumn paisColumn;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnId;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnNombre;
+        private System.Windows.Forms.DataGridViewComboBoxColumn ColumnCP;
+        private System.Windows.Forms.DataGridViewComboBoxColumn ColumnProvincia;
+        private System.Windows.Forms.DataGridViewComboBoxColumn paisColumn;
     }
 }
