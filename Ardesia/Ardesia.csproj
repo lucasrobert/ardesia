@@ -53,6 +53,12 @@
     <Compile Include="ProveedorEditorForm.Designer.cs">
       <DependentUpon>ProveedorEditorForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ProveedorListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProveedorListForm.Designer.cs">
+      <DependentUpon>ProveedorListForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="SiloEditorForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -147,6 +153,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="ProveedorEditorForm.resx">
       <DependentUpon>ProveedorEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProveedorListForm.resx">
+      <DependentUpon>ProveedorListForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SiloEditorForm.resx">
       <DependentUpon>SiloEditorForm.cs</DependentUpon>
