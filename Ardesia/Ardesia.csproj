@@ -47,11 +47,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="SectorEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SectorEditorForm.Designer.cs">
+      <DependentUpon>SectorEditorForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="PaisEditorForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="PaisEditorForm.Designer.cs">
       <DependentUpon>PaisEditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SectorListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SectorListForm.Designer.cs">
+      <DependentUpon>SectorListForm.cs</DependentUpon>
     </Compile>
     <Compile Include="PaisListForm.cs">
       <SubType>Form</SubType>
@@ -115,8 +127,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="SectorEditorForm.resx">
+      <DependentUpon>SectorEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PaisEditorForm.resx">
       <DependentUpon>PaisEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SectorListForm.resx">
+      <DependentUpon>SectorListForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PaisListForm.resx">
       <DependentUpon>PaisListForm.cs</DependentUpon>
