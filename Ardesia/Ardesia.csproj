@@ -65,6 +65,12 @@
     <Compile Include="FormulaListForm.Designer.cs">
       <DependentUpon>FormulaListForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="TamboEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TamboEditorForm.Designer.cs">
+      <DependentUpon>TamboEditorForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="TamboListForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -183,6 +189,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormulaListForm.resx">
       <DependentUpon>FormulaListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TamboEditorForm.resx">
+      <DependentUpon>TamboEditorForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TamboListForm.resx">
       <DependentUpon>TamboListForm.cs</DependentUpon>
