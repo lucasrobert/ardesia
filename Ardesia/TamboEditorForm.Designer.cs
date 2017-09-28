@@ -107,7 +107,7 @@
             // nombreLabel
             // 
             this.nombreLabel.AutoSize = true;
-            this.nombreLabel.Location = new System.Drawing.Point(196, 9);
+            this.nombreLabel.Location = new System.Drawing.Point(199, 9);
             this.nombreLabel.Name = "nombreLabel";
             this.nombreLabel.Size = new System.Drawing.Size(47, 13);
             this.nombreLabel.TabIndex = 17;
@@ -117,7 +117,7 @@
             // 
             this.idTextBox.Location = new System.Drawing.Point(63, 6);
             this.idTextBox.Name = "idTextBox";
-            this.idTextBox.Size = new System.Drawing.Size(127, 20);
+            this.idTextBox.Size = new System.Drawing.Size(130, 20);
             this.idTextBox.TabIndex = 22;
             // 
             // idLabel
