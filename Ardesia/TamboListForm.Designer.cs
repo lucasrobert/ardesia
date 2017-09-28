@@ -1,6 +1,6 @@
 ﻿namespace Ardesia
 {
-    partial class PaisListForm
+    partial class TamboListForm
     {
         /// <summary>
         /// Required designer variable.
@@ -29,10 +29,11 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PaisListForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TamboListForm));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.ColumnId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NumeroColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1 = new System.Windows.Forms.Panel();
             this.deleteButton = new System.Windows.Forms.Button();
             this.editButton = new System.Windows.Forms.Button();
@@ -46,13 +47,17 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ColumnId,
-            this.ColumnNombre});
+            this.ColumnNombre,
+            this.NumeroColumn});
             this.dataGridView1.Location = new System.Drawing.Point(12, 32);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(751, 301);
+            this.dataGridView1.Size = new System.Drawing.Size(680, 301);
             this.dataGridView1.TabIndex = 0;
             // 
             // ColumnId
@@ -67,6 +72,11 @@
             this.ColumnNombre.HeaderText = "Nombre";
             this.ColumnNombre.Name = "ColumnNombre";
             // 
+            // NumeroColumn
+            // 
+            this.NumeroColumn.HeaderText = "Número";
+            this.NumeroColumn.Name = "NumeroColumn";
+            // 
             // panel1
             // 
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -77,7 +87,7 @@
             this.panel1.Controls.Add(this.addButton);
             this.panel1.Location = new System.Drawing.Point(12, 339);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(751, 29);
+            this.panel1.Size = new System.Drawing.Size(680, 29);
             this.panel1.TabIndex = 1;
             // 
             // deleteButton
@@ -86,7 +96,7 @@
             this.deleteButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.deleteButton.ImageIndex = 1;
             this.deleteButton.ImageList = this.imageList1;
-            this.deleteButton.Location = new System.Drawing.Point(673, 3);
+            this.deleteButton.Location = new System.Drawing.Point(602, 3);
             this.deleteButton.Name = "deleteButton";
             this.deleteButton.Size = new System.Drawing.Size(75, 23);
             this.deleteButton.TabIndex = 5;
@@ -100,7 +110,7 @@
             this.editButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.editButton.ImageIndex = 2;
             this.editButton.ImageList = this.imageList1;
-            this.editButton.Location = new System.Drawing.Point(592, 3);
+            this.editButton.Location = new System.Drawing.Point(520, 3);
             this.editButton.Name = "editButton";
             this.editButton.Size = new System.Drawing.Size(75, 23);
             this.editButton.TabIndex = 4;
@@ -114,8 +124,9 @@
             this.addButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.addButton.ImageIndex = 0;
             this.addButton.ImageList = this.imageList1;
-            this.addButton.Location = new System.Drawing.Point(511, 3);
+            this.addButton.Location = new System.Drawing.Point(440, 3);
             this.addButton.Name = "addButton";
+            this.addButton.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.addButton.Size = new System.Drawing.Size(75, 23);
             this.addButton.TabIndex = 3;
             this.addButton.Text = "&Agregar";
@@ -146,17 +157,17 @@
             this.imageList1.Images.SetKeyName(1, "cross-circle.png");
             this.imageList1.Images.SetKeyName(2, "pencil.png");
             // 
-            // PaisListForm
+            // TamboListForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(775, 380);
+            this.ClientSize = new System.Drawing.Size(704, 380);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dataGridView1);
-            this.Name = "PaisListForm";
-            this.Text = "Paises";
+            this.Name = "TamboListForm";
+            this.Text = "Tambos";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -170,11 +181,12 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnId;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnNombre;
         private System.Windows.Forms.Button deleteButton;
         private System.Windows.Forms.Button editButton;
         private System.Windows.Forms.Button addButton;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnId;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnNombre;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NumeroColumn;
         private System.Windows.Forms.ImageList imageList1;
     }
 }

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Ardesia
 {
-    public partial class EmpleadoListForm : Form
+    public partial class FormulaListForm : Form
     {
-        public EmpleadoListForm()
+        public FormulaListForm()
         {
             InitializeComponent();
         }
@@ -22,5 +22,6 @@ namespace Ardesia
 
 
         }
+        
     }
 }

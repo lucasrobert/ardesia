@@ -10,17 +10,12 @@ using System.Windows.Forms;
 
 namespace Ardesia
 {
-    public partial class EmpleadoListForm : Form
+    public partial class FormulaEditorForm : Form
     {
-        public EmpleadoListForm()
+        public FormulaEditorForm()
         {
             InitializeComponent();
         }
 
-        private void addButton_Click(object sender, EventArgs e)
-        {
-
-
-        }
     }
 }

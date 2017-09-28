@@ -47,6 +47,36 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormulaInsumoEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormulaInsumoEditorForm.Designer.cs">
+      <DependentUpon>FormulaInsumoEditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormulaEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormulaEditorForm.Designer.cs">
+      <DependentUpon>FormulaEditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormulaListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormulaListForm.Designer.cs">
+      <DependentUpon>FormulaListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TamboEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TamboEditorForm.Designer.cs">
+      <DependentUpon>TamboEditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TamboListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TamboListForm.Designer.cs">
+      <DependentUpon>TamboListForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="ProveedorEditorForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -151,6 +181,21 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormulaInsumoEditorForm.resx">
+      <DependentUpon>FormulaInsumoEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormulaEditorForm.resx">
+      <DependentUpon>FormulaEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormulaListForm.resx">
+      <DependentUpon>FormulaListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TamboEditorForm.resx">
+      <DependentUpon>TamboEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TamboListForm.resx">
+      <DependentUpon>TamboListForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ProveedorEditorForm.resx">
       <DependentUpon>ProveedorEditorForm.cs</DependentUpon>
     </EmbeddedResource>
