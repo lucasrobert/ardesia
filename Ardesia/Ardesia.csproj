@@ -47,17 +47,41 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PedidoInsumoInsumoListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PedidoInsumoInsumoListForm.Designer.cs">
+      <DependentUpon>PedidoInsumoInsumoListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PedidoInsumoProduccionEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PedidoInsumoProduccionEditorForm.Designer.cs">
+      <DependentUpon>PedidoInsumoProduccionEditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PedidoInsumoMantenimientoEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PedidoInsumoMantenimientoEditorForm.Designer.cs">
+      <DependentUpon>PedidoInsumoMantenimientoEditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PedidoInsumoListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PedidoInsumoListForm.Designer.cs">
+      <DependentUpon>PedidoInsumoListForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="PedidoInsumoInsumoEditorForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="PedidoInsumoInsumoEditorForm.Designer.cs">
       <DependentUpon>PedidoInsumoInsumoEditorForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="PedidoInsumoEditorForm.cs">
+    <Compile Include="PedidoInsumoLimpiezaEditorForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PedidoInsumoEditorForm.Designer.cs">
-      <DependentUpon>PedidoInsumoEditorForm.cs</DependentUpon>
+    <Compile Include="PedidoInsumoLimpiezaEditorForm.Designer.cs">
+      <DependentUpon>PedidoInsumoLimpiezaEditorForm.cs</DependentUpon>
     </Compile>
     <Compile Include="LimpiezaInsumoEditor.cs">
       <SubType>Form</SubType>
@@ -241,11 +265,23 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="PedidoInsumoInsumoListForm.resx">
+      <DependentUpon>PedidoInsumoInsumoListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PedidoInsumoProduccionEditorForm.resx">
+      <DependentUpon>PedidoInsumoProduccionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PedidoInsumoMantenimientoEditorForm.resx">
+      <DependentUpon>PedidoInsumoMantenimientoEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PedidoInsumoListForm.resx">
+      <DependentUpon>PedidoInsumoListForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PedidoInsumoInsumoEditorForm.resx">
       <DependentUpon>PedidoInsumoInsumoEditorForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PedidoInsumoEditorForm.resx">
-      <DependentUpon>PedidoInsumoEditorForm.cs</DependentUpon>
+    <EmbeddedResource Include="PedidoInsumoLimpiezaEditorForm.resx">
+      <DependentUpon>PedidoInsumoLimpiezaEditorForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LimpiezaInsumoEditor.resx">
       <DependentUpon>LimpiezaInsumoEditor.cs</DependentUpon>

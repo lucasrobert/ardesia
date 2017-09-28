@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Ardesia
 {
-    public partial class PedidoInsumoEditorForm : Form
+    public partial class PedidoInsumoMantenimientoEditorForm : Form
     {
-        public PedidoInsumoEditorForm()
+        public PedidoInsumoMantenimientoEditorForm()
         {
             InitializeComponent();
         }

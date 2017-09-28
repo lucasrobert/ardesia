@@ -10,22 +10,12 @@ using System.Windows.Forms;
 
 namespace Ardesia
 {
-    public partial class LimpiezaEditorForm : Form
+    public partial class PedidoInsumoInsumoListForm : Form
     {
-        public LimpiezaEditorForm()
+        public PedidoInsumoInsumoListForm()
         {
             InitializeComponent();
         }
 
-        private void clienteLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void idTextBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-        
     }
 }

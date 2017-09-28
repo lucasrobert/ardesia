@@ -60,9 +60,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.Controls.Add(this.editButton);
             this.panel1.Controls.Add(this.saveButton);
-            this.panel1.Location = new System.Drawing.Point(15, 327);
+            this.panel1.Location = new System.Drawing.Point(17, 321);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(535, 29);
+            this.panel1.Size = new System.Drawing.Size(550, 29);
             this.panel1.TabIndex = 2;
             // 
             // editButton
@@ -71,7 +71,7 @@
             this.editButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.editButton.ImageKey = "door--arrow.png";
             this.editButton.ImageList = this.imageList1;
-            this.editButton.Location = new System.Drawing.Point(457, 3);
+            this.editButton.Location = new System.Drawing.Point(472, 3);
             this.editButton.Name = "editButton";
             this.editButton.Size = new System.Drawing.Size(75, 23);
             this.editButton.TabIndex = 5;
@@ -94,7 +94,7 @@
             this.saveButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.saveButton.ImageIndex = 0;
             this.saveButton.ImageList = this.imageList1;
-            this.saveButton.Location = new System.Drawing.Point(376, 3);
+            this.saveButton.Location = new System.Drawing.Point(391, 3);
             this.saveButton.Name = "saveButton";
             this.saveButton.Size = new System.Drawing.Size(75, 23);
             this.saveButton.TabIndex = 4;
@@ -104,15 +104,18 @@
             // 
             // dataGridView2
             // 
+            this.dataGridView2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2,
             this.CantidadColumn,
             this.UnidadMedidaColumn});
-            this.dataGridView2.Location = new System.Drawing.Point(16, 110);
+            this.dataGridView2.Location = new System.Drawing.Point(17, 97);
             this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(535, 209);
+            this.dataGridView2.Size = new System.Drawing.Size(550, 218);
             this.dataGridView2.TabIndex = 13;
             // 
             // dataGridViewTextBoxColumn1
@@ -140,7 +143,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 86);
+            this.label1.Location = new System.Drawing.Point(13, 73);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(49, 13);
             this.label1.TabIndex = 15;
@@ -151,7 +154,7 @@
             this.deleteButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.deleteButton.ImageIndex = 3;
             this.deleteButton.ImageList = this.imageList1;
-            this.deleteButton.Location = new System.Drawing.Point(148, 81);
+            this.deleteButton.Location = new System.Drawing.Point(149, 68);
             this.deleteButton.Name = "deleteButton";
             this.deleteButton.Size = new System.Drawing.Size(75, 23);
             this.deleteButton.TabIndex = 17;
@@ -164,7 +167,7 @@
             this.addButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.addButton.ImageIndex = 2;
             this.addButton.ImageList = this.imageList1;
-            this.addButton.Location = new System.Drawing.Point(67, 81);
+            this.addButton.Location = new System.Drawing.Point(68, 68);
             this.addButton.Name = "addButton";
             this.addButton.Size = new System.Drawing.Size(75, 23);
             this.addButton.TabIndex = 16;
@@ -175,7 +178,7 @@
             // empleadoLabel
             // 
             this.empleadoLabel.AutoSize = true;
-            this.empleadoLabel.Location = new System.Drawing.Point(166, 15);
+            this.empleadoLabel.Location = new System.Drawing.Point(12, 41);
             this.empleadoLabel.Name = "empleadoLabel";
             this.empleadoLabel.Size = new System.Drawing.Size(57, 13);
             this.empleadoLabel.TabIndex = 28;
@@ -184,7 +187,7 @@
             // clienteComboBox
             // 
             this.clienteComboBox.FormattingEnabled = true;
-            this.clienteComboBox.Location = new System.Drawing.Point(67, 45);
+            this.clienteComboBox.Location = new System.Drawing.Point(260, 12);
             this.clienteComboBox.Name = "clienteComboBox";
             this.clienteComboBox.Size = new System.Drawing.Size(130, 21);
             this.clienteComboBox.TabIndex = 27;
@@ -192,7 +195,7 @@
             // dateTimePicker1
             // 
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(425, 12);
+            this.dateTimePicker1.Location = new System.Drawing.Point(445, 13);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(122, 20);
             this.dateTimePicker1.TabIndex = 26;
@@ -200,7 +203,7 @@
             // productoComboBox
             // 
             this.productoComboBox.FormattingEnabled = true;
-            this.productoComboBox.Location = new System.Drawing.Point(229, 11);
+            this.productoComboBox.Location = new System.Drawing.Point(80, 38);
             this.productoComboBox.Name = "productoComboBox";
             this.productoComboBox.Size = new System.Drawing.Size(127, 21);
             this.productoComboBox.TabIndex = 25;
@@ -208,7 +211,7 @@
             // fechaLabel
             // 
             this.fechaLabel.AutoSize = true;
-            this.fechaLabel.Location = new System.Drawing.Point(379, 15);
+            this.fechaLabel.Location = new System.Drawing.Point(396, 15);
             this.fechaLabel.Name = "fechaLabel";
             this.fechaLabel.Size = new System.Drawing.Size(40, 13);
             this.fechaLabel.TabIndex = 21;
@@ -217,7 +220,7 @@
             // sectorLabel
             // 
             this.sectorLabel.AutoSize = true;
-            this.sectorLabel.Location = new System.Drawing.Point(13, 48);
+            this.sectorLabel.Location = new System.Drawing.Point(213, 15);
             this.sectorLabel.Name = "sectorLabel";
             this.sectorLabel.Size = new System.Drawing.Size(41, 13);
             this.sectorLabel.TabIndex = 22;
@@ -226,9 +229,9 @@
             // 
             // idTextBox
             // 
-            this.idTextBox.Location = new System.Drawing.Point(67, 12);
+            this.idTextBox.Location = new System.Drawing.Point(80, 12);
             this.idTextBox.Name = "idTextBox";
-            this.idTextBox.Size = new System.Drawing.Size(75, 20);
+            this.idTextBox.Size = new System.Drawing.Size(127, 20);
             this.idTextBox.TabIndex = 24;
             this.idTextBox.TextChanged += new System.EventHandler(this.idTextBox_TextChanged);
             // 
@@ -245,7 +248,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(562, 368);
+            this.ClientSize = new System.Drawing.Size(577, 362);
             this.Controls.Add(this.empleadoLabel);
             this.Controls.Add(this.clienteComboBox);
             this.Controls.Add(this.dateTimePicker1);

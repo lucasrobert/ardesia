@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Ardesia
 {
-    public partial class LimpiezaEditorForm : Form
+    public partial class PedidoInsumoProduccionEditorForm : Form
     {
-        public LimpiezaEditorForm()
+        public PedidoInsumoProduccionEditorForm()
         {
             InitializeComponent();
         }
@@ -26,6 +26,5 @@ namespace Ardesia
         {
 
         }
-        
     }
 }
