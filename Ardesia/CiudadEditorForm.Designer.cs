@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CiudadEditorForm));
             this.panel1 = new System.Windows.Forms.Panel();
             this.paisComboBox = new System.Windows.Forms.ComboBox();
             this.paisLabel = new System.Windows.Forms.Label();
@@ -39,6 +41,7 @@
             this.nombreLabel = new System.Windows.Forms.Label();
             this.idTextBox = new System.Windows.Forms.TextBox();
             this.idLabel = new System.Windows.Forms.Label();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.editButton = new System.Windows.Forms.Button();
             this.saveButton = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
@@ -139,24 +142,39 @@
             this.idLabel.TabIndex = 16;
             this.idLabel.Text = "ID:";
             // 
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "disk.png");
+            this.imageList1.Images.SetKeyName(1, "door--arrow.png");
+            // 
             // editButton
             // 
             this.editButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.editButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.editButton.ImageKey = "door--arrow.png";
+            this.editButton.ImageList = this.imageList1;
             this.editButton.Location = new System.Drawing.Point(464, 3);
             this.editButton.Name = "editButton";
             this.editButton.Size = new System.Drawing.Size(75, 23);
-            this.editButton.TabIndex = 3;
+            this.editButton.TabIndex = 5;
             this.editButton.Text = "&Salir";
+            this.editButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.editButton.UseVisualStyleBackColor = true;
             // 
             // saveButton
             // 
             this.saveButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.saveButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.saveButton.ImageIndex = 0;
+            this.saveButton.ImageList = this.imageList1;
             this.saveButton.Location = new System.Drawing.Point(383, 3);
             this.saveButton.Name = "saveButton";
             this.saveButton.Size = new System.Drawing.Size(75, 23);
-            this.saveButton.TabIndex = 2;
+            this.saveButton.TabIndex = 4;
             this.saveButton.Text = "&Guardar";
+            this.saveButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.saveButton.UseVisualStyleBackColor = true;
             // 
             // CiudadEditorForm
@@ -197,6 +215,7 @@
         private System.Windows.Forms.TextBox idTextBox;
         private System.Windows.Forms.Label idLabel;
         private System.Windows.Forms.Button editButton;
+        private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.Button saveButton;
     }
 }

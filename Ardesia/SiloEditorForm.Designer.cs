@@ -1,6 +1,6 @@
 ﻿namespace Ardesia
 {
-    partial class ProvinciaEditorForm
+    partial class SiloEditorForm
     {
         /// <summary>
         /// Required designer variable.
@@ -29,17 +29,17 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProvinciaEditorForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SiloEditorForm));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.paisComboBox = new System.Windows.Forms.ComboBox();
-            this.paisLabel = new System.Windows.Forms.Label();
+            this.editButton = new System.Windows.Forms.Button();
+            this.saveButton = new System.Windows.Forms.Button();
             this.nombreTextBox = new System.Windows.Forms.TextBox();
             this.nombreLabel = new System.Windows.Forms.Label();
             this.idTextBox = new System.Windows.Forms.TextBox();
             this.idLabel = new System.Windows.Forms.Label();
+            this.capacidadTextBox = new System.Windows.Forms.TextBox();
+            this.capacidadLabel = new System.Windows.Forms.Label();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.editButton = new System.Windows.Forms.Button();
-            this.saveButton = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -51,26 +51,36 @@
             this.panel1.Controls.Add(this.saveButton);
             this.panel1.Location = new System.Drawing.Point(12, 34);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(512, 30);
+            this.panel1.Size = new System.Drawing.Size(556, 30);
             this.panel1.TabIndex = 3;
             // 
-            // paisComboBox
+            // editButton
             // 
-            this.paisComboBox.Enabled = false;
-            this.paisComboBox.FormattingEnabled = true;
-            this.paisComboBox.Location = new System.Drawing.Point(395, 6);
-            this.paisComboBox.Name = "paisComboBox";
-            this.paisComboBox.Size = new System.Drawing.Size(130, 21);
-            this.paisComboBox.TabIndex = 29;
+            this.editButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.editButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.editButton.ImageKey = "door--arrow.png";
+            this.editButton.ImageList = this.imageList1;
+            this.editButton.Location = new System.Drawing.Point(478, 3);
+            this.editButton.Name = "editButton";
+            this.editButton.Size = new System.Drawing.Size(75, 23);
+            this.editButton.TabIndex = 3;
+            this.editButton.Text = "&Salir";
+            this.editButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.editButton.UseVisualStyleBackColor = true;
             // 
-            // paisLabel
+            // saveButton
             // 
-            this.paisLabel.AutoSize = true;
-            this.paisLabel.Location = new System.Drawing.Point(359, 9);
-            this.paisLabel.Name = "paisLabel";
-            this.paisLabel.Size = new System.Drawing.Size(30, 13);
-            this.paisLabel.TabIndex = 28;
-            this.paisLabel.Text = "Pais:";
+            this.saveButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.saveButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.saveButton.ImageIndex = 0;
+            this.saveButton.ImageList = this.imageList1;
+            this.saveButton.Location = new System.Drawing.Point(397, 3);
+            this.saveButton.Name = "saveButton";
+            this.saveButton.Size = new System.Drawing.Size(75, 23);
+            this.saveButton.TabIndex = 2;
+            this.saveButton.Text = "&Guardar";
+            this.saveButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.saveButton.UseVisualStyleBackColor = true;
             // 
             // nombreTextBox
             // 
@@ -104,6 +114,24 @@
             this.idLabel.TabIndex = 16;
             this.idLabel.Text = "ID:";
             // 
+            // capacidadTextBox
+            // 
+            this.capacidadTextBox.Location = new System.Drawing.Point(438, 6);
+            this.capacidadTextBox.Name = "capacidadTextBox";
+            this.capacidadTextBox.Size = new System.Drawing.Size(130, 20);
+            this.capacidadTextBox.TabIndex = 24;
+            this.capacidadTextBox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // capacidadLabel
+            // 
+            this.capacidadLabel.AutoSize = true;
+            this.capacidadLabel.Location = new System.Drawing.Point(371, 9);
+            this.capacidadLabel.Name = "capacidadLabel";
+            this.capacidadLabel.Size = new System.Drawing.Size(61, 13);
+            this.capacidadLabel.TabIndex = 23;
+            this.capacidadLabel.Text = "Capacidad:";
+            this.capacidadLabel.Click += new System.EventHandler(this.label1_Click);
+            // 
             // imageList1
             // 
             this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
@@ -111,48 +139,20 @@
             this.imageList1.Images.SetKeyName(0, "disk.png");
             this.imageList1.Images.SetKeyName(1, "door--arrow.png");
             // 
-            // editButton
-            // 
-            this.editButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.editButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.editButton.ImageKey = "door--arrow.png";
-            this.editButton.ImageList = this.imageList1;
-            this.editButton.Location = new System.Drawing.Point(434, 3);
-            this.editButton.Name = "editButton";
-            this.editButton.Size = new System.Drawing.Size(75, 23);
-            this.editButton.TabIndex = 5;
-            this.editButton.Text = "&Salir";
-            this.editButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.editButton.UseVisualStyleBackColor = true;
-            // 
-            // saveButton
-            // 
-            this.saveButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.saveButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.saveButton.ImageIndex = 0;
-            this.saveButton.ImageList = this.imageList1;
-            this.saveButton.Location = new System.Drawing.Point(353, 3);
-            this.saveButton.Name = "saveButton";
-            this.saveButton.Size = new System.Drawing.Size(75, 23);
-            this.saveButton.TabIndex = 4;
-            this.saveButton.Text = "&Guardar";
-            this.saveButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.saveButton.UseVisualStyleBackColor = true;
-            // 
-            // ProvinciaEditorForm
+            // SiloEditorForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(536, 76);
-            this.Controls.Add(this.paisComboBox);
-            this.Controls.Add(this.paisLabel);
+            this.ClientSize = new System.Drawing.Size(580, 76);
+            this.Controls.Add(this.capacidadTextBox);
+            this.Controls.Add(this.capacidadLabel);
             this.Controls.Add(this.nombreTextBox);
             this.Controls.Add(this.nombreLabel);
             this.Controls.Add(this.idTextBox);
             this.Controls.Add(this.idLabel);
             this.Controls.Add(this.panel1);
-            this.Name = "ProvinciaEditorForm";
-            this.Text = "Provincia";
+            this.Name = "SiloEditorForm";
+            this.Text = "Silo";
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -162,14 +162,14 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.ComboBox paisComboBox;
-        private System.Windows.Forms.Label paisLabel;
         private System.Windows.Forms.TextBox nombreTextBox;
         private System.Windows.Forms.Label nombreLabel;
         private System.Windows.Forms.TextBox idTextBox;
         private System.Windows.Forms.Label idLabel;
         private System.Windows.Forms.Button editButton;
-        private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.Button saveButton;
+        private System.Windows.Forms.TextBox capacidadTextBox;
+        private System.Windows.Forms.Label capacidadLabel;
+        private System.Windows.Forms.ImageList imageList1;
     }
 }

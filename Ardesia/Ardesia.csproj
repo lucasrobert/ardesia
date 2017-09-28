@@ -47,6 +47,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="TamboListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TamboListForm.Designer.cs">
+      <DependentUpon>TamboListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProveedorEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProveedorEditorForm.Designer.cs">
+      <DependentUpon>ProveedorEditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProveedorListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProveedorListForm.Designer.cs">
+      <DependentUpon>ProveedorListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SiloEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SiloEditorForm.Designer.cs">
+      <DependentUpon>SiloEditorForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="SectorEditorForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,6 +88,12 @@
     </Compile>
     <Compile Include="SectorListForm.Designer.cs">
       <DependentUpon>SectorListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SiloListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SiloListForm.Designer.cs">
+      <DependentUpon>SiloListForm.cs</DependentUpon>
     </Compile>
     <Compile Include="PaisListForm.cs">
       <SubType>Form</SubType>
@@ -127,6 +157,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="TamboListForm.resx">
+      <DependentUpon>TamboListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProveedorEditorForm.resx">
+      <DependentUpon>ProveedorEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProveedorListForm.resx">
+      <DependentUpon>ProveedorListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SiloEditorForm.resx">
+      <DependentUpon>SiloEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SectorEditorForm.resx">
       <DependentUpon>SectorEditorForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -135,6 +177,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SectorListForm.resx">
       <DependentUpon>SectorListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SiloListForm.resx">
+      <DependentUpon>SiloListForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PaisListForm.resx">
       <DependentUpon>PaisListForm.cs</DependentUpon>

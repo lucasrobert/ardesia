@@ -10,16 +10,15 @@ using System.Windows.Forms;
 
 namespace Ardesia
 {
-    public partial class EmpleadoListForm : Form
+    public partial class ProveedorEditorForm : Form
     {
-        public EmpleadoListForm()
+        public ProveedorEditorForm()
         {
             InitializeComponent();
         }
 
-        private void addButton_Click(object sender, EventArgs e)
+        private void label2_Click(object sender, EventArgs e)
         {
-
 
         }
     }

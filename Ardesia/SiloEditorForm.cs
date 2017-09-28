@@ -10,16 +10,20 @@ using System.Windows.Forms;
 
 namespace Ardesia
 {
-    public partial class EmpleadoListForm : Form
+    public partial class SiloEditorForm : Form
     {
-        public EmpleadoListForm()
+        public SiloEditorForm()
         {
             InitializeComponent();
         }
 
-        private void addButton_Click(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }
