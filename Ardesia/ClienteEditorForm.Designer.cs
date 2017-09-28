@@ -55,7 +55,7 @@
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -274,25 +274,26 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 75);
+            this.label4.Location = new System.Drawing.Point(12, 77);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(76, 13);
             this.label4.TabIndex = 40;
             this.label4.Text = "Fecha de nac:";
             // 
-            // textBox6
+            // dateTimePicker1
             // 
-            this.textBox6.Location = new System.Drawing.Point(94, 72);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(94, 20);
-            this.textBox6.TabIndex = 41;
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker1.Location = new System.Drawing.Point(94, 74);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(94, 20);
+            this.dateTimePicker1.TabIndex = 41;
             // 
             // ClienteEditorForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(602, 282);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textBox5);
@@ -350,6 +351,6 @@
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }
