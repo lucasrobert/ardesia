@@ -1,0 +1,351 @@
+﻿namespace Ardesia
+{
+    partial class PedidoInsumoEditorForm
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PedidoInsumoEditorForm));
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.editButton = new System.Windows.Forms.Button();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.saveButton = new System.Windows.Forms.Button();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.label1 = new System.Windows.Forms.Label();
+            this.deleteButton = new System.Windows.Forms.Button();
+            this.addButton = new System.Windows.Forms.Button();
+            this.empleadoLabel = new System.Windows.Forms.Label();
+            this.clienteComboBox = new System.Windows.Forms.ComboBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.productoComboBox = new System.Windows.Forms.ComboBox();
+            this.fechaLabel = new System.Windows.Forms.Label();
+            this.proveedorLabel = new System.Windows.Forms.Label();
+            this.idTextBox = new System.Windows.Forms.TextBox();
+            this.numeroLabel = new System.Windows.Forms.Label();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CantidadColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.UnidadMedidaColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Importe = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.importeTotalLabel = new System.Windows.Forms.Label();
+            this.importeTotalTextBox = new System.Windows.Forms.TextBox();
+            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.Controls.Add(this.importeTotalTextBox);
+            this.panel1.Controls.Add(this.importeTotalLabel);
+            this.panel1.Controls.Add(this.editButton);
+            this.panel1.Controls.Add(this.saveButton);
+            this.panel1.Location = new System.Drawing.Point(15, 407);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(544, 29);
+            this.panel1.TabIndex = 2;
+            // 
+            // editButton
+            // 
+            this.editButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.editButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.editButton.ImageKey = "door--arrow.png";
+            this.editButton.ImageList = this.imageList1;
+            this.editButton.Location = new System.Drawing.Point(466, 3);
+            this.editButton.Name = "editButton";
+            this.editButton.Size = new System.Drawing.Size(75, 23);
+            this.editButton.TabIndex = 5;
+            this.editButton.Text = "&Salir";
+            this.editButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.editButton.UseVisualStyleBackColor = true;
+            // 
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "disk.png");
+            this.imageList1.Images.SetKeyName(1, "door--arrow.png");
+            this.imageList1.Images.SetKeyName(2, "plus-circle.png");
+            this.imageList1.Images.SetKeyName(3, "cross-circle.png");
+            // 
+            // saveButton
+            // 
+            this.saveButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.saveButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.saveButton.ImageIndex = 0;
+            this.saveButton.ImageList = this.imageList1;
+            this.saveButton.Location = new System.Drawing.Point(385, 3);
+            this.saveButton.Name = "saveButton";
+            this.saveButton.Size = new System.Drawing.Size(75, 23);
+            this.saveButton.TabIndex = 4;
+            this.saveButton.Text = "&Guardar";
+            this.saveButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.saveButton.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.CantidadColumn,
+            this.UnidadMedidaColumn,
+            this.Importe});
+            this.dataGridView2.Location = new System.Drawing.Point(16, 185);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.Size = new System.Drawing.Size(543, 209);
+            this.dataGridView2.TabIndex = 13;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 161);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(49, 13);
+            this.label1.TabIndex = 15;
+            this.label1.Text = "Insumos:";
+            // 
+            // deleteButton
+            // 
+            this.deleteButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.deleteButton.ImageIndex = 3;
+            this.deleteButton.ImageList = this.imageList1;
+            this.deleteButton.Location = new System.Drawing.Point(148, 156);
+            this.deleteButton.Name = "deleteButton";
+            this.deleteButton.Size = new System.Drawing.Size(75, 23);
+            this.deleteButton.TabIndex = 17;
+            this.deleteButton.Text = "&Borrar";
+            this.deleteButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.deleteButton.UseVisualStyleBackColor = true;
+            // 
+            // addButton
+            // 
+            this.addButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.addButton.ImageIndex = 2;
+            this.addButton.ImageList = this.imageList1;
+            this.addButton.Location = new System.Drawing.Point(67, 156);
+            this.addButton.Name = "addButton";
+            this.addButton.Size = new System.Drawing.Size(75, 23);
+            this.addButton.TabIndex = 16;
+            this.addButton.Text = "&Agregar";
+            this.addButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.addButton.UseVisualStyleBackColor = true;
+            // 
+            // empleadoLabel
+            // 
+            this.empleadoLabel.AutoSize = true;
+            this.empleadoLabel.Location = new System.Drawing.Point(166, 15);
+            this.empleadoLabel.Name = "empleadoLabel";
+            this.empleadoLabel.Size = new System.Drawing.Size(57, 13);
+            this.empleadoLabel.TabIndex = 28;
+            this.empleadoLabel.Text = "Empleado:";
+            // 
+            // clienteComboBox
+            // 
+            this.clienteComboBox.FormattingEnabled = true;
+            this.clienteComboBox.Location = new System.Drawing.Point(78, 118);
+            this.clienteComboBox.Name = "clienteComboBox";
+            this.clienteComboBox.Size = new System.Drawing.Size(130, 21);
+            this.clienteComboBox.TabIndex = 27;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker1.Location = new System.Drawing.Point(425, 12);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(122, 20);
+            this.dateTimePicker1.TabIndex = 26;
+            // 
+            // productoComboBox
+            // 
+            this.productoComboBox.FormattingEnabled = true;
+            this.productoComboBox.Location = new System.Drawing.Point(229, 11);
+            this.productoComboBox.Name = "productoComboBox";
+            this.productoComboBox.Size = new System.Drawing.Size(127, 21);
+            this.productoComboBox.TabIndex = 25;
+            // 
+            // fechaLabel
+            // 
+            this.fechaLabel.AutoSize = true;
+            this.fechaLabel.Location = new System.Drawing.Point(379, 15);
+            this.fechaLabel.Name = "fechaLabel";
+            this.fechaLabel.Size = new System.Drawing.Size(40, 13);
+            this.fechaLabel.TabIndex = 21;
+            this.fechaLabel.Text = "Fecha:";
+            // 
+            // proveedorLabel
+            // 
+            this.proveedorLabel.AutoSize = true;
+            this.proveedorLabel.Location = new System.Drawing.Point(13, 121);
+            this.proveedorLabel.Name = "proveedorLabel";
+            this.proveedorLabel.Size = new System.Drawing.Size(59, 13);
+            this.proveedorLabel.TabIndex = 22;
+            this.proveedorLabel.Text = "Proveedor:";
+            this.proveedorLabel.Click += new System.EventHandler(this.clienteLabel_Click);
+            // 
+            // idTextBox
+            // 
+            this.idTextBox.Location = new System.Drawing.Point(78, 12);
+            this.idTextBox.Name = "idTextBox";
+            this.idTextBox.Size = new System.Drawing.Size(75, 20);
+            this.idTextBox.TabIndex = 24;
+            this.idTextBox.TextChanged += new System.EventHandler(this.idTextBox_TextChanged);
+            // 
+            // numeroLabel
+            // 
+            this.numeroLabel.AutoSize = true;
+            this.numeroLabel.Location = new System.Drawing.Point(13, 15);
+            this.numeroLabel.Name = "numeroLabel";
+            this.numeroLabel.Size = new System.Drawing.Size(47, 13);
+            this.numeroLabel.TabIndex = 23;
+            this.numeroLabel.Text = "Numero:";
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.HeaderText = "ID";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewTextBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.HeaderText = "Nombre";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // CantidadColumn
+            // 
+            this.CantidadColumn.HeaderText = "Cantidad";
+            this.CantidadColumn.Name = "CantidadColumn";
+            // 
+            // UnidadMedidaColumn
+            // 
+            this.UnidadMedidaColumn.HeaderText = "Unidad";
+            this.UnidadMedidaColumn.Name = "UnidadMedidaColumn";
+            // 
+            // Importe
+            // 
+            this.Importe.HeaderText = "Importe";
+            this.Importe.Name = "Importe";
+            // 
+            // importeTotalLabel
+            // 
+            this.importeTotalLabel.AutoSize = true;
+            this.importeTotalLabel.Location = new System.Drawing.Point(13, 8);
+            this.importeTotalLabel.Name = "importeTotalLabel";
+            this.importeTotalLabel.Size = new System.Drawing.Size(68, 13);
+            this.importeTotalLabel.TabIndex = 6;
+            this.importeTotalLabel.Text = "Importe total:";
+            // 
+            // importeTotalTextBox
+            // 
+            this.importeTotalTextBox.Location = new System.Drawing.Point(93, 5);
+            this.importeTotalTextBox.Name = "importeTotalTextBox";
+            this.importeTotalTextBox.Size = new System.Drawing.Size(76, 20);
+            this.importeTotalTextBox.TabIndex = 7;
+            // 
+            // checkedListBox1
+            // 
+            this.checkedListBox1.FormattingEnabled = true;
+            this.checkedListBox1.Items.AddRange(new object[] {
+            "Limpieza",
+            "Mantenimiento",
+            "Plan de Producción Semanal"});
+            this.checkedListBox1.Location = new System.Drawing.Point(15, 50);
+            this.checkedListBox1.Name = "checkedListBox1";
+            this.checkedListBox1.Size = new System.Drawing.Size(120, 49);
+            this.checkedListBox1.TabIndex = 29;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(148, 63);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 30;
+            // 
+            // PedidoInsumoEditorForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(571, 448);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.checkedListBox1);
+            this.Controls.Add(this.empleadoLabel);
+            this.Controls.Add(this.clienteComboBox);
+            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.productoComboBox);
+            this.Controls.Add(this.fechaLabel);
+            this.Controls.Add(this.proveedorLabel);
+            this.Controls.Add(this.idTextBox);
+            this.Controls.Add(this.numeroLabel);
+            this.Controls.Add(this.deleteButton);
+            this.Controls.Add(this.addButton);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.dataGridView2);
+            this.Controls.Add(this.panel1);
+            this.Name = "PedidoInsumoEditorForm";
+            this.Text = "Pedido de insumos";
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button editButton;
+        private System.Windows.Forms.ImageList imageList1;
+        private System.Windows.Forms.Button saveButton;
+        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button deleteButton;
+        private System.Windows.Forms.Button addButton;
+        private System.Windows.Forms.Label empleadoLabel;
+        private System.Windows.Forms.ComboBox clienteComboBox;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.ComboBox productoComboBox;
+        private System.Windows.Forms.Label fechaLabel;
+        private System.Windows.Forms.Label proveedorLabel;
+        private System.Windows.Forms.TextBox idTextBox;
+        private System.Windows.Forms.Label numeroLabel;
+        private System.Windows.Forms.TextBox importeTotalTextBox;
+        private System.Windows.Forms.Label importeTotalLabel;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CantidadColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn UnidadMedidaColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Importe;
+        private System.Windows.Forms.CheckedListBox checkedListBox1;
+        private System.Windows.Forms.ComboBox comboBox1;
+    }
+}

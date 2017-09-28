@@ -47,6 +47,54 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PedidoInsumoInsumoEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PedidoInsumoInsumoEditorForm.Designer.cs">
+      <DependentUpon>PedidoInsumoInsumoEditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PedidoInsumoEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PedidoInsumoEditorForm.Designer.cs">
+      <DependentUpon>PedidoInsumoEditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LimpiezaInsumoEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LimpiezaInsumoEditor.Designer.cs">
+      <DependentUpon>LimpiezaInsumoEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LimpiezaListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LimpiezaListForm.Designer.cs">
+      <DependentUpon>LimpiezaListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LimpiezaEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LimpiezaEditorForm.Designer.cs">
+      <DependentUpon>LimpiezaEditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RemitoSalidaProductoProductoEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RemitoSalidaProductoProductoEditorForm.Designer.cs">
+      <DependentUpon>RemitoSalidaProductoProductoEditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RemitoSalidaProductoListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RemitoSalidaProductoListForm.Designer.cs">
+      <DependentUpon>RemitoSalidaProductoListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RemitoSalidaProductoEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RemitoSalidaProductoEditorForm.Designer.cs">
+      <DependentUpon>RemitoSalidaProductoEditorForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormulaInsumoEditorForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,6 +112,18 @@
     </Compile>
     <Compile Include="FormulaListForm.Designer.cs">
       <DependentUpon>FormulaListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClienteListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClienteListForm.Designer.cs">
+      <DependentUpon>ClienteListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClienteEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClienteEditorForm.Designer.cs">
+      <DependentUpon>ClienteEditorForm.cs</DependentUpon>
     </Compile>
     <Compile Include="TamboEditorForm.cs">
       <SubType>Form</SubType>
@@ -181,6 +241,30 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="PedidoInsumoInsumoEditorForm.resx">
+      <DependentUpon>PedidoInsumoInsumoEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PedidoInsumoEditorForm.resx">
+      <DependentUpon>PedidoInsumoEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LimpiezaInsumoEditor.resx">
+      <DependentUpon>LimpiezaInsumoEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LimpiezaListForm.resx">
+      <DependentUpon>LimpiezaListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LimpiezaEditorForm.resx">
+      <DependentUpon>LimpiezaEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RemitoSalidaProductoProductoEditorForm.resx">
+      <DependentUpon>RemitoSalidaProductoProductoEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RemitoSalidaProductoListForm.resx">
+      <DependentUpon>RemitoSalidaProductoListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RemitoSalidaProductoEditorForm.resx">
+      <DependentUpon>RemitoSalidaProductoEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormulaInsumoEditorForm.resx">
       <DependentUpon>FormulaInsumoEditorForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -189,6 +273,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormulaListForm.resx">
       <DependentUpon>FormulaListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClienteListForm.resx">
+      <DependentUpon>ClienteListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClienteEditorForm.resx">
+      <DependentUpon>ClienteEditorForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TamboEditorForm.resx">
       <DependentUpon>TamboEditorForm.cs</DependentUpon>
