@@ -33,25 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DevExpress.Data.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.Images.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Printing.v17.1.Core, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.Utils.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.Xpo.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraBars.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraEditors.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.XtraGrid.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraLayout.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.XtraPrinting.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="System" />
-    <Reference Include="System.ComponentModel.DataAnnotations" />
-    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.DirectoryServices" />
-    <Reference Include="System.Runtime.Serialization" />
-    <Reference Include="System.ServiceModel" />
-    <Reference Include="System.Web" />
-    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -63,6 +47,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MantenimientoListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MantenimientoListForm.Designer.cs">
+      <DependentUpon>MantenimientoListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MantenimientoEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MantenimientoEditorForm.Designer.cs">
+      <DependentUpon>MantenimientoEditorForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -171,11 +167,23 @@
     <Compile Include="ClienteEditorForm.Designer.cs">
       <DependentUpon>ClienteEditorForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="EquipoEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EquipoEditorForm.Designer.cs">
+      <DependentUpon>EquipoEditorForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="TamboEditorForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="TamboEditorForm.Designer.cs">
       <DependentUpon>TamboEditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EquipoListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EquipoListForm.Designer.cs">
+      <DependentUpon>EquipoListForm.cs</DependentUpon>
     </Compile>
     <Compile Include="TamboListForm.cs">
       <SubType>Form</SubType>
@@ -273,6 +281,12 @@
     <Compile Include="CalleListForm.Designer.cs">
       <DependentUpon>CalleListForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPrincipal.Designer.cs">
+      <DependentUpon>FormPrincipal.cs</DependentUpon>
+    </Compile>
     <Compile Include="EmpleadoListForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -281,14 +295,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="FormPrincipal.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormPrincipal.Designer.cs">
-      <DependentUpon>FormPrincipal.cs</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="FormPrincipal.resx">
-      <DependentUpon>FormPrincipal.cs</DependentUpon>
+    <EmbeddedResource Include="MantenimientoListForm.resx">
+      <DependentUpon>MantenimientoListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MantenimientoEditorForm.resx">
+      <DependentUpon>MantenimientoEditorForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
@@ -320,7 +331,6 @@
     <EmbeddedResource Include="LimpiezaEditorForm.resx">
       <DependentUpon>LimpiezaEditorForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="RemitoSalidaProductoProductoEditorForm.resx">
       <DependentUpon>RemitoSalidaProductoProductoEditorForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -345,8 +355,14 @@
     <EmbeddedResource Include="ClienteEditorForm.resx">
       <DependentUpon>ClienteEditorForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="EquipoEditorForm.resx">
+      <DependentUpon>EquipoEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TamboEditorForm.resx">
       <DependentUpon>TamboEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EquipoListForm.resx">
+      <DependentUpon>EquipoListForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TamboListForm.resx">
       <DependentUpon>TamboListForm.cs</DependentUpon>
@@ -395,6 +411,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CalleListForm.resx">
       <DependentUpon>CalleListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPrincipal.resx">
+      <DependentUpon>FormPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EmpleadoListForm.resx">
       <DependentUpon>EmpleadoListForm.cs</DependentUpon>

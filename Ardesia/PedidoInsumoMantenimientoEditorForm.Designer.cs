@@ -31,6 +31,8 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PedidoInsumoMantenimientoEditorForm));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.editButton = new System.Windows.Forms.Button();
             this.saveButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -55,8 +57,6 @@
             this.ImporteColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -72,6 +72,30 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(542, 29);
             this.panel1.TabIndex = 2;
+            // 
+            // button1
+            // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.ImageIndex = 4;
+            this.button1.ImageList = this.imageList1;
+            this.button1.Location = new System.Drawing.Point(285, 3);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(92, 23);
+            this.button1.TabIndex = 9;
+            this.button1.Text = "&Ver insumos";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "disk.png");
+            this.imageList1.Images.SetKeyName(1, "door--arrow.png");
+            this.imageList1.Images.SetKeyName(2, "plus-circle.png");
+            this.imageList1.Images.SetKeyName(3, "cross-circle.png");
+            this.imageList1.Images.SetKeyName(4, "magnifier-zoom.png");
             // 
             // editButton
             // 
@@ -114,6 +138,7 @@
             // 
             this.deleteButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.deleteButton.ImageIndex = 3;
+            this.deleteButton.ImageList = this.imageList1;
             this.deleteButton.Location = new System.Drawing.Point(184, 73);
             this.deleteButton.Name = "deleteButton";
             this.deleteButton.Size = new System.Drawing.Size(75, 23);
@@ -126,6 +151,7 @@
             // 
             this.addButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.addButton.ImageIndex = 2;
+            this.addButton.ImageList = this.imageList1;
             this.addButton.Location = new System.Drawing.Point(103, 73);
             this.addButton.Name = "addButton";
             this.addButton.Size = new System.Drawing.Size(75, 23);
@@ -296,30 +322,6 @@
             this.label3.Size = new System.Drawing.Size(68, 13);
             this.label3.TabIndex = 34;
             this.label3.Text = "Importe total:";
-            // 
-            // button1
-            // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.ImageIndex = 4;
-            this.button1.ImageList = this.imageList1;
-            this.button1.Location = new System.Drawing.Point(285, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(92, 23);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "&Ver insumos";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // imageList1
-            // 
-            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList1.Images.SetKeyName(0, "disk.png");
-            this.imageList1.Images.SetKeyName(1, "door--arrow.png");
-            this.imageList1.Images.SetKeyName(2, "plus-circle.png");
-            this.imageList1.Images.SetKeyName(3, "cross-circle.png");
-            this.imageList1.Images.SetKeyName(4, "magnifier-zoom.png");
             // 
             // PedidoInsumoMantenimientoEditorForm
             // 
