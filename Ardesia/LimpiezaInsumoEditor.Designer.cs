@@ -47,7 +47,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.Controls.Add(this.editButton);
             this.panel1.Controls.Add(this.saveButton);
-            this.panel1.Location = new System.Drawing.Point(12, 42);
+            this.panel1.Location = new System.Drawing.Point(12, 38);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(402, 30);
             this.panel1.TabIndex = 3;
@@ -124,7 +124,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(426, 84);
+            this.ClientSize = new System.Drawing.Size(426, 80);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.cantidadLabel);
             this.Controls.Add(this.provinciaComboBox);
