@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormulaInsumoEditorForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LimpiezaInsumoEditor));
             this.panel1 = new System.Windows.Forms.Panel();
             this.editButton = new System.Windows.Forms.Button();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
@@ -43,11 +43,11 @@
             // 
             // panel1
             // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.Controls.Add(this.editButton);
             this.panel1.Controls.Add(this.saveButton);
-            this.panel1.Location = new System.Drawing.Point(12, 37);
+            this.panel1.Location = new System.Drawing.Point(12, 42);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(402, 30);
             this.panel1.TabIndex = 3;
@@ -120,17 +120,17 @@
             this.textBox1.Size = new System.Drawing.Size(130, 20);
             this.textBox1.TabIndex = 30;
             // 
-            // FormulaInsumoEditorForm
+            // LimpiezaInsumoEditor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(426, 79);
+            this.ClientSize = new System.Drawing.Size(426, 84);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.cantidadLabel);
             this.Controls.Add(this.provinciaComboBox);
             this.Controls.Add(this.insumoLabel);
             this.Controls.Add(this.panel1);
-            this.Name = "FormulaInsumoEditorForm";
+            this.Name = "LimpiezaInsumoEditor";
             this.Text = "Insumo";
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
