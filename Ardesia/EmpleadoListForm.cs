@@ -19,7 +19,7 @@ namespace Ardesia
 
         private void addButton_Click(object sender, EventArgs e)
         {
-
+            new EmpleadoEditorForm().Show();
 
         }
     }

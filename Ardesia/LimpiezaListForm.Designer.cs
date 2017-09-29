@@ -31,6 +31,10 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LimpiezaListForm));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.ColumnId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Sector = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.Empleado = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.panel1 = new System.Windows.Forms.Panel();
             this.deleteButton = new System.Windows.Forms.Button();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
@@ -38,10 +42,6 @@
             this.addButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.ColumnId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Sector = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.Empleado = new System.Windows.Forms.DataGridViewComboBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -59,6 +59,28 @@
             this.dataGridView1.Size = new System.Drawing.Size(751, 333);
             this.dataGridView1.TabIndex = 0;
             // 
+            // ColumnId
+            // 
+            this.ColumnId.HeaderText = "ID";
+            this.ColumnId.Name = "ColumnId";
+            this.ColumnId.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.ColumnId.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // Fecha
+            // 
+            this.Fecha.HeaderText = "Fecha";
+            this.Fecha.Name = "Fecha";
+            // 
+            // Sector
+            // 
+            this.Sector.HeaderText = "Sector";
+            this.Sector.Name = "Sector";
+            // 
+            // Empleado
+            // 
+            this.Empleado.HeaderText = "Empleado";
+            this.Empleado.Name = "Empleado";
+            // 
             // panel1
             // 
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
@@ -66,7 +88,7 @@
             this.panel1.Controls.Add(this.deleteButton);
             this.panel1.Controls.Add(this.editButton);
             this.panel1.Controls.Add(this.addButton);
-            this.panel1.Location = new System.Drawing.Point(12, 375);
+            this.panel1.Location = new System.Drawing.Point(12, 266);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(751, 29);
             this.panel1.TabIndex = 1;
@@ -138,39 +160,18 @@
             this.textBox1.Size = new System.Drawing.Size(204, 20);
             this.textBox1.TabIndex = 3;
             // 
-            // ColumnId
-            // 
-            this.ColumnId.HeaderText = "ID";
-            this.ColumnId.Name = "ColumnId";
-            this.ColumnId.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.ColumnId.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // Fecha
-            // 
-            this.Fecha.HeaderText = "Fecha";
-            this.Fecha.Name = "Fecha";
-            // 
-            // Sector
-            // 
-            this.Sector.HeaderText = "Sector";
-            this.Sector.Name = "Sector";
-            // 
-            // Empleado
-            // 
-            this.Empleado.HeaderText = "Empleado";
-            this.Empleado.Name = "Empleado";
-            // 
             // LimpiezaListForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(775, 416);
+            this.ClientSize = new System.Drawing.Size(775, 307);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dataGridView1);
             this.Name = "LimpiezaListForm";
             this.Text = "Limpiezas";
+            this.Load += new System.EventHandler(this.LimpiezaListForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);

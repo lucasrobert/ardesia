@@ -22,6 +22,10 @@ namespace Ardesia
 
 
         }
-        
+
+        private void LimpiezaListForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

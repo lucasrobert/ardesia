@@ -67,7 +67,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.Controls.Add(this.editButton);
             this.panel1.Controls.Add(this.saveButton);
-            this.panel1.Location = new System.Drawing.Point(12, 125);
+            this.panel1.Location = new System.Drawing.Point(12, 118);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(788, 30);
             this.panel1.TabIndex = 3;
@@ -260,7 +260,7 @@
             // 
             this.textBox3.Location = new System.Drawing.Point(283, 12);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(110, 20);
+            this.textBox3.Size = new System.Drawing.Size(130, 20);
             this.textBox3.TabIndex = 46;
             // 
             // label7
@@ -308,7 +308,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(812, 167);
+            this.ClientSize = new System.Drawing.Size(812, 160);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textBox2);
