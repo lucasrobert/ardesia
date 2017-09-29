@@ -16,5 +16,10 @@ namespace Ardesia
         {
             InitializeComponent();
         }
+
+        private void EmpleadoEditorForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
