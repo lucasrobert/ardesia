@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Ardesia
 {
-    public partial class SectorListForm : Form
+    public partial class SectorListForm : DevExpress.XtraEditors.XtraForm
     {
         public SectorListForm()
         {

@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Ardesia
 {
-    public partial class CiudadListForm : Form
+    public partial class CiudadListForm : DevExpress.XtraEditors.XtraForm
     {
         public CiudadListForm()
         {

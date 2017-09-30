@@ -28,12 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PedidoInsumoMantenimientoEditorForm));
             this.repositoryItemLookUpEditEquipo = new DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit();
             this.repositoryItemLookUpEditEmpleado = new DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit();
             this.exitSimpleButton = new DevExpress.XtraEditors.SimpleButton();
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.imageList1 = new System.Windows.Forms.ImageList();
             this.saveSimpleButton = new DevExpress.XtraEditors.SimpleButton();
             this.verInsumosSimpleButton = new DevExpress.XtraEditors.SimpleButton();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
@@ -86,7 +85,7 @@
             this.exitSimpleButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.exitSimpleButton.ImageOptions.ImageIndex = 1;
             this.exitSimpleButton.ImageOptions.ImageList = this.imageList1;
-            this.exitSimpleButton.Location = new System.Drawing.Point(515, 397);
+            this.exitSimpleButton.Location = new System.Drawing.Point(515, 329);
             this.exitSimpleButton.Name = "exitSimpleButton";
             this.exitSimpleButton.Size = new System.Drawing.Size(98, 22);
             this.exitSimpleButton.TabIndex = 12;
@@ -107,7 +106,7 @@
             this.saveSimpleButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.saveSimpleButton.ImageOptions.ImageIndex = 0;
             this.saveSimpleButton.ImageOptions.ImageList = this.imageList1;
-            this.saveSimpleButton.Location = new System.Drawing.Point(408, 397);
+            this.saveSimpleButton.Location = new System.Drawing.Point(408, 329);
             this.saveSimpleButton.Name = "saveSimpleButton";
             this.saveSimpleButton.Size = new System.Drawing.Size(101, 22);
             this.saveSimpleButton.TabIndex = 11;
@@ -118,7 +117,7 @@
             this.verInsumosSimpleButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.verInsumosSimpleButton.ImageOptions.ImageIndex = 4;
             this.verInsumosSimpleButton.ImageOptions.ImageList = this.imageList1;
-            this.verInsumosSimpleButton.Location = new System.Drawing.Point(12, 397);
+            this.verInsumosSimpleButton.Location = new System.Drawing.Point(12, 329);
             this.verInsumosSimpleButton.Name = "verInsumosSimpleButton";
             this.verInsumosSimpleButton.Size = new System.Drawing.Size(98, 22);
             this.verInsumosSimpleButton.TabIndex = 10;
@@ -132,7 +131,7 @@
             this.gridControl1.Location = new System.Drawing.Point(12, 189);
             this.gridControl1.MainView = this.mantenimientoGridView;
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(601, 202);
+            this.gridControl1.Size = new System.Drawing.Size(601, 134);
             this.gridControl1.TabIndex = 36;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.mantenimientoGridView});
@@ -307,7 +306,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(625, 431);
+            this.ClientSize = new System.Drawing.Size(625, 363);
             this.Controls.Add(this.verInsumosSimpleButton);
             this.Controls.Add(this.exitSimpleButton);
             this.Controls.Add(this.saveSimpleButton);

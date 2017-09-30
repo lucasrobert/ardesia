@@ -28,12 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MantenimientoEditorForm));
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.editButton = new System.Windows.Forms.Button();
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.saveButton = new System.Windows.Forms.Button();
+            this.imageList1 = new System.Windows.Forms.ImageList();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -50,39 +46,15 @@
             this.equipoLabel = new System.Windows.Forms.Label();
             this.idTextBox = new System.Windows.Forms.TextBox();
             this.idLabel = new System.Windows.Forms.Label();
-            this.memoEdit1 = new DevExpress.XtraEditors.MemoEdit();
-            this.label2 = new System.Windows.Forms.Label();
             this.separatorControl1 = new DevExpress.XtraEditors.SeparatorControl();
-            this.panel1.SuspendLayout();
+            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
+            this.memoEdit2 = new DevExpress.XtraEditors.MemoEdit();
+            this.exitSimpleButton = new DevExpress.XtraEditors.SimpleButton();
+            this.saveSimpleButton = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.memoEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.memoEdit2.Properties)).BeginInit();
             this.SuspendLayout();
-            // 
-            // panel1
-            // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.Controls.Add(this.editButton);
-            this.panel1.Controls.Add(this.saveButton);
-            this.panel1.Location = new System.Drawing.Point(17, 441);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(581, 29);
-            this.panel1.TabIndex = 2;
-            // 
-            // editButton
-            // 
-            this.editButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.editButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.editButton.ImageKey = "door--arrow.png";
-            this.editButton.ImageList = this.imageList1;
-            this.editButton.Location = new System.Drawing.Point(503, 3);
-            this.editButton.Name = "editButton";
-            this.editButton.Size = new System.Drawing.Size(75, 23);
-            this.editButton.TabIndex = 5;
-            this.editButton.Text = "&Salir";
-            this.editButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.editButton.UseVisualStyleBackColor = true;
             // 
             // imageList1
             // 
@@ -92,20 +64,6 @@
             this.imageList1.Images.SetKeyName(1, "door--arrow.png");
             this.imageList1.Images.SetKeyName(2, "plus-circle.png");
             this.imageList1.Images.SetKeyName(3, "cross-circle.png");
-            // 
-            // saveButton
-            // 
-            this.saveButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.saveButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.saveButton.ImageIndex = 0;
-            this.saveButton.ImageList = this.imageList1;
-            this.saveButton.Location = new System.Drawing.Point(422, 3);
-            this.saveButton.Name = "saveButton";
-            this.saveButton.Size = new System.Drawing.Size(75, 23);
-            this.saveButton.TabIndex = 4;
-            this.saveButton.Text = "&Guardar";
-            this.saveButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.saveButton.UseVisualStyleBackColor = true;
             // 
             // dataGridView2
             // 
@@ -247,22 +205,6 @@
             this.idLabel.TabIndex = 23;
             this.idLabel.Text = "ID:";
             // 
-            // memoEdit1
-            // 
-            this.memoEdit1.Location = new System.Drawing.Point(99, 65);
-            this.memoEdit1.Name = "memoEdit1";
-            this.memoEdit1.Size = new System.Drawing.Size(487, 96);
-            this.memoEdit1.TabIndex = 29;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 67);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(81, 13);
-            this.label2.TabIndex = 30;
-            this.label2.Text = "Observaciones:";
-            // 
             // separatorControl1
             // 
             this.separatorControl1.Location = new System.Drawing.Point(12, 167);
@@ -270,14 +212,55 @@
             this.separatorControl1.Size = new System.Drawing.Size(586, 23);
             this.separatorControl1.TabIndex = 31;
             // 
+            // labelControl3
+            // 
+            this.labelControl3.Location = new System.Drawing.Point(12, 67);
+            this.labelControl3.Name = "labelControl3";
+            this.labelControl3.Size = new System.Drawing.Size(75, 13);
+            this.labelControl3.TabIndex = 53;
+            this.labelControl3.Text = "Observaciones:";
+            // 
+            // memoEdit2
+            // 
+            this.memoEdit2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.memoEdit2.Location = new System.Drawing.Point(12, 86);
+            this.memoEdit2.Name = "memoEdit2";
+            this.memoEdit2.Size = new System.Drawing.Size(586, 75);
+            this.memoEdit2.TabIndex = 52;
+            // 
+            // exitSimpleButton
+            // 
+            this.exitSimpleButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.exitSimpleButton.ImageOptions.ImageIndex = 1;
+            this.exitSimpleButton.ImageOptions.ImageList = this.imageList1;
+            this.exitSimpleButton.Location = new System.Drawing.Point(500, 448);
+            this.exitSimpleButton.Name = "exitSimpleButton";
+            this.exitSimpleButton.Size = new System.Drawing.Size(98, 22);
+            this.exitSimpleButton.TabIndex = 55;
+            this.exitSimpleButton.Text = "&Salir";
+            // 
+            // saveSimpleButton
+            // 
+            this.saveSimpleButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.saveSimpleButton.ImageOptions.ImageIndex = 0;
+            this.saveSimpleButton.ImageOptions.ImageList = this.imageList1;
+            this.saveSimpleButton.Location = new System.Drawing.Point(393, 448);
+            this.saveSimpleButton.Name = "saveSimpleButton";
+            this.saveSimpleButton.Size = new System.Drawing.Size(101, 22);
+            this.saveSimpleButton.TabIndex = 54;
+            this.saveSimpleButton.Text = "&Guardar";
+            // 
             // MantenimientoEditorForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(608, 482);
+            this.Controls.Add(this.exitSimpleButton);
+            this.Controls.Add(this.saveSimpleButton);
+            this.Controls.Add(this.labelControl3);
+            this.Controls.Add(this.memoEdit2);
             this.Controls.Add(this.separatorControl1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.memoEdit1);
             this.Controls.Add(this.empleadoLabel);
             this.Controls.Add(this.clienteComboBox);
             this.Controls.Add(this.dateTimePicker1);
@@ -290,24 +273,18 @@
             this.Controls.Add(this.addButton);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView2);
-            this.Controls.Add(this.panel1);
             this.Name = "MantenimientoEditorForm";
             this.Text = "Mantenimiento";
-            this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.memoEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.memoEdit2.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button editButton;
         private System.Windows.Forms.ImageList imageList1;
-        private System.Windows.Forms.Button saveButton;
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button deleteButton;
@@ -324,8 +301,10 @@
         private System.Windows.Forms.Label equipoLabel;
         private System.Windows.Forms.TextBox idTextBox;
         private System.Windows.Forms.Label idLabel;
-        private DevExpress.XtraEditors.MemoEdit memoEdit1;
-        private System.Windows.Forms.Label label2;
         private DevExpress.XtraEditors.SeparatorControl separatorControl1;
+        private DevExpress.XtraEditors.LabelControl labelControl3;
+        private DevExpress.XtraEditors.MemoEdit memoEdit2;
+        private DevExpress.XtraEditors.SimpleButton exitSimpleButton;
+        private DevExpress.XtraEditors.SimpleButton saveSimpleButton;
     }
 }

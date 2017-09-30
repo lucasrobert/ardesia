@@ -125,7 +125,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAAQ
-        DQAAAk1TRnQBSQFMAgEBBQEAAXgBAAF4AQABEAEAARABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
+        DQAAAk1TRnQBSQFMAgEBBQEAAYABAAGAAQABEAEAARABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
         AwABQAMAASADAAEBAQABCAYAAQgYAAGAAgABgAMAAoABAAGAAwABgAEAAYABAAKAAgADwAEAAcAB3AHA
         AQAB8AHKAaYBAAEzBQABMwEAATMBAAEzAQACMwIAAxYBAAMcAQADIgEAAykBAANVAQADTQEAA0IBAAM5
         AQABgAF8Af8BAAJQAf8BAAGTAQAB1gEAAf8B7AHMAQABxgHWAe8BAAHWAucBAAGQAakBrQIAAf8BMwMA
@@ -154,10 +154,10 @@
         AQABzAH/AWYBAAL/AZkBAAL/AcwBAAJmAf8BAAFmAf8BZgEAAWYC/wEAAf8CZgEAAf8BZgH/AQAC/wFm
         AQABIQEAAaUBAANfAQADdwEAA4YBAAOWAQADywEAA7IBAAPXAQAD3QEAA+MBAAPqAQAD8QEAA/gBAAHw
         AfsB/wEAAaQCoAEAA4ADAAH/AgAB/wMAAv8BAAH/AwAB/wEAAf8BAAL/AgAD/0IAAfQB7wHwPQABvAHy
-        Ae8B8jwAAfIBBwHwAe8B8zwAAfMBBwHuAe8B9DwAAfQBvAEHAe8B9AEJAbQBrQG0AQkB9TYAAfQBvAG1
-        Ac8BCQEZAfQBGQEJAc8B8zYAAfQBzwEJBPMB9AHdAc8B9TUAAQkBtQHxBvMBtQEJNQABzwHwAfEG8wHw
-        Ac81AAGGA/EF8wHxAYY1AAHPAfAH8QHwAc81AAIJAfEB8gXzAbsBCTUAAfUBtAG8AfIE8wHdAbQB9TYA
-        AfMBtAEJAfEB8wHxAQkBtAHzOAAB9QEJAdYB1QHWAQkB9UQAARwJbgGLAfEkAAHzAY0G7wSNAbYDAAFu
+        Ae8B8jwAAfIBBwHwAe8B8zwAAfMBBwG8Ae8B9DwAAfQBvAEHAe8B9AEJAbQBrQG0AQkB/zYAAfQBvAG1
+        Ac8BCQEZAfQBGQEJAc8B8zYAAfQBzwEJBPMB9AHdAc8B/zUAAQkBtQHxBvMBtQEJNQABzwHwAfEG8wHw
+        Ac81AAGGA/EF8wHxAYY1AAHPAfAH8QHwAc81AAIJAfEB8gXzAbsBCTUAAf8BtAG8AfIE8wHdAbQB/zYA
+        AfMBtAEJAfEB8wHxAQkBtAHzOAAB/wEJAdYB1QHWAQkB/0QAARwJbgGLAfEkAAHzAY0G7wSNAbYDAAFu
         AkwEdAFSAkwBiwG0AfIFAAH/AQgBmAJyAZgBCAH/CAAB/wG8ARwCbgEcAbwB/wUAAfMCjQHvAq8C9wHv
         A68BtgGNAwABbgFMBEsBbASLAdoBtAHyAwAB8gFyAU8BVQJUAVUBTwFyAfIGAAHyAW4BRQFGAiABRgFF
         AW4B8gQAAfcBtgGNAe8CjQPvAY0CrwG2AfcDAAFuAUwESwGLAdwF2wG0AgAB8gFyAVUGVAFVAXIB8gQA
@@ -183,21 +183,6 @@
         AcABAwHAAQMBgAEBAcABBwHgAQcB4AEHAYABAQHAAQcB8AEPAfABDwL/AcABBwT/Cw==
 </value>
   </data>
-  <metadata name="ColumnId.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Fecha.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Sector.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Empleado.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="ImporteColumn.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <metadata name="ColumnId.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>

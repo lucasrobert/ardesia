@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Ardesia
 {
-    public partial class MantenimientoListForm : Form
+    public partial class MantenimientoListForm : DevExpress.XtraEditors.XtraForm
     {
         public MantenimientoListForm()
         {

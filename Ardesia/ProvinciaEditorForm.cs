@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Ardesia
 {
-    public partial class ProvinciaEditorForm : Form
+    public partial class ProvinciaEditorForm : DevExpress.XtraEditors.XtraForm
     {
         public ProvinciaEditorForm()
         {

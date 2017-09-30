@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Ardesia
 {
-    public partial class LimpiezaInsumoEditor : Form
+    public partial class LimpiezaInsumoEditor : DevExpress.XtraEditors.XtraForm
     {
         public LimpiezaInsumoEditor()
         {

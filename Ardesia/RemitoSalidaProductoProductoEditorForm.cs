@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Ardesia
 {
-    public partial class RemitoSalidaProductoProductoEditorForm : Form
+    public partial class RemitoSalidaProductoProductoEditorForm : DevExpress.XtraEditors.XtraFormorm
     {
         public RemitoSalidaProductoProductoEditorForm()
         {

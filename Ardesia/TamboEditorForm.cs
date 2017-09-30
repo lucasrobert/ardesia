@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Ardesia
 {
-    public partial class TamboEditorForm : Form
+    public partial class TamboEditorForm : DevExpress.XtraEditors.XtraForm
     {
         public TamboEditorForm()
         {

@@ -10,12 +10,13 @@ using System.Windows.Forms;
 
 namespace Ardesia
 {
-    public partial class MantenimientoEditorForm : Form
+    public partial class MantenimientoEditorForm : DevExpress.XtraEditors.XtraForm
     {
         public MantenimientoEditorForm()
         {
             InitializeComponent();
         }
-        
+
+     
     }
 }

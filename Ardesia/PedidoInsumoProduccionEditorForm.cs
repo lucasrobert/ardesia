@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Ardesia
 {
-    public partial class PedidoInsumoProduccionEditorForm : Form
+    public partial class PedidoInsumoProduccionEditorForm : DevExpress.XtraEditors.XtraForm
     {
         public PedidoInsumoProduccionEditorForm()
         {

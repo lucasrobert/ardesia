@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Ardesia
 {
-    public partial class PaisEditorForm : Form
+    public partial class PaisEditorForm : DevExpress.XtraEditors.XtraForm
     {
         public PaisEditorForm()
         {

@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Ardesia
 {
-    public partial class SiloListForm : Form
+    public partial class SiloListForm : DevExpress.XtraEditors.XtraForm
     {
         public SiloListForm()
         {

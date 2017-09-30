@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Ardesia
 {
-    public partial class FormulaInsumoEditorForm : Form
+    public partial class FormulaInsumoEditorForm : DevExpress.XtraEditors.XtraForm
     {
         public FormulaInsumoEditorForm()
         {

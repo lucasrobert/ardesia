@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Ardesia
 {
-    public partial class PedidoInsumoLimpiezaEditorForm : Form
+    public partial class PedidoInsumoLimpiezaEditorForm : DevExpress.XtraEditors.XtraForm
     {
         public PedidoInsumoLimpiezaEditorForm()
         {
@@ -22,9 +22,5 @@ namespace Ardesia
 
         }
 
-        private void idTextBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }
