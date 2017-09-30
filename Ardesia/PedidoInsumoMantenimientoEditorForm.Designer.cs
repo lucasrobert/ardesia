@@ -52,8 +52,6 @@
             this.fechaLabelControl = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.empleadoLookUpEdit = new DevExpress.XtraEditors.LookUpEdit();
-            this.memoEdit1 = new DevExpress.XtraEditors.MemoEdit();
-            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemLookUpEditEquipo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemLookUpEditEmpleado)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
@@ -63,7 +61,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.empleadoLookUpEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.memoEdit1.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // repositoryItemLookUpEditEquipo
@@ -128,10 +125,10 @@
             this.gridControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.gridControl1.Location = new System.Drawing.Point(12, 189);
+            this.gridControl1.Location = new System.Drawing.Point(12, 95);
             this.gridControl1.MainView = this.mantenimientoGridView;
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(601, 134);
+            this.gridControl1.Size = new System.Drawing.Size(601, 228);
             this.gridControl1.TabIndex = 36;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.mantenimientoGridView});
@@ -206,7 +203,7 @@
             // 
             this.addSimpleButton.ImageOptions.ImageIndex = 2;
             this.addSimpleButton.ImageOptions.ImageList = this.imageList1;
-            this.addSimpleButton.Location = new System.Drawing.Point(92, 160);
+            this.addSimpleButton.Location = new System.Drawing.Point(92, 66);
             this.addSimpleButton.Name = "addSimpleButton";
             this.addSimpleButton.Size = new System.Drawing.Size(97, 23);
             this.addSimpleButton.TabIndex = 13;
@@ -216,7 +213,7 @@
             // 
             this.deleteSimpleButton.ImageOptions.ImageIndex = 3;
             this.deleteSimpleButton.ImageOptions.ImageList = this.imageList1;
-            this.deleteSimpleButton.Location = new System.Drawing.Point(195, 160);
+            this.deleteSimpleButton.Location = new System.Drawing.Point(195, 66);
             this.deleteSimpleButton.Name = "deleteSimpleButton";
             this.deleteSimpleButton.Size = new System.Drawing.Size(97, 23);
             this.deleteSimpleButton.TabIndex = 39;
@@ -224,7 +221,7 @@
             // 
             // mantLabelControl
             // 
-            this.mantLabelControl.Location = new System.Drawing.Point(12, 165);
+            this.mantLabelControl.Location = new System.Drawing.Point(12, 71);
             this.mantLabelControl.Name = "mantLabelControl";
             this.mantLabelControl.Size = new System.Drawing.Size(74, 13);
             this.mantLabelControl.TabIndex = 40;
@@ -285,23 +282,6 @@
             this.empleadoLookUpEdit.Size = new System.Drawing.Size(140, 20);
             this.empleadoLookUpEdit.TabIndex = 46;
             // 
-            // memoEdit1
-            // 
-            this.memoEdit1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.memoEdit1.Location = new System.Drawing.Point(12, 88);
-            this.memoEdit1.Name = "memoEdit1";
-            this.memoEdit1.Size = new System.Drawing.Size(601, 66);
-            this.memoEdit1.TabIndex = 50;
-            // 
-            // labelControl3
-            // 
-            this.labelControl3.Location = new System.Drawing.Point(12, 69);
-            this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(75, 13);
-            this.labelControl3.TabIndex = 51;
-            this.labelControl3.Text = "Observaciones:";
-            // 
             // PedidoInsumoMantenimientoEditorForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -310,8 +290,6 @@
             this.Controls.Add(this.verInsumosSimpleButton);
             this.Controls.Add(this.exitSimpleButton);
             this.Controls.Add(this.saveSimpleButton);
-            this.Controls.Add(this.labelControl3);
-            this.Controls.Add(this.memoEdit1);
             this.Controls.Add(this.empleadoLookUpEdit);
             this.Controls.Add(this.labelControl2);
             this.Controls.Add(this.fechaLabelControl);
@@ -336,7 +314,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.empleadoLookUpEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.memoEdit1.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -364,8 +341,6 @@
         private DevExpress.XtraEditors.LabelControl fechaLabelControl;
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.LookUpEdit empleadoLookUpEdit;
-        private DevExpress.XtraEditors.MemoEdit memoEdit1;
-        private DevExpress.XtraEditors.LabelControl labelControl3;
         private DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit repositoryItemLookUpEditEquipo;
         private DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit repositoryItemLookUpEditEmpleado;
     }

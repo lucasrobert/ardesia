@@ -12,11 +12,19 @@ namespace Ardesia
 {
     public partial class PaisEditorForm : DevExpress.XtraEditors.XtraForm
     {
-        public PaisEditorForm()
+        public PaisEditorForm() 
         {
             InitializeComponent();
         }
 
+        private void exitSimpleButton_Click(object sender, EventArgs e)
+        {
 
+        }
+
+        private void saveSimpleButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

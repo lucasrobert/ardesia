@@ -199,16 +199,15 @@
             this.proveedorLabel.AutoSize = true;
             this.proveedorLabel.Location = new System.Drawing.Point(166, 15);
             this.proveedorLabel.Name = "proveedorLabel";
-            this.proveedorLabel.Size = new System.Drawing.Size(59, 13);
+            this.proveedorLabel.Size = new System.Drawing.Size(61, 13);
             this.proveedorLabel.TabIndex = 22;
             this.proveedorLabel.Text = "Proveedor:";
-            this.proveedorLabel.Click += new System.EventHandler(this.clienteLabel_Click);
             // 
             // idTextBox
             // 
             this.idTextBox.Location = new System.Drawing.Point(60, 11);
             this.idTextBox.Name = "idTextBox";
-            this.idTextBox.Size = new System.Drawing.Size(100, 20);
+            this.idTextBox.Size = new System.Drawing.Size(100, 21);
             this.idTextBox.TabIndex = 24;
             // 
             // numeroLabel
@@ -216,7 +215,7 @@
             this.numeroLabel.AutoSize = true;
             this.numeroLabel.Location = new System.Drawing.Point(13, 15);
             this.numeroLabel.Name = "numeroLabel";
-            this.numeroLabel.Size = new System.Drawing.Size(47, 13);
+            this.numeroLabel.Size = new System.Drawing.Size(48, 13);
             this.numeroLabel.TabIndex = 23;
             this.numeroLabel.Text = "Numero:";
             // 
@@ -226,7 +225,7 @@
             this.limpiezaRadioButton.Checked = true;
             this.limpiezaRadioButton.Location = new System.Drawing.Point(83, 46);
             this.limpiezaRadioButton.Name = "limpiezaRadioButton";
-            this.limpiezaRadioButton.Size = new System.Drawing.Size(66, 17);
+            this.limpiezaRadioButton.Size = new System.Drawing.Size(65, 17);
             this.limpiezaRadioButton.TabIndex = 29;
             this.limpiezaRadioButton.TabStop = true;
             this.limpiezaRadioButton.Text = "Limpieza";
@@ -237,7 +236,7 @@
             this.mantenimientoRadioButton.AutoSize = true;
             this.mantenimientoRadioButton.Location = new System.Drawing.Point(155, 46);
             this.mantenimientoRadioButton.Name = "mantenimientoRadioButton";
-            this.mantenimientoRadioButton.Size = new System.Drawing.Size(94, 17);
+            this.mantenimientoRadioButton.Size = new System.Drawing.Size(95, 17);
             this.mantenimientoRadioButton.TabIndex = 30;
             this.mantenimientoRadioButton.Text = "Mantenimiento";
             this.mantenimientoRadioButton.UseVisualStyleBackColor = true;
@@ -247,7 +246,7 @@
             this.radioButton2.AutoSize = true;
             this.radioButton2.Location = new System.Drawing.Point(255, 46);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(79, 17);
+            this.radioButton2.Size = new System.Drawing.Size(77, 17);
             this.radioButton2.TabIndex = 31;
             this.radioButton2.Text = "Producción";
             this.radioButton2.UseVisualStyleBackColor = true;
@@ -257,7 +256,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(12, 48);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(61, 13);
+            this.label2.Size = new System.Drawing.Size(62, 13);
             this.label2.TabIndex = 32;
             this.label2.Text = "Pedido por:";
             // 
@@ -308,7 +307,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox2.Location = new System.Drawing.Point(401, 295);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(156, 20);
+            this.textBox2.Size = new System.Drawing.Size(156, 21);
             this.textBox2.TabIndex = 10;
             // 
             // label3
@@ -318,7 +317,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(327, 298);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(68, 13);
+            this.label3.Size = new System.Drawing.Size(74, 13);
             this.label3.TabIndex = 9;
             this.label3.Text = "Importe total:";
             // 
@@ -327,7 +326,7 @@
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePicker1.Location = new System.Drawing.Point(429, 10);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(130, 20);
+            this.dateTimePicker1.Size = new System.Drawing.Size(130, 21);
             this.dateTimePicker1.TabIndex = 26;
             this.dateTimePicker1.Value = new System.DateTime(2017, 9, 20, 11, 45, 0, 0);
             // 

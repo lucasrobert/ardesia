@@ -17,10 +17,6 @@ namespace Ardesia
             InitializeComponent();
         }
 
-        private void clienteLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
+    
     }
 }

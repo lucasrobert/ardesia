@@ -15,6 +15,6 @@ namespace Ardesia
         public PedidoInsumoInsumoEditorForm()
         {
             InitializeComponent();
-        }
-    }
+        } 
+    } 
 }

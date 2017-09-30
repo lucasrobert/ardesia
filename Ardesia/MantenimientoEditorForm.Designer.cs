@@ -78,7 +78,7 @@
             this.UnidadMedidaColumn});
             this.dataGridView2.Location = new System.Drawing.Point(12, 225);
             this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(553, 182);
+            this.dataGridView2.Size = new System.Drawing.Size(586, 217);
             this.dataGridView2.TabIndex = 13;
             // 
             // dataGridViewTextBoxColumn1
@@ -108,7 +108,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(12, 201);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(49, 13);
+            this.label1.Size = new System.Drawing.Size(51, 13);
             this.label1.TabIndex = 15;
             this.label1.Text = "Insumos:";
             // 
@@ -160,7 +160,7 @@
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePicker1.Location = new System.Drawing.Point(464, 13);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(122, 20);
+            this.dateTimePicker1.Size = new System.Drawing.Size(122, 21);
             this.dateTimePicker1.TabIndex = 26;
             // 
             // productoComboBox
@@ -193,7 +193,7 @@
             // 
             this.idTextBox.Location = new System.Drawing.Point(99, 12);
             this.idTextBox.Name = "idTextBox";
-            this.idTextBox.Size = new System.Drawing.Size(127, 20);
+            this.idTextBox.Size = new System.Drawing.Size(127, 21);
             this.idTextBox.TabIndex = 24;
             // 
             // idLabel
@@ -201,7 +201,7 @@
             this.idLabel.AutoSize = true;
             this.idLabel.Location = new System.Drawing.Point(12, 15);
             this.idLabel.Name = "idLabel";
-            this.idLabel.Size = new System.Drawing.Size(21, 13);
+            this.idLabel.Size = new System.Drawing.Size(22, 13);
             this.idLabel.TabIndex = 23;
             this.idLabel.Text = "ID:";
             // 

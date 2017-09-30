@@ -17,14 +17,6 @@ namespace Ardesia
             InitializeComponent();
         }
 
-        private void aceptarButton_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void editButton_Click(object sender, EventArgs e)
-        {
-
-        }
+    
     }
 }

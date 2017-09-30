@@ -28,12 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EmpleadoEditorForm));
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.editButton = new System.Windows.Forms.Button();
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.saveButton = new System.Windows.Forms.Button();
+            this.imageList1 = new System.Windows.Forms.ImageList();
             this.idLabel = new System.Windows.Forms.Label();
             this.idTextBox = new System.Windows.Forms.TextBox();
             this.nombreLabel = new System.Windows.Forms.Label();
@@ -52,33 +48,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.cpLabel = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.panel1.SuspendLayout();
+            this.exitSimpleButton = new DevExpress.XtraEditors.SimpleButton();
+            this.saveSimpleButton = new DevExpress.XtraEditors.SimpleButton();
             this.SuspendLayout();
-            // 
-            // panel1
-            // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.Controls.Add(this.editButton);
-            this.panel1.Controls.Add(this.saveButton);
-            this.panel1.Location = new System.Drawing.Point(15, 95);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(717, 29);
-            this.panel1.TabIndex = 2;
-            // 
-            // editButton
-            // 
-            this.editButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.editButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.editButton.ImageKey = "door--arrow.png";
-            this.editButton.ImageList = this.imageList1;
-            this.editButton.Location = new System.Drawing.Point(639, 3);
-            this.editButton.Name = "editButton";
-            this.editButton.Size = new System.Drawing.Size(75, 23);
-            this.editButton.TabIndex = 5;
-            this.editButton.Text = "&Salir";
-            this.editButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.editButton.UseVisualStyleBackColor = true;
             // 
             // imageList1
             // 
@@ -87,26 +59,12 @@
             this.imageList1.Images.SetKeyName(0, "disk.png");
             this.imageList1.Images.SetKeyName(1, "door--arrow.png");
             // 
-            // saveButton
-            // 
-            this.saveButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.saveButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.saveButton.ImageIndex = 0;
-            this.saveButton.ImageList = this.imageList1;
-            this.saveButton.Location = new System.Drawing.Point(558, 3);
-            this.saveButton.Name = "saveButton";
-            this.saveButton.Size = new System.Drawing.Size(75, 23);
-            this.saveButton.TabIndex = 4;
-            this.saveButton.Text = "&Guardar";
-            this.saveButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.saveButton.UseVisualStyleBackColor = true;
-            // 
             // idLabel
             // 
             this.idLabel.AutoSize = true;
             this.idLabel.Location = new System.Drawing.Point(12, 9);
             this.idLabel.Name = "idLabel";
-            this.idLabel.Size = new System.Drawing.Size(21, 13);
+            this.idLabel.Size = new System.Drawing.Size(22, 13);
             this.idLabel.TabIndex = 3;
             this.idLabel.Text = "ID:";
             // 
@@ -114,7 +72,7 @@
             // 
             this.idTextBox.Location = new System.Drawing.Point(51, 6);
             this.idTextBox.Name = "idTextBox";
-            this.idTextBox.Size = new System.Drawing.Size(130, 20);
+            this.idTextBox.Size = new System.Drawing.Size(130, 21);
             this.idTextBox.TabIndex = 4;
             // 
             // nombreLabel
@@ -122,7 +80,7 @@
             this.nombreLabel.AutoSize = true;
             this.nombreLabel.Location = new System.Drawing.Point(187, 9);
             this.nombreLabel.Name = "nombreLabel";
-            this.nombreLabel.Size = new System.Drawing.Size(47, 13);
+            this.nombreLabel.Size = new System.Drawing.Size(48, 13);
             this.nombreLabel.TabIndex = 3;
             this.nombreLabel.Text = "Nombre:";
             // 
@@ -130,7 +88,7 @@
             // 
             this.nombreTextBox.Location = new System.Drawing.Point(240, 6);
             this.nombreTextBox.Name = "nombreTextBox";
-            this.nombreTextBox.Size = new System.Drawing.Size(130, 20);
+            this.nombreTextBox.Size = new System.Drawing.Size(130, 21);
             this.nombreTextBox.TabIndex = 4;
             // 
             // label1
@@ -138,7 +96,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(376, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(47, 13);
+            this.label1.Size = new System.Drawing.Size(48, 13);
             this.label1.TabIndex = 3;
             this.label1.Text = "Apellido:";
             // 
@@ -146,7 +104,7 @@
             // 
             this.apellidoTextBox.Location = new System.Drawing.Point(436, 6);
             this.apellidoTextBox.Name = "apellidoTextBox";
-            this.apellidoTextBox.Size = new System.Drawing.Size(127, 20);
+            this.apellidoTextBox.Size = new System.Drawing.Size(127, 21);
             this.apellidoTextBox.TabIndex = 4;
             // 
             // tipoLabel
@@ -179,7 +137,7 @@
             this.ciudadLabel.AutoSize = true;
             this.ciudadLabel.Location = new System.Drawing.Point(187, 36);
             this.ciudadLabel.Name = "ciudadLabel";
-            this.ciudadLabel.Size = new System.Drawing.Size(43, 13);
+            this.ciudadLabel.Size = new System.Drawing.Size(44, 13);
             this.ciudadLabel.TabIndex = 6;
             this.ciudadLabel.Text = "Ciudad:";
             // 
@@ -230,7 +188,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(12, 62);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(33, 13);
+            this.label2.Size = new System.Drawing.Size(34, 13);
             this.label2.TabIndex = 12;
             this.label2.Text = "Calle:";
             // 
@@ -247,14 +205,38 @@
             // 
             this.textBox1.Location = new System.Drawing.Point(51, 32);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(130, 20);
+            this.textBox1.Size = new System.Drawing.Size(130, 21);
             this.textBox1.TabIndex = 15;
+            // 
+            // exitSimpleButton
+            // 
+            this.exitSimpleButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.exitSimpleButton.ImageOptions.ImageIndex = 1;
+            this.exitSimpleButton.ImageOptions.ImageList = this.imageList1;
+            this.exitSimpleButton.Location = new System.Drawing.Point(634, 102);
+            this.exitSimpleButton.Name = "exitSimpleButton";
+            this.exitSimpleButton.Size = new System.Drawing.Size(98, 22);
+            this.exitSimpleButton.TabIndex = 17;
+            this.exitSimpleButton.Text = "&Salir";
+            // 
+            // saveSimpleButton
+            // 
+            this.saveSimpleButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.saveSimpleButton.ImageOptions.ImageIndex = 0;
+            this.saveSimpleButton.ImageOptions.ImageList = this.imageList1;
+            this.saveSimpleButton.Location = new System.Drawing.Point(527, 102);
+            this.saveSimpleButton.Name = "saveSimpleButton";
+            this.saveSimpleButton.Size = new System.Drawing.Size(101, 22);
+            this.saveSimpleButton.TabIndex = 16;
+            this.saveSimpleButton.Text = "&Guardar";
             // 
             // EmpleadoEditorForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(744, 136);
+            this.Controls.Add(this.exitSimpleButton);
+            this.Controls.Add(this.saveSimpleButton);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.cpLabel);
             this.Controls.Add(this.calleComboBox);
@@ -273,19 +255,15 @@
             this.Controls.Add(this.nombreLabel);
             this.Controls.Add(this.idTextBox);
             this.Controls.Add(this.idLabel);
-            this.Controls.Add(this.panel1);
             this.Name = "EmpleadoEditorForm";
             this.Text = "Empleado";
             this.Load += new System.EventHandler(this.EmpleadoEditorForm_Load);
-            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label idLabel;
         private System.Windows.Forms.TextBox idTextBox;
         private System.Windows.Forms.Label nombreLabel;
@@ -304,8 +282,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label cpLabel;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button editButton;
         private System.Windows.Forms.ImageList imageList1;
-        private System.Windows.Forms.Button saveButton;
+        private DevExpress.XtraEditors.SimpleButton exitSimpleButton;
+        private DevExpress.XtraEditors.SimpleButton saveSimpleButton;
     }
 }

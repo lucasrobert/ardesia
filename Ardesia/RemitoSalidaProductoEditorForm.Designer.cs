@@ -28,12 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RemitoSalidaProductoEditorForm));
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.editButton = new System.Windows.Forms.Button();
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.saveButton = new System.Windows.Forms.Button();
+            this.imageList1 = new System.Windows.Forms.ImageList();
             this.idLabel = new System.Windows.Forms.Label();
             this.idTextBox = new System.Windows.Forms.TextBox();
             this.clienteLabel = new System.Windows.Forms.Label();
@@ -50,34 +46,10 @@
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.clienteComboBox = new System.Windows.Forms.ComboBox();
             this.empleadoLabel = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
+            this.exitSimpleButton = new DevExpress.XtraEditors.SimpleButton();
+            this.saveSimpleButton = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
-            // 
-            // panel1
-            // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.Controls.Add(this.editButton);
-            this.panel1.Controls.Add(this.saveButton);
-            this.panel1.Location = new System.Drawing.Point(12, 329);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(538, 29);
-            this.panel1.TabIndex = 2;
-            // 
-            // editButton
-            // 
-            this.editButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.editButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.editButton.ImageKey = "door--arrow.png";
-            this.editButton.ImageList = this.imageList1;
-            this.editButton.Location = new System.Drawing.Point(460, 3);
-            this.editButton.Name = "editButton";
-            this.editButton.Size = new System.Drawing.Size(75, 23);
-            this.editButton.TabIndex = 5;
-            this.editButton.Text = "&Salir";
-            this.editButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.editButton.UseVisualStyleBackColor = true;
             // 
             // imageList1
             // 
@@ -88,26 +60,12 @@
             this.imageList1.Images.SetKeyName(2, "plus-circle.png");
             this.imageList1.Images.SetKeyName(3, "cross-circle.png");
             // 
-            // saveButton
-            // 
-            this.saveButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.saveButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.saveButton.ImageIndex = 0;
-            this.saveButton.ImageList = this.imageList1;
-            this.saveButton.Location = new System.Drawing.Point(379, 3);
-            this.saveButton.Name = "saveButton";
-            this.saveButton.Size = new System.Drawing.Size(75, 23);
-            this.saveButton.TabIndex = 4;
-            this.saveButton.Text = "&Guardar";
-            this.saveButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.saveButton.UseVisualStyleBackColor = true;
-            // 
             // idLabel
             // 
             this.idLabel.AutoSize = true;
             this.idLabel.Location = new System.Drawing.Point(12, 15);
             this.idLabel.Name = "idLabel";
-            this.idLabel.Size = new System.Drawing.Size(21, 13);
+            this.idLabel.Size = new System.Drawing.Size(22, 13);
             this.idLabel.TabIndex = 3;
             this.idLabel.Text = "ID:";
             // 
@@ -115,7 +73,7 @@
             // 
             this.idTextBox.Location = new System.Drawing.Point(66, 12);
             this.idTextBox.Name = "idTextBox";
-            this.idTextBox.Size = new System.Drawing.Size(75, 20);
+            this.idTextBox.Size = new System.Drawing.Size(75, 21);
             this.idTextBox.TabIndex = 4;
             // 
             // clienteLabel
@@ -123,7 +81,7 @@
             this.clienteLabel.AutoSize = true;
             this.clienteLabel.Location = new System.Drawing.Point(12, 48);
             this.clienteLabel.Name = "clienteLabel";
-            this.clienteLabel.Size = new System.Drawing.Size(42, 13);
+            this.clienteLabel.Size = new System.Drawing.Size(44, 13);
             this.clienteLabel.TabIndex = 3;
             this.clienteLabel.Text = "Cliente:";
             // 
@@ -135,7 +93,6 @@
             this.fechaLabel.Size = new System.Drawing.Size(40, 13);
             this.fechaLabel.TabIndex = 3;
             this.fechaLabel.Text = "Fecha:";
-            this.fechaLabel.Click += new System.EventHandler(this.fechaLabel_Click);
             // 
             // productoComboBox
             // 
@@ -185,7 +142,7 @@
             this.productosLabel.AutoSize = true;
             this.productosLabel.Location = new System.Drawing.Point(11, 85);
             this.productosLabel.Name = "productosLabel";
-            this.productosLabel.Size = new System.Drawing.Size(58, 13);
+            this.productosLabel.Size = new System.Drawing.Size(59, 13);
             this.productosLabel.TabIndex = 15;
             this.productosLabel.Text = "Productos:";
             // 
@@ -214,14 +171,13 @@
             this.addButton.Text = "&Agregar";
             this.addButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.addButton.UseVisualStyleBackColor = true;
-            this.addButton.Click += new System.EventHandler(this.addButton_Click);
             // 
             // dateTimePicker1
             // 
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePicker1.Location = new System.Drawing.Point(424, 12);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(122, 20);
+            this.dateTimePicker1.Size = new System.Drawing.Size(122, 21);
             this.dateTimePicker1.TabIndex = 18;
             // 
             // clienteComboBox
@@ -241,11 +197,35 @@
             this.empleadoLabel.TabIndex = 20;
             this.empleadoLabel.Text = "Empleado:";
             // 
+            // exitSimpleButton
+            // 
+            this.exitSimpleButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.exitSimpleButton.ImageOptions.ImageIndex = 1;
+            this.exitSimpleButton.ImageOptions.ImageList = this.imageList1;
+            this.exitSimpleButton.Location = new System.Drawing.Point(455, 336);
+            this.exitSimpleButton.Name = "exitSimpleButton";
+            this.exitSimpleButton.Size = new System.Drawing.Size(98, 22);
+            this.exitSimpleButton.TabIndex = 40;
+            this.exitSimpleButton.Text = "&Salir";
+            // 
+            // saveSimpleButton
+            // 
+            this.saveSimpleButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.saveSimpleButton.ImageOptions.ImageIndex = 0;
+            this.saveSimpleButton.ImageOptions.ImageList = this.imageList1;
+            this.saveSimpleButton.Location = new System.Drawing.Point(348, 336);
+            this.saveSimpleButton.Name = "saveSimpleButton";
+            this.saveSimpleButton.Size = new System.Drawing.Size(101, 22);
+            this.saveSimpleButton.TabIndex = 39;
+            this.saveSimpleButton.Text = "&Guardar";
+            // 
             // RemitoSalidaProductoEditorForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(565, 370);
+            this.Controls.Add(this.exitSimpleButton);
+            this.Controls.Add(this.saveSimpleButton);
             this.Controls.Add(this.empleadoLabel);
             this.Controls.Add(this.clienteComboBox);
             this.Controls.Add(this.dateTimePicker1);
@@ -258,10 +238,8 @@
             this.Controls.Add(this.clienteLabel);
             this.Controls.Add(this.idTextBox);
             this.Controls.Add(this.idLabel);
-            this.Controls.Add(this.panel1);
             this.Name = "RemitoSalidaProductoEditorForm";
             this.Text = "Remito de Salida de Productos";
-            this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -269,16 +247,12 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label idLabel;
         private System.Windows.Forms.TextBox idTextBox;
         private System.Windows.Forms.Label clienteLabel;
         private System.Windows.Forms.Label fechaLabel;
         private System.Windows.Forms.ComboBox productoComboBox;
-        private System.Windows.Forms.Button editButton;
         private System.Windows.Forms.ImageList imageList1;
-        private System.Windows.Forms.Button saveButton;
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.Label productosLabel;
         private System.Windows.Forms.Button deleteButton;
@@ -290,5 +264,7 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.ComboBox clienteComboBox;
         private System.Windows.Forms.Label empleadoLabel;
+        private DevExpress.XtraEditors.SimpleButton exitSimpleButton;
+        private DevExpress.XtraEditors.SimpleButton saveSimpleButton;
     }
 }

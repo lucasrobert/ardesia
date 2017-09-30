@@ -28,12 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TamboEditorForm));
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.editButton = new System.Windows.Forms.Button();
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.saveButton = new System.Windows.Forms.Button();
+            this.imageList1 = new System.Windows.Forms.ImageList();
             this.nombreTextBox = new System.Windows.Forms.TextBox();
             this.nombreLabel = new System.Windows.Forms.Label();
             this.idTextBox = new System.Windows.Forms.TextBox();
@@ -48,33 +44,9 @@
             this.ciudadComboBox = new System.Windows.Forms.ComboBox();
             this.ciudadLabel = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
+            this.exitSimpleButton = new DevExpress.XtraEditors.SimpleButton();
+            this.saveSimpleButton = new DevExpress.XtraEditors.SimpleButton();
             this.SuspendLayout();
-            // 
-            // panel1
-            // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.Controls.Add(this.editButton);
-            this.panel1.Controls.Add(this.saveButton);
-            this.panel1.Location = new System.Drawing.Point(12, 89);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(566, 30);
-            this.panel1.TabIndex = 3;
-            // 
-            // editButton
-            // 
-            this.editButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.editButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.editButton.ImageKey = "door--arrow.png";
-            this.editButton.ImageList = this.imageList1;
-            this.editButton.Location = new System.Drawing.Point(488, 3);
-            this.editButton.Name = "editButton";
-            this.editButton.Size = new System.Drawing.Size(75, 23);
-            this.editButton.TabIndex = 3;
-            this.editButton.Text = "&Salir";
-            this.editButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.editButton.UseVisualStyleBackColor = true;
             // 
             // imageList1
             // 
@@ -83,25 +55,11 @@
             this.imageList1.Images.SetKeyName(0, "disk.png");
             this.imageList1.Images.SetKeyName(1, "door--arrow.png");
             // 
-            // saveButton
-            // 
-            this.saveButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.saveButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.saveButton.ImageIndex = 0;
-            this.saveButton.ImageList = this.imageList1;
-            this.saveButton.Location = new System.Drawing.Point(407, 3);
-            this.saveButton.Name = "saveButton";
-            this.saveButton.Size = new System.Drawing.Size(75, 23);
-            this.saveButton.TabIndex = 2;
-            this.saveButton.Text = "&Guardar";
-            this.saveButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.saveButton.UseVisualStyleBackColor = true;
-            // 
             // nombreTextBox
             // 
             this.nombreTextBox.Location = new System.Drawing.Point(259, 6);
             this.nombreTextBox.Name = "nombreTextBox";
-            this.nombreTextBox.Size = new System.Drawing.Size(130, 20);
+            this.nombreTextBox.Size = new System.Drawing.Size(130, 21);
             this.nombreTextBox.TabIndex = 20;
             // 
             // nombreLabel
@@ -109,7 +67,7 @@
             this.nombreLabel.AutoSize = true;
             this.nombreLabel.Location = new System.Drawing.Point(199, 9);
             this.nombreLabel.Name = "nombreLabel";
-            this.nombreLabel.Size = new System.Drawing.Size(47, 13);
+            this.nombreLabel.Size = new System.Drawing.Size(48, 13);
             this.nombreLabel.TabIndex = 17;
             this.nombreLabel.Text = "Nombre:";
             // 
@@ -117,7 +75,7 @@
             // 
             this.idTextBox.Location = new System.Drawing.Point(63, 6);
             this.idTextBox.Name = "idTextBox";
-            this.idTextBox.Size = new System.Drawing.Size(130, 20);
+            this.idTextBox.Size = new System.Drawing.Size(130, 21);
             this.idTextBox.TabIndex = 22;
             // 
             // idLabel
@@ -125,7 +83,7 @@
             this.idLabel.AutoSize = true;
             this.idLabel.Location = new System.Drawing.Point(12, 9);
             this.idLabel.Name = "idLabel";
-            this.idLabel.Size = new System.Drawing.Size(21, 13);
+            this.idLabel.Size = new System.Drawing.Size(22, 13);
             this.idLabel.TabIndex = 16;
             this.idLabel.Text = "ID:";
             // 
@@ -133,7 +91,7 @@
             // 
             this.capacidadTextBox.Location = new System.Drawing.Point(448, 6);
             this.capacidadTextBox.Name = "capacidadTextBox";
-            this.capacidadTextBox.Size = new System.Drawing.Size(130, 20);
+            this.capacidadTextBox.Size = new System.Drawing.Size(130, 21);
             this.capacidadTextBox.TabIndex = 24;
             // 
             // numeroLabel
@@ -141,7 +99,7 @@
             this.numeroLabel.AutoSize = true;
             this.numeroLabel.Location = new System.Drawing.Point(395, 9);
             this.numeroLabel.Name = "numeroLabel";
-            this.numeroLabel.Size = new System.Drawing.Size(47, 13);
+            this.numeroLabel.Size = new System.Drawing.Size(48, 13);
             this.numeroLabel.TabIndex = 23;
             this.numeroLabel.Text = "Numero:";
             // 
@@ -200,7 +158,7 @@
             this.ciudadLabel.AutoSize = true;
             this.ciudadLabel.Location = new System.Drawing.Point(14, 36);
             this.ciudadLabel.Name = "ciudadLabel";
-            this.ciudadLabel.Size = new System.Drawing.Size(43, 13);
+            this.ciudadLabel.Size = new System.Drawing.Size(44, 13);
             this.ciudadLabel.TabIndex = 25;
             this.ciudadLabel.Text = "Ciudad:";
             // 
@@ -209,15 +167,39 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(12, 67);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(33, 13);
+            this.label2.Size = new System.Drawing.Size(34, 13);
             this.label2.TabIndex = 32;
             this.label2.Text = "Calle:";
+            // 
+            // exitSimpleButton
+            // 
+            this.exitSimpleButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.exitSimpleButton.ImageOptions.ImageIndex = 1;
+            this.exitSimpleButton.ImageOptions.ImageList = this.imageList1;
+            this.exitSimpleButton.Location = new System.Drawing.Point(480, 97);
+            this.exitSimpleButton.Name = "exitSimpleButton";
+            this.exitSimpleButton.Size = new System.Drawing.Size(98, 22);
+            this.exitSimpleButton.TabIndex = 40;
+            this.exitSimpleButton.Text = "&Salir";
+            // 
+            // saveSimpleButton
+            // 
+            this.saveSimpleButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.saveSimpleButton.ImageOptions.ImageIndex = 0;
+            this.saveSimpleButton.ImageOptions.ImageList = this.imageList1;
+            this.saveSimpleButton.Location = new System.Drawing.Point(373, 97);
+            this.saveSimpleButton.Name = "saveSimpleButton";
+            this.saveSimpleButton.Size = new System.Drawing.Size(101, 22);
+            this.saveSimpleButton.TabIndex = 39;
+            this.saveSimpleButton.Text = "&Guardar";
             // 
             // TamboEditorForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(590, 131);
+            this.Controls.Add(this.exitSimpleButton);
+            this.Controls.Add(this.saveSimpleButton);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.calleComboBox);
             this.Controls.Add(this.paisComboBox);
@@ -232,24 +214,18 @@
             this.Controls.Add(this.nombreLabel);
             this.Controls.Add(this.idTextBox);
             this.Controls.Add(this.idLabel);
-            this.Controls.Add(this.panel1);
             this.Name = "TamboEditorForm";
             this.Text = "Tambo";
-            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox nombreTextBox;
         private System.Windows.Forms.Label nombreLabel;
         private System.Windows.Forms.TextBox idTextBox;
         private System.Windows.Forms.Label idLabel;
-        private System.Windows.Forms.Button editButton;
-        private System.Windows.Forms.Button saveButton;
         private System.Windows.Forms.TextBox capacidadTextBox;
         private System.Windows.Forms.Label numeroLabel;
         private System.Windows.Forms.ImageList imageList1;
@@ -261,5 +237,7 @@
         private System.Windows.Forms.ComboBox ciudadComboBox;
         private System.Windows.Forms.Label ciudadLabel;
         private System.Windows.Forms.Label label2;
+        private DevExpress.XtraEditors.SimpleButton exitSimpleButton;
+        private DevExpress.XtraEditors.SimpleButton saveSimpleButton;
     }
 }

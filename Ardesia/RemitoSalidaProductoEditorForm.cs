@@ -17,14 +17,6 @@ namespace Ardesia
             InitializeComponent();
         }
 
-        private void fechaLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void addButton_Click(object sender, EventArgs e)
-        {
-
-        }
+     
     }
 }
