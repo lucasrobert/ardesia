@@ -50,8 +50,13 @@
             this.equipoLabel = new System.Windows.Forms.Label();
             this.idTextBox = new System.Windows.Forms.TextBox();
             this.idLabel = new System.Windows.Forms.Label();
+            this.memoEdit1 = new DevExpress.XtraEditors.MemoEdit();
+            this.label2 = new System.Windows.Forms.Label();
+            this.separatorControl1 = new DevExpress.XtraEditors.SeparatorControl();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.memoEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.separatorControl1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -60,9 +65,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.Controls.Add(this.editButton);
             this.panel1.Controls.Add(this.saveButton);
-            this.panel1.Location = new System.Drawing.Point(17, 321);
+            this.panel1.Location = new System.Drawing.Point(17, 441);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(550, 29);
+            this.panel1.Size = new System.Drawing.Size(581, 29);
             this.panel1.TabIndex = 2;
             // 
             // editButton
@@ -71,7 +76,7 @@
             this.editButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.editButton.ImageKey = "door--arrow.png";
             this.editButton.ImageList = this.imageList1;
-            this.editButton.Location = new System.Drawing.Point(472, 3);
+            this.editButton.Location = new System.Drawing.Point(503, 3);
             this.editButton.Name = "editButton";
             this.editButton.Size = new System.Drawing.Size(75, 23);
             this.editButton.TabIndex = 5;
@@ -94,7 +99,7 @@
             this.saveButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.saveButton.ImageIndex = 0;
             this.saveButton.ImageList = this.imageList1;
-            this.saveButton.Location = new System.Drawing.Point(391, 3);
+            this.saveButton.Location = new System.Drawing.Point(422, 3);
             this.saveButton.Name = "saveButton";
             this.saveButton.Size = new System.Drawing.Size(75, 23);
             this.saveButton.TabIndex = 4;
@@ -113,9 +118,9 @@
             this.dataGridViewTextBoxColumn2,
             this.CantidadColumn,
             this.UnidadMedidaColumn});
-            this.dataGridView2.Location = new System.Drawing.Point(17, 97);
+            this.dataGridView2.Location = new System.Drawing.Point(12, 225);
             this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(550, 218);
+            this.dataGridView2.Size = new System.Drawing.Size(553, 182);
             this.dataGridView2.TabIndex = 13;
             // 
             // dataGridViewTextBoxColumn1
@@ -143,7 +148,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 73);
+            this.label1.Location = new System.Drawing.Point(12, 201);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(49, 13);
             this.label1.TabIndex = 15;
@@ -154,7 +159,7 @@
             this.deleteButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.deleteButton.ImageIndex = 3;
             this.deleteButton.ImageList = this.imageList1;
-            this.deleteButton.Location = new System.Drawing.Point(149, 68);
+            this.deleteButton.Location = new System.Drawing.Point(149, 196);
             this.deleteButton.Name = "deleteButton";
             this.deleteButton.Size = new System.Drawing.Size(75, 23);
             this.deleteButton.TabIndex = 17;
@@ -167,7 +172,7 @@
             this.addButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.addButton.ImageIndex = 2;
             this.addButton.ImageList = this.imageList1;
-            this.addButton.Location = new System.Drawing.Point(68, 68);
+            this.addButton.Location = new System.Drawing.Point(68, 196);
             this.addButton.Name = "addButton";
             this.addButton.Size = new System.Drawing.Size(75, 23);
             this.addButton.TabIndex = 16;
@@ -187,7 +192,7 @@
             // clienteComboBox
             // 
             this.clienteComboBox.FormattingEnabled = true;
-            this.clienteComboBox.Location = new System.Drawing.Point(260, 12);
+            this.clienteComboBox.Location = new System.Drawing.Point(279, 12);
             this.clienteComboBox.Name = "clienteComboBox";
             this.clienteComboBox.Size = new System.Drawing.Size(130, 21);
             this.clienteComboBox.TabIndex = 27;
@@ -195,7 +200,7 @@
             // dateTimePicker1
             // 
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(445, 13);
+            this.dateTimePicker1.Location = new System.Drawing.Point(464, 13);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(122, 20);
             this.dateTimePicker1.TabIndex = 26;
@@ -203,7 +208,7 @@
             // productoComboBox
             // 
             this.productoComboBox.FormattingEnabled = true;
-            this.productoComboBox.Location = new System.Drawing.Point(80, 38);
+            this.productoComboBox.Location = new System.Drawing.Point(99, 38);
             this.productoComboBox.Name = "productoComboBox";
             this.productoComboBox.Size = new System.Drawing.Size(127, 21);
             this.productoComboBox.TabIndex = 25;
@@ -211,7 +216,7 @@
             // fechaLabel
             // 
             this.fechaLabel.AutoSize = true;
-            this.fechaLabel.Location = new System.Drawing.Point(396, 15);
+            this.fechaLabel.Location = new System.Drawing.Point(415, 15);
             this.fechaLabel.Name = "fechaLabel";
             this.fechaLabel.Size = new System.Drawing.Size(40, 13);
             this.fechaLabel.TabIndex = 21;
@@ -220,35 +225,59 @@
             // equipoLabel
             // 
             this.equipoLabel.AutoSize = true;
-            this.equipoLabel.Location = new System.Drawing.Point(213, 15);
+            this.equipoLabel.Location = new System.Drawing.Point(232, 15);
             this.equipoLabel.Name = "equipoLabel";
             this.equipoLabel.Size = new System.Drawing.Size(43, 13);
             this.equipoLabel.TabIndex = 22;
             this.equipoLabel.Text = "Equipo:";
-            this.equipoLabel.Click += new System.EventHandler(this.clienteLabel_Click);
             // 
             // idTextBox
             // 
-            this.idTextBox.Location = new System.Drawing.Point(80, 12);
+            this.idTextBox.Location = new System.Drawing.Point(99, 12);
             this.idTextBox.Name = "idTextBox";
             this.idTextBox.Size = new System.Drawing.Size(127, 20);
             this.idTextBox.TabIndex = 24;
-            this.idTextBox.TextChanged += new System.EventHandler(this.idTextBox_TextChanged);
             // 
             // idLabel
             // 
             this.idLabel.AutoSize = true;
-            this.idLabel.Location = new System.Drawing.Point(13, 15);
+            this.idLabel.Location = new System.Drawing.Point(12, 15);
             this.idLabel.Name = "idLabel";
             this.idLabel.Size = new System.Drawing.Size(21, 13);
             this.idLabel.TabIndex = 23;
             this.idLabel.Text = "ID:";
             // 
+            // memoEdit1
+            // 
+            this.memoEdit1.Location = new System.Drawing.Point(99, 65);
+            this.memoEdit1.Name = "memoEdit1";
+            this.memoEdit1.Size = new System.Drawing.Size(487, 96);
+            this.memoEdit1.TabIndex = 29;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(12, 67);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(81, 13);
+            this.label2.TabIndex = 30;
+            this.label2.Text = "Observaciones:";
+            // 
+            // separatorControl1
+            // 
+            this.separatorControl1.Location = new System.Drawing.Point(12, 167);
+            this.separatorControl1.Name = "separatorControl1";
+            this.separatorControl1.Size = new System.Drawing.Size(586, 23);
+            this.separatorControl1.TabIndex = 31;
+            // 
             // MantenimientoEditorForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(577, 362);
+            this.ClientSize = new System.Drawing.Size(608, 482);
+            this.Controls.Add(this.separatorControl1);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.memoEdit1);
             this.Controls.Add(this.empleadoLabel);
             this.Controls.Add(this.clienteComboBox);
             this.Controls.Add(this.dateTimePicker1);
@@ -266,6 +295,8 @@
             this.Text = "Mantenimiento";
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.memoEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.separatorControl1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -293,5 +324,8 @@
         private System.Windows.Forms.Label equipoLabel;
         private System.Windows.Forms.TextBox idTextBox;
         private System.Windows.Forms.Label idLabel;
+        private DevExpress.XtraEditors.MemoEdit memoEdit1;
+        private System.Windows.Forms.Label label2;
+        private DevExpress.XtraEditors.SeparatorControl separatorControl1;
     }
 }

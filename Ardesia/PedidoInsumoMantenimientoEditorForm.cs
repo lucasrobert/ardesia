@@ -10,21 +10,12 @@ using System.Windows.Forms;
 
 namespace Ardesia
 {
-    public partial class PedidoInsumoMantenimientoEditorForm : Form
-    {
+    public partial class PedidoInsumoMantenimientoEditorForm : DevExpress.XtraEditors.XtraForm
+    { 
         public PedidoInsumoMantenimientoEditorForm()
         {
             InitializeComponent();
         }
-
-        private void clienteLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void idTextBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }

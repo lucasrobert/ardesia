@@ -16,16 +16,6 @@ namespace Ardesia
         {
             InitializeComponent();
         }
-
-        private void clienteLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void idTextBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
         
     }
 }
