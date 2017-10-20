@@ -11,9 +11,9 @@ using DevExpress.XtraEditors;
 
 namespace Ardesia
 {
-    public partial class FormPrincipal : DevExpress.XtraEditors.XtraForm
+    public partial class PrincipalForm : DevExpress.XtraEditors.XtraForm
     {
-        public FormPrincipal()
+        public PrincipalForm()
         {
             InitializeComponent();
         }
