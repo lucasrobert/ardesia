@@ -28,12 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SiloListForm));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.ColumnId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Capacidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.imageList1 = new System.Windows.Forms.ImageList();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.deleteSimpleButton = new DevExpress.XtraEditors.SimpleButton();
@@ -98,6 +99,7 @@
             // deleteSimpleButton
             // 
             this.deleteSimpleButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.deleteSimpleButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.deleteSimpleButton.ImageOptions.ImageIndex = 1;
             this.deleteSimpleButton.ImageOptions.ImageList = this.imageList1;
             this.deleteSimpleButton.Location = new System.Drawing.Point(662, 346);
@@ -105,10 +107,12 @@
             this.deleteSimpleButton.Size = new System.Drawing.Size(101, 22);
             this.deleteSimpleButton.TabIndex = 46;
             this.deleteSimpleButton.Text = "&Borrar";
+            this.deleteSimpleButton.Click += new System.EventHandler(this.deleteSimpleButton_Click);
             // 
             // editSimpleButton
             // 
             this.editSimpleButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.editSimpleButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.editSimpleButton.ImageOptions.ImageIndex = 2;
             this.editSimpleButton.ImageOptions.ImageList = this.imageList1;
             this.editSimpleButton.Location = new System.Drawing.Point(558, 346);
@@ -116,10 +120,12 @@
             this.editSimpleButton.Size = new System.Drawing.Size(98, 22);
             this.editSimpleButton.TabIndex = 45;
             this.editSimpleButton.Text = "&Editar";
+            this.editSimpleButton.Click += new System.EventHandler(this.editSimpleButton_Click);
             // 
             // addSimpleButton
             // 
             this.addSimpleButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.addSimpleButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.addSimpleButton.ImageOptions.ImageIndex = 0;
             this.addSimpleButton.ImageOptions.ImageList = this.imageList1;
             this.addSimpleButton.Location = new System.Drawing.Point(451, 346);
@@ -127,6 +133,7 @@
             this.addSimpleButton.Size = new System.Drawing.Size(101, 22);
             this.addSimpleButton.TabIndex = 44;
             this.addSimpleButton.Text = "&Agregar";
+            this.addSimpleButton.Click += new System.EventHandler(this.addSimpleButton_Click);
             // 
             // SiloListForm
             // 
@@ -140,6 +147,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
             this.Name = "SiloListForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Silos";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

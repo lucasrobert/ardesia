@@ -28,13 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MantenimientoListForm));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.ColumnId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Equipo = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.Empleado = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.imageList1 = new System.Windows.Forms.ImageList();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.deleteSimpleButton = new DevExpress.XtraEditors.SimpleButton();
@@ -134,6 +135,7 @@
             this.addSimpleButton.Size = new System.Drawing.Size(101, 22);
             this.addSimpleButton.TabIndex = 53;
             this.addSimpleButton.Text = "&Agregar";
+            this.addSimpleButton.Click += new System.EventHandler(this.addSimpleButton_Click);
             // 
             // MantenimientoListForm
             // 

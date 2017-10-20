@@ -28,8 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SiloEditorForm));
-            this.imageList1 = new System.Windows.Forms.ImageList();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.nombreTextBox = new System.Windows.Forms.TextBox();
             this.nombreLabel = new System.Windows.Forms.Label();
             this.idTextBox = new System.Windows.Forms.TextBox();
@@ -100,6 +101,7 @@
             // exitSimpleButton
             // 
             this.exitSimpleButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.exitSimpleButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.exitSimpleButton.ImageOptions.ImageIndex = 1;
             this.exitSimpleButton.ImageOptions.ImageList = this.imageList1;
             this.exitSimpleButton.Location = new System.Drawing.Point(470, 42);
@@ -107,10 +109,12 @@
             this.exitSimpleButton.Size = new System.Drawing.Size(98, 22);
             this.exitSimpleButton.TabIndex = 40;
             this.exitSimpleButton.Text = "&Salir";
+            this.exitSimpleButton.Click += new System.EventHandler(this.exitSimpleButton_Click);
             // 
             // saveSimpleButton
             // 
             this.saveSimpleButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.saveSimpleButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.saveSimpleButton.ImageOptions.ImageIndex = 0;
             this.saveSimpleButton.ImageOptions.ImageList = this.imageList1;
             this.saveSimpleButton.Location = new System.Drawing.Point(363, 42);
@@ -133,6 +137,7 @@
             this.Controls.Add(this.idTextBox);
             this.Controls.Add(this.idLabel);
             this.Name = "SiloEditorForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Silo";
             this.ResumeLayout(false);
             this.PerformLayout();

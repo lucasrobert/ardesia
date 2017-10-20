@@ -22,6 +22,10 @@ namespace Ardesia
 
 
         }
-        
+
+        private void addSimpleButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

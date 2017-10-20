@@ -28,8 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CalleEditorForm));
-            this.imageList1 = new System.Windows.Forms.ImageList();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.paisComboBox = new System.Windows.Forms.ComboBox();
             this.paisLabel = new System.Windows.Forms.Label();
             this.provinciaComboBox = new System.Windows.Forms.ComboBox();
