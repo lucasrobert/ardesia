@@ -18,5 +18,10 @@ namespace Ardesia
             InitializeComponent();
         }
 
+        private void eployeesTileBarItem_ItemClick(object sender, TileItemEventArgs e)
+        {
+            new EmpleadoListForm().Show();
+        }
+
     }
 }

@@ -308,9 +308,6 @@
     <Compile Include="PrincipalForm.Designer.cs">
       <DependentUpon>PrincipalForm.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="PrincipalForm.resx">
-      <DependentUpon>PrincipalForm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="MantenimientoListForm.resx">
       <DependentUpon>MantenimientoListForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -346,6 +343,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LimpiezaEditorForm.resx">
       <DependentUpon>LimpiezaEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrincipalForm.resx">
+      <DependentUpon>PrincipalForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="RemitoSalidaProductoProductoEditorForm.resx">
