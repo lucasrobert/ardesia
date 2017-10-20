@@ -17,6 +17,9 @@ namespace Ardesia
             InitializeComponent();
         }
 
+        private void simpleButton2_Click(object sender, EventArgs e)
+        {
 
+        }
     }
 }
