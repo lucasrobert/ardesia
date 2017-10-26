@@ -28,11 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PedidoInsumoMantenimientoEditorForm));
             this.repositoryItemLookUpEditEquipo = new DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit();
             this.repositoryItemLookUpEditEmpleado = new DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit();
             this.exitSimpleButton = new DevExpress.XtraEditors.SimpleButton();
-            this.imageList1 = new System.Windows.Forms.ImageList();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.saveSimpleButton = new DevExpress.XtraEditors.SimpleButton();
             this.verInsumosSimpleButton = new DevExpress.XtraEditors.SimpleButton();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
@@ -80,11 +81,13 @@
             // exitSimpleButton
             // 
             this.exitSimpleButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.exitSimpleButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.exitSimpleButton.ImageOptions.ImageIndex = 1;
             this.exitSimpleButton.ImageOptions.ImageList = this.imageList1;
-            this.exitSimpleButton.Location = new System.Drawing.Point(515, 329);
+            this.exitSimpleButton.Location = new System.Drawing.Point(601, 405);
+            this.exitSimpleButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.exitSimpleButton.Name = "exitSimpleButton";
-            this.exitSimpleButton.Size = new System.Drawing.Size(98, 22);
+            this.exitSimpleButton.Size = new System.Drawing.Size(114, 27);
             this.exitSimpleButton.TabIndex = 12;
             this.exitSimpleButton.Text = "&Salir";
             // 
@@ -101,22 +104,26 @@
             // saveSimpleButton
             // 
             this.saveSimpleButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.saveSimpleButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.saveSimpleButton.ImageOptions.ImageIndex = 0;
             this.saveSimpleButton.ImageOptions.ImageList = this.imageList1;
-            this.saveSimpleButton.Location = new System.Drawing.Point(408, 329);
+            this.saveSimpleButton.Location = new System.Drawing.Point(476, 405);
+            this.saveSimpleButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.saveSimpleButton.Name = "saveSimpleButton";
-            this.saveSimpleButton.Size = new System.Drawing.Size(101, 22);
+            this.saveSimpleButton.Size = new System.Drawing.Size(118, 27);
             this.saveSimpleButton.TabIndex = 11;
             this.saveSimpleButton.Text = "&Guardar";
             // 
             // verInsumosSimpleButton
             // 
             this.verInsumosSimpleButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.verInsumosSimpleButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.verInsumosSimpleButton.ImageOptions.ImageIndex = 4;
             this.verInsumosSimpleButton.ImageOptions.ImageList = this.imageList1;
-            this.verInsumosSimpleButton.Location = new System.Drawing.Point(12, 329);
+            this.verInsumosSimpleButton.Location = new System.Drawing.Point(14, 405);
+            this.verInsumosSimpleButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.verInsumosSimpleButton.Name = "verInsumosSimpleButton";
-            this.verInsumosSimpleButton.Size = new System.Drawing.Size(98, 22);
+            this.verInsumosSimpleButton.Size = new System.Drawing.Size(114, 27);
             this.verInsumosSimpleButton.TabIndex = 10;
             this.verInsumosSimpleButton.Text = "&Ver insumos";
             // 
@@ -125,10 +132,12 @@
             this.gridControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.gridControl1.Location = new System.Drawing.Point(12, 95);
+            this.gridControl1.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.gridControl1.Location = new System.Drawing.Point(14, 117);
             this.gridControl1.MainView = this.mantenimientoGridView;
+            this.gridControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(601, 228);
+            this.gridControl1.Size = new System.Drawing.Size(701, 281);
             this.gridControl1.TabIndex = 36;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.mantenimientoGridView});
@@ -186,26 +195,29 @@
             // 
             // numeroLabelControl
             // 
-            this.numeroLabelControl.Location = new System.Drawing.Point(12, 14);
+            this.numeroLabelControl.Location = new System.Drawing.Point(14, 17);
+            this.numeroLabelControl.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.numeroLabelControl.Name = "numeroLabelControl";
-            this.numeroLabelControl.Size = new System.Drawing.Size(41, 13);
+            this.numeroLabelControl.Size = new System.Drawing.Size(50, 16);
             this.numeroLabelControl.TabIndex = 37;
             this.numeroLabelControl.Text = "Número:";
             // 
             // numeroTextEdit
             // 
-            this.numeroTextEdit.Location = new System.Drawing.Point(68, 11);
+            this.numeroTextEdit.Location = new System.Drawing.Point(79, 14);
+            this.numeroTextEdit.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.numeroTextEdit.Name = "numeroTextEdit";
-            this.numeroTextEdit.Size = new System.Drawing.Size(140, 20);
+            this.numeroTextEdit.Size = new System.Drawing.Size(163, 22);
             this.numeroTextEdit.TabIndex = 38;
             // 
             // addSimpleButton
             // 
             this.addSimpleButton.ImageOptions.ImageIndex = 2;
             this.addSimpleButton.ImageOptions.ImageList = this.imageList1;
-            this.addSimpleButton.Location = new System.Drawing.Point(92, 66);
+            this.addSimpleButton.Location = new System.Drawing.Point(107, 81);
+            this.addSimpleButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.addSimpleButton.Name = "addSimpleButton";
-            this.addSimpleButton.Size = new System.Drawing.Size(97, 23);
+            this.addSimpleButton.Size = new System.Drawing.Size(113, 28);
             this.addSimpleButton.TabIndex = 13;
             this.addSimpleButton.Text = "&Agregar";
             // 
@@ -213,80 +225,88 @@
             // 
             this.deleteSimpleButton.ImageOptions.ImageIndex = 3;
             this.deleteSimpleButton.ImageOptions.ImageList = this.imageList1;
-            this.deleteSimpleButton.Location = new System.Drawing.Point(195, 66);
+            this.deleteSimpleButton.Location = new System.Drawing.Point(227, 81);
+            this.deleteSimpleButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.deleteSimpleButton.Name = "deleteSimpleButton";
-            this.deleteSimpleButton.Size = new System.Drawing.Size(97, 23);
+            this.deleteSimpleButton.Size = new System.Drawing.Size(113, 28);
             this.deleteSimpleButton.TabIndex = 39;
             this.deleteSimpleButton.Text = "&Borrar";
             // 
             // mantLabelControl
             // 
-            this.mantLabelControl.Location = new System.Drawing.Point(12, 71);
+            this.mantLabelControl.Location = new System.Drawing.Point(14, 87);
+            this.mantLabelControl.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.mantLabelControl.Name = "mantLabelControl";
-            this.mantLabelControl.Size = new System.Drawing.Size(74, 13);
+            this.mantLabelControl.Size = new System.Drawing.Size(89, 16);
             this.mantLabelControl.TabIndex = 40;
             this.mantLabelControl.Text = "Mantenimiento:";
             // 
             // labelControl1
             // 
-            this.labelControl1.Location = new System.Drawing.Point(214, 14);
+            this.labelControl1.Location = new System.Drawing.Point(250, 17);
+            this.labelControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(54, 13);
+            this.labelControl1.Size = new System.Drawing.Size(63, 16);
             this.labelControl1.TabIndex = 41;
             this.labelControl1.Text = "Proveedor:";
             // 
             // proveedorLookUpEdit
             // 
-            this.proveedorLookUpEdit.Location = new System.Drawing.Point(274, 11);
+            this.proveedorLookUpEdit.Location = new System.Drawing.Point(320, 14);
+            this.proveedorLookUpEdit.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.proveedorLookUpEdit.Name = "proveedorLookUpEdit";
             this.proveedorLookUpEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.proveedorLookUpEdit.Size = new System.Drawing.Size(140, 20);
+            this.proveedorLookUpEdit.Size = new System.Drawing.Size(163, 22);
             this.proveedorLookUpEdit.TabIndex = 42;
             // 
             // dateEdit1
             // 
             this.dateEdit1.EditValue = null;
-            this.dateEdit1.Location = new System.Drawing.Point(473, 11);
+            this.dateEdit1.Location = new System.Drawing.Point(552, 14);
+            this.dateEdit1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dateEdit1.Name = "dateEdit1";
             this.dateEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.dateEdit1.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.dateEdit1.Properties.NullText = "DD/MM/AAAA";
-            this.dateEdit1.Size = new System.Drawing.Size(140, 20);
+            this.dateEdit1.Size = new System.Drawing.Size(163, 22);
             this.dateEdit1.TabIndex = 43;
             // 
             // fechaLabelControl
             // 
-            this.fechaLabelControl.Location = new System.Drawing.Point(416, 14);
+            this.fechaLabelControl.Location = new System.Drawing.Point(485, 17);
+            this.fechaLabelControl.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.fechaLabelControl.Name = "fechaLabelControl";
-            this.fechaLabelControl.Size = new System.Drawing.Size(33, 13);
+            this.fechaLabelControl.Size = new System.Drawing.Size(39, 16);
             this.fechaLabelControl.TabIndex = 44;
             this.fechaLabelControl.Text = "Fecha:";
             // 
             // labelControl2
             // 
-            this.labelControl2.Location = new System.Drawing.Point(12, 43);
+            this.labelControl2.Location = new System.Drawing.Point(14, 53);
+            this.labelControl2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(50, 13);
+            this.labelControl2.Size = new System.Drawing.Size(61, 16);
             this.labelControl2.TabIndex = 45;
             this.labelControl2.Text = "Empleado:";
             // 
             // empleadoLookUpEdit
             // 
-            this.empleadoLookUpEdit.Location = new System.Drawing.Point(68, 40);
+            this.empleadoLookUpEdit.Location = new System.Drawing.Point(79, 49);
+            this.empleadoLookUpEdit.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.empleadoLookUpEdit.Name = "empleadoLookUpEdit";
             this.empleadoLookUpEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.empleadoLookUpEdit.Size = new System.Drawing.Size(140, 20);
+            this.empleadoLookUpEdit.Size = new System.Drawing.Size(163, 22);
             this.empleadoLookUpEdit.TabIndex = 46;
             // 
             // PedidoInsumoMantenimientoEditorForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(625, 363);
+            this.ClientSize = new System.Drawing.Size(729, 447);
             this.Controls.Add(this.verInsumosSimpleButton);
             this.Controls.Add(this.exitSimpleButton);
             this.Controls.Add(this.saveSimpleButton);
@@ -303,7 +323,9 @@
             this.Controls.Add(this.numeroLabelControl);
             this.Controls.Add(this.gridControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "PedidoInsumoMantenimientoEditorForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Pedido de insumos por mantenimientos";
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemLookUpEditEquipo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemLookUpEditEmpleado)).EndInit();

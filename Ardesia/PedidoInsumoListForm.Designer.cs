@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PedidoInsumoListForm));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.ColumnId = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -36,7 +37,7 @@
             this.ProveedorColumn = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.EmpleadoColumn = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.ImporteColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.imageList1 = new System.Windows.Forms.ImageList();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.deleteSimpleButton = new DevExpress.XtraEditors.SimpleButton();
@@ -57,9 +58,10 @@
             this.ProveedorColumn,
             this.EmpleadoColumn,
             this.ImporteColumn});
-            this.dataGridView1.Location = new System.Drawing.Point(15, 33);
+            this.dataGridView1.Location = new System.Drawing.Point(17, 41);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(751, 301);
+            this.dataGridView1.Size = new System.Drawing.Size(876, 370);
             this.dataGridView1.TabIndex = 0;
             // 
             // ColumnId
@@ -104,80 +106,91 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(50, 6);
+            this.textBox1.Location = new System.Drawing.Point(58, 7);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(204, 21);
+            this.textBox1.Size = new System.Drawing.Size(237, 23);
             this.textBox1.TabIndex = 5;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Location = new System.Drawing.Point(14, 11);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.Size = new System.Drawing.Size(42, 17);
             this.label1.TabIndex = 4;
             this.label1.Text = "Filtro:";
             // 
             // deleteSimpleButton
             // 
             this.deleteSimpleButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.deleteSimpleButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.deleteSimpleButton.ImageOptions.ImageIndex = 1;
             this.deleteSimpleButton.ImageOptions.ImageList = this.imageList1;
-            this.deleteSimpleButton.Location = new System.Drawing.Point(662, 346);
+            this.deleteSimpleButton.Location = new System.Drawing.Point(772, 426);
+            this.deleteSimpleButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.deleteSimpleButton.Name = "deleteSimpleButton";
-            this.deleteSimpleButton.Size = new System.Drawing.Size(101, 22);
+            this.deleteSimpleButton.Size = new System.Drawing.Size(118, 27);
             this.deleteSimpleButton.TabIndex = 49;
             this.deleteSimpleButton.Text = "&Borrar";
             // 
             // editSimpleButton
             // 
             this.editSimpleButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.editSimpleButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.editSimpleButton.ImageOptions.ImageIndex = 2;
             this.editSimpleButton.ImageOptions.ImageList = this.imageList1;
-            this.editSimpleButton.Location = new System.Drawing.Point(558, 346);
+            this.editSimpleButton.Location = new System.Drawing.Point(651, 426);
+            this.editSimpleButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.editSimpleButton.Name = "editSimpleButton";
-            this.editSimpleButton.Size = new System.Drawing.Size(98, 22);
+            this.editSimpleButton.Size = new System.Drawing.Size(114, 27);
             this.editSimpleButton.TabIndex = 48;
             this.editSimpleButton.Text = "&Editar";
             // 
             // addSimpleButton
             // 
             this.addSimpleButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.addSimpleButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.addSimpleButton.ImageOptions.ImageIndex = 0;
             this.addSimpleButton.ImageOptions.ImageList = this.imageList1;
-            this.addSimpleButton.Location = new System.Drawing.Point(397, 346);
+            this.addSimpleButton.Location = new System.Drawing.Point(463, 426);
+            this.addSimpleButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.addSimpleButton.Name = "addSimpleButton";
-            this.addSimpleButton.Size = new System.Drawing.Size(155, 22);
+            this.addSimpleButton.Size = new System.Drawing.Size(181, 27);
             this.addSimpleButton.TabIndex = 47;
             this.addSimpleButton.Text = "Agregar por &Producción";
             // 
             // simpleButton1
             // 
             this.simpleButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.simpleButton1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.simpleButton1.ImageOptions.ImageIndex = 0;
             this.simpleButton1.ImageOptions.ImageList = this.imageList1;
-            this.simpleButton1.Location = new System.Drawing.Point(40, 346);
+            this.simpleButton1.Location = new System.Drawing.Point(47, 426);
+            this.simpleButton1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(177, 22);
+            this.simpleButton1.Size = new System.Drawing.Size(206, 27);
             this.simpleButton1.TabIndex = 50;
             this.simpleButton1.Text = "Agregar pedido por &Limpiezas";
             // 
             // simpleButton2
             // 
             this.simpleButton2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.simpleButton2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.simpleButton2.ImageOptions.ImageIndex = 0;
             this.simpleButton2.ImageOptions.ImageList = this.imageList1;
-            this.simpleButton2.Location = new System.Drawing.Point(223, 346);
+            this.simpleButton2.Location = new System.Drawing.Point(260, 426);
+            this.simpleButton2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.Size = new System.Drawing.Size(168, 22);
+            this.simpleButton2.Size = new System.Drawing.Size(196, 27);
             this.simpleButton2.TabIndex = 51;
             this.simpleButton2.Text = "Agregar por &Mantenimientos";
             // 
             // PedidoInsumoListForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(775, 380);
+            this.ClientSize = new System.Drawing.Size(904, 468);
             this.Controls.Add(this.simpleButton2);
             this.Controls.Add(this.simpleButton1);
             this.Controls.Add(this.deleteSimpleButton);
@@ -186,7 +199,9 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "PedidoInsumoListForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Pedidos de insumos";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

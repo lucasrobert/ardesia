@@ -56,17 +56,18 @@
             // 
             this.paisComboBox.Enabled = false;
             this.paisComboBox.FormattingEnabled = true;
-            this.paisComboBox.Location = new System.Drawing.Point(258, 32);
+            this.paisComboBox.Location = new System.Drawing.Point(301, 39);
+            this.paisComboBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.paisComboBox.Name = "paisComboBox";
-            this.paisComboBox.Size = new System.Drawing.Size(130, 21);
+            this.paisComboBox.Size = new System.Drawing.Size(151, 24);
             this.paisComboBox.TabIndex = 29;
             // 
             // paisLabel
             // 
             this.paisLabel.AutoSize = true;
-            this.paisLabel.Location = new System.Drawing.Point(205, 35);
+            this.paisLabel.Location = new System.Drawing.Point(239, 43);
             this.paisLabel.Name = "paisLabel";
-            this.paisLabel.Size = new System.Drawing.Size(30, 13);
+            this.paisLabel.Size = new System.Drawing.Size(36, 17);
             this.paisLabel.TabIndex = 28;
             this.paisLabel.Text = "Pais:";
             // 
@@ -74,96 +75,104 @@
             // 
             this.provinciaComboBox.Enabled = false;
             this.provinciaComboBox.FormattingEnabled = true;
-            this.provinciaComboBox.Location = new System.Drawing.Point(72, 32);
+            this.provinciaComboBox.Location = new System.Drawing.Point(84, 39);
+            this.provinciaComboBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.provinciaComboBox.Name = "provinciaComboBox";
-            this.provinciaComboBox.Size = new System.Drawing.Size(127, 21);
+            this.provinciaComboBox.Size = new System.Drawing.Size(147, 24);
             this.provinciaComboBox.TabIndex = 27;
             // 
             // provinciaLlabel
             // 
             this.provinciaLlabel.AutoSize = true;
-            this.provinciaLlabel.Location = new System.Drawing.Point(12, 35);
+            this.provinciaLlabel.Location = new System.Drawing.Point(14, 43);
             this.provinciaLlabel.Name = "provinciaLlabel";
-            this.provinciaLlabel.Size = new System.Drawing.Size(54, 13);
+            this.provinciaLlabel.Size = new System.Drawing.Size(68, 17);
             this.provinciaLlabel.TabIndex = 26;
             this.provinciaLlabel.Text = "Provincia:";
             // 
             // ciudadComboBox
             // 
             this.ciudadComboBox.FormattingEnabled = true;
-            this.ciudadComboBox.Location = new System.Drawing.Point(443, 6);
+            this.ciudadComboBox.Location = new System.Drawing.Point(517, 7);
+            this.ciudadComboBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ciudadComboBox.Name = "ciudadComboBox";
-            this.ciudadComboBox.Size = new System.Drawing.Size(130, 21);
+            this.ciudadComboBox.Size = new System.Drawing.Size(151, 24);
             this.ciudadComboBox.TabIndex = 25;
             // 
             // ciudadLabel
             // 
             this.ciudadLabel.AutoSize = true;
-            this.ciudadLabel.Location = new System.Drawing.Point(394, 9);
+            this.ciudadLabel.Location = new System.Drawing.Point(460, 11);
             this.ciudadLabel.Name = "ciudadLabel";
-            this.ciudadLabel.Size = new System.Drawing.Size(44, 13);
+            this.ciudadLabel.Size = new System.Drawing.Size(55, 17);
             this.ciudadLabel.TabIndex = 24;
             this.ciudadLabel.Text = "Ciudad:";
             // 
             // nombreTextBox
             // 
-            this.nombreTextBox.Location = new System.Drawing.Point(258, 6);
+            this.nombreTextBox.Location = new System.Drawing.Point(301, 7);
+            this.nombreTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.nombreTextBox.Name = "nombreTextBox";
-            this.nombreTextBox.Size = new System.Drawing.Size(130, 21);
+            this.nombreTextBox.Size = new System.Drawing.Size(151, 23);
             this.nombreTextBox.TabIndex = 20;
             // 
             // nombreLabel
             // 
             this.nombreLabel.AutoSize = true;
-            this.nombreLabel.Location = new System.Drawing.Point(205, 9);
+            this.nombreLabel.Location = new System.Drawing.Point(239, 11);
             this.nombreLabel.Name = "nombreLabel";
-            this.nombreLabel.Size = new System.Drawing.Size(48, 13);
+            this.nombreLabel.Size = new System.Drawing.Size(62, 17);
             this.nombreLabel.TabIndex = 17;
             this.nombreLabel.Text = "Nombre:";
             // 
             // idTextBox
             // 
-            this.idTextBox.Location = new System.Drawing.Point(72, 6);
+            this.idTextBox.Location = new System.Drawing.Point(84, 7);
+            this.idTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.idTextBox.Name = "idTextBox";
-            this.idTextBox.Size = new System.Drawing.Size(127, 21);
+            this.idTextBox.Size = new System.Drawing.Size(147, 23);
             this.idTextBox.TabIndex = 22;
             // 
             // idLabel
             // 
             this.idLabel.AutoSize = true;
-            this.idLabel.Location = new System.Drawing.Point(12, 9);
+            this.idLabel.Location = new System.Drawing.Point(14, 11);
             this.idLabel.Name = "idLabel";
-            this.idLabel.Size = new System.Drawing.Size(22, 13);
+            this.idLabel.Size = new System.Drawing.Size(27, 17);
             this.idLabel.TabIndex = 16;
             this.idLabel.Text = "ID:";
             // 
             // exitSimpleButton
             // 
             this.exitSimpleButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.exitSimpleButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.exitSimpleButton.ImageOptions.ImageIndex = 1;
             this.exitSimpleButton.ImageOptions.ImageList = this.imageList1;
-            this.exitSimpleButton.Location = new System.Drawing.Point(474, 76);
+            this.exitSimpleButton.Location = new System.Drawing.Point(553, 94);
+            this.exitSimpleButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.exitSimpleButton.Name = "exitSimpleButton";
-            this.exitSimpleButton.Size = new System.Drawing.Size(98, 22);
+            this.exitSimpleButton.Size = new System.Drawing.Size(114, 27);
             this.exitSimpleButton.TabIndex = 31;
             this.exitSimpleButton.Text = "&Salir";
             // 
             // saveSimpleButton
             // 
             this.saveSimpleButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.saveSimpleButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.saveSimpleButton.ImageOptions.ImageIndex = 0;
             this.saveSimpleButton.ImageOptions.ImageList = this.imageList1;
-            this.saveSimpleButton.Location = new System.Drawing.Point(367, 76);
+            this.saveSimpleButton.Location = new System.Drawing.Point(428, 94);
+            this.saveSimpleButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.saveSimpleButton.Name = "saveSimpleButton";
-            this.saveSimpleButton.Size = new System.Drawing.Size(101, 22);
+            this.saveSimpleButton.Size = new System.Drawing.Size(118, 27);
             this.saveSimpleButton.TabIndex = 30;
             this.saveSimpleButton.Text = "&Guardar";
             // 
             // CalleEditorForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(584, 110);
+            this.ClientSize = new System.Drawing.Size(681, 135);
             this.Controls.Add(this.exitSimpleButton);
             this.Controls.Add(this.saveSimpleButton);
             this.Controls.Add(this.paisComboBox);
@@ -176,7 +185,9 @@
             this.Controls.Add(this.nombreLabel);
             this.Controls.Add(this.idTextBox);
             this.Controls.Add(this.idLabel);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "CalleEditorForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Calle";
             this.ResumeLayout(false);
             this.PerformLayout();
