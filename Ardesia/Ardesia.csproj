@@ -84,6 +84,18 @@
     <Compile Include="PedidoInsumoInsumoListForm.Designer.cs">
       <DependentUpon>PedidoInsumoInsumoListForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ProductoEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductoEditorForm.Designer.cs">
+      <DependentUpon>ProductoEditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductoListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductoListForm.Designer.cs">
+      <DependentUpon>ProductoListForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="PedidoInsumoProduccionEditorForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -319,6 +331,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PedidoInsumoInsumoListForm.resx">
       <DependentUpon>PedidoInsumoInsumoListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductoEditorForm.resx">
+      <DependentUpon>ProductoEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductoListForm.resx">
+      <DependentUpon>ProductoListForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PedidoInsumoProduccionEditorForm.resx">
       <DependentUpon>PedidoInsumoProduccionEditorForm.cs</DependentUpon>
