@@ -60,6 +60,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="TransportistaEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TransportistaEditorForm.Designer.cs">
+      <DependentUpon>TransportistaEditorForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="TransportistaListForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -326,6 +332,9 @@
     <Compile Include="PrincipalForm.Designer.cs">
       <DependentUpon>PrincipalForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="TransportistaEditorForm.resx">
+      <DependentUpon>TransportistaEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TransportistaListForm.resx">
       <DependentUpon>TransportistaListForm.cs</DependentUpon>
     </EmbeddedResource>
