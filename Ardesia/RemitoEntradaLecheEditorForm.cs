@@ -10,18 +10,16 @@ using System.Windows.Forms;
 
 namespace Ardesia
 {
-    public partial class TransportistaListForm : DevExpress.XtraEditors.XtraForm
+    public partial class RemitoEntradaLecheEditorForm : DevExpress.XtraEditors.XtraForm
     {
-        public TransportistaListForm()
+        public RemitoEntradaLecheEditorForm()
         {
             InitializeComponent();
         }
 
-        private void addButton_Click(object sender, EventArgs e)
+        private void RemitoEntradaLecheEditorForm_Load(object sender, EventArgs e)
         {
-            new TransportistaEditorForm().Show();
 
         }
-        
     }
 }

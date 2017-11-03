@@ -303,7 +303,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "TransportistaEditorForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Empleado";
+            this.Text = "Transportista";
             this.Load += new System.EventHandler(this.TransportistaEditorForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
