@@ -1,6 +1,6 @@
 ﻿namespace Ardesia
 {
-    partial class TransportistaListForm
+    partial class ReciboLecheListForm
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TransportistaListForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ReciboLecheListForm));
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -38,22 +38,17 @@
             this.addSimpleButton = new DevExpress.XtraEditors.SimpleButton();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
-            this.transportistaGridView = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.reciboLecheGridView = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumnId = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumnNombre = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumnApellido = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumnTelefono = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumnDominioCamion = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridCapacidad = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumnCalle = new DevExpress.XtraGrid.Columns.GridColumn();
             this.repositoryItemLookUpEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit();
-            this.gridColumnCiudad = new DevExpress.XtraGrid.Columns.GridColumn();
             this.repositoryItemLookUpEdit3 = new DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit();
-            this.gridColumnProvincia = new DevExpress.XtraGrid.Columns.GridColumn();
             this.repositoryItemLookUpEdit2 = new DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit();
+            this.gridColumnCategoriaLeche = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumnEmpleado = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumnSector = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.transportistaGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.reciboLecheGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemLookUpEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemLookUpEdit3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemLookUpEdit2)).BeginInit();
@@ -134,7 +129,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gridControl1.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.gridControl1.Location = new System.Drawing.Point(18, 63);
-            this.gridControl1.MainView = this.transportistaGridView;
+            this.gridControl1.MainView = this.reciboLecheGridView;
             this.gridControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.gridControl1.Name = "gridControl1";
             this.gridControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
@@ -144,29 +139,24 @@
             this.gridControl1.Size = new System.Drawing.Size(860, 196);
             this.gridControl1.TabIndex = 59;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.transportistaGridView});
+            this.reciboLecheGridView});
             // 
-            // transportistaGridView
+            // reciboLecheGridView
             // 
-            this.transportistaGridView.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.reciboLecheGridView.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.gridColumnId,
-            this.gridColumnNombre,
-            this.gridColumnApellido,
-            this.gridColumnTelefono,
-            this.gridColumnDominioCamion,
-            this.gridCapacidad,
-            this.gridColumnCalle,
-            this.gridColumnCiudad,
-            this.gridColumnProvincia});
-            this.transportistaGridView.GridControl = this.gridControl1;
-            this.transportistaGridView.Name = "transportistaGridView";
-            this.transportistaGridView.OptionsFilter.ShowAllTableValuesInFilterPopup = true;
-            this.transportistaGridView.OptionsPrint.EnableAppearanceOddRow = true;
-            this.transportistaGridView.OptionsPrint.PrintFilterInfo = true;
-            this.transportistaGridView.OptionsView.HeaderFilterButtonShowMode = DevExpress.XtraEditors.Controls.FilterButtonShowMode.Button;
-            this.transportistaGridView.OptionsView.ShowAutoFilterRow = true;
-            this.transportistaGridView.OptionsView.ShowFooter = true;
-            this.transportistaGridView.OptionsView.ShowGroupPanel = false;
+            this.gridColumnCategoriaLeche,
+            this.gridColumnEmpleado,
+            this.gridColumnSector});
+            this.reciboLecheGridView.GridControl = this.gridControl1;
+            this.reciboLecheGridView.Name = "reciboLecheGridView";
+            this.reciboLecheGridView.OptionsFilter.ShowAllTableValuesInFilterPopup = true;
+            this.reciboLecheGridView.OptionsPrint.EnableAppearanceOddRow = true;
+            this.reciboLecheGridView.OptionsPrint.PrintFilterInfo = true;
+            this.reciboLecheGridView.OptionsView.HeaderFilterButtonShowMode = DevExpress.XtraEditors.Controls.FilterButtonShowMode.Button;
+            this.reciboLecheGridView.OptionsView.ShowAutoFilterRow = true;
+            this.reciboLecheGridView.OptionsView.ShowFooter = true;
+            this.reciboLecheGridView.OptionsView.ShowGroupPanel = false;
             // 
             // gridColumnId
             // 
@@ -175,63 +165,12 @@
             this.gridColumnId.Visible = true;
             this.gridColumnId.VisibleIndex = 0;
             // 
-            // gridColumnNombre
-            // 
-            this.gridColumnNombre.Caption = "Nombre";
-            this.gridColumnNombre.Name = "gridColumnNombre";
-            this.gridColumnNombre.Visible = true;
-            this.gridColumnNombre.VisibleIndex = 1;
-            // 
-            // gridColumnApellido
-            // 
-            this.gridColumnApellido.Caption = "Apellido";
-            this.gridColumnApellido.Name = "gridColumnApellido";
-            this.gridColumnApellido.Visible = true;
-            this.gridColumnApellido.VisibleIndex = 2;
-            // 
-            // gridColumnTelefono
-            // 
-            this.gridColumnTelefono.Caption = "Telefono";
-            this.gridColumnTelefono.Name = "gridColumnTelefono";
-            this.gridColumnTelefono.Visible = true;
-            this.gridColumnTelefono.VisibleIndex = 3;
-            // 
-            // gridColumnDominioCamion
-            // 
-            this.gridColumnDominioCamion.Caption = "Dominio Camion";
-            this.gridColumnDominioCamion.Name = "gridColumnDominioCamion";
-            this.gridColumnDominioCamion.Visible = true;
-            this.gridColumnDominioCamion.VisibleIndex = 4;
-            // 
-            // gridCapacidad
-            // 
-            this.gridCapacidad.Caption = "Capacidad";
-            this.gridCapacidad.Name = "gridCapacidad";
-            this.gridCapacidad.Visible = true;
-            this.gridCapacidad.VisibleIndex = 5;
-            // 
-            // gridColumnCalle
-            // 
-            this.gridColumnCalle.Caption = "Calle";
-            this.gridColumnCalle.ColumnEdit = this.repositoryItemLookUpEdit1;
-            this.gridColumnCalle.Name = "gridColumnCalle";
-            this.gridColumnCalle.Visible = true;
-            this.gridColumnCalle.VisibleIndex = 6;
-            // 
             // repositoryItemLookUpEdit1
             // 
             this.repositoryItemLookUpEdit1.AutoHeight = false;
             this.repositoryItemLookUpEdit1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.repositoryItemLookUpEdit1.Name = "repositoryItemLookUpEdit1";
-            // 
-            // gridColumnCiudad
-            // 
-            this.gridColumnCiudad.Caption = "Ciudad";
-            this.gridColumnCiudad.ColumnEdit = this.repositoryItemLookUpEdit3;
-            this.gridColumnCiudad.Name = "gridColumnCiudad";
-            this.gridColumnCiudad.Visible = true;
-            this.gridColumnCiudad.VisibleIndex = 8;
             // 
             // repositoryItemLookUpEdit3
             // 
@@ -240,14 +179,6 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.repositoryItemLookUpEdit3.Name = "repositoryItemLookUpEdit3";
             // 
-            // gridColumnProvincia
-            // 
-            this.gridColumnProvincia.Caption = "Provincia";
-            this.gridColumnProvincia.ColumnEdit = this.repositoryItemLookUpEdit2;
-            this.gridColumnProvincia.Name = "gridColumnProvincia";
-            this.gridColumnProvincia.Visible = true;
-            this.gridColumnProvincia.VisibleIndex = 7;
-            // 
             // repositoryItemLookUpEdit2
             // 
             this.repositoryItemLookUpEdit2.AutoHeight = false;
@@ -255,7 +186,28 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.repositoryItemLookUpEdit2.Name = "repositoryItemLookUpEdit2";
             // 
-            // TransportistaListForm
+            // gridColumnCategoriaLeche
+            // 
+            this.gridColumnCategoriaLeche.Caption = "Categoria leche";
+            this.gridColumnCategoriaLeche.Name = "gridColumnCategoriaLeche";
+            this.gridColumnCategoriaLeche.Visible = true;
+            this.gridColumnCategoriaLeche.VisibleIndex = 1;
+            // 
+            // gridColumnEmpleado
+            // 
+            this.gridColumnEmpleado.Caption = "Empleado";
+            this.gridColumnEmpleado.Name = "gridColumnEmpleado";
+            this.gridColumnEmpleado.Visible = true;
+            this.gridColumnEmpleado.VisibleIndex = 2;
+            // 
+            // gridColumnSector
+            // 
+            this.gridColumnSector.Caption = "Sector";
+            this.gridColumnSector.Name = "gridColumnSector";
+            this.gridColumnSector.Visible = true;
+            this.gridColumnSector.VisibleIndex = 3;
+            // 
+            // ReciboLecheListForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -267,12 +219,12 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.Name = "TransportistaListForm";
+            this.Name = "ReciboLecheListForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Transportistas";
+            this.Text = "Recibos de leche";
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.transportistaGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.reciboLecheGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemLookUpEdit1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemLookUpEdit3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemLookUpEdit2)).EndInit();
@@ -290,18 +242,13 @@
         private DevExpress.XtraEditors.SimpleButton addSimpleButton;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private DevExpress.XtraGrid.GridControl gridControl1;
-        private DevExpress.XtraGrid.Views.Grid.GridView transportistaGridView;
+        private DevExpress.XtraGrid.Views.Grid.GridView reciboLecheGridView;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumnId;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumnNombre;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumnApellido;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumnTelefono;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumnDominioCamion;
-        private DevExpress.XtraGrid.Columns.GridColumn gridCapacidad;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumnCalle;
         private DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit repositoryItemLookUpEdit1;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumnCiudad;
         private DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit repositoryItemLookUpEdit3;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumnProvincia;
         private DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit repositoryItemLookUpEdit2;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumnCategoriaLeche;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumnEmpleado;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumnSector;
     }
 }

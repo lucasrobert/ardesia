@@ -66,6 +66,12 @@
     <Compile Include="RemitoEntradaLecheEditorForm.Designer.cs">
       <DependentUpon>RemitoEntradaLecheEditorForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ReciboLecheEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReciboLecheEditorForm.Designer.cs">
+      <DependentUpon>ReciboLecheEditorForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="TransportistaEditorForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,6 +83,12 @@
     </Compile>
     <Compile Include="RemitoEntradaLecheListForm.Designer.cs">
       <DependentUpon>RemitoEntradaLecheListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReciboLecheListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReciboLecheListForm.Designer.cs">
+      <DependentUpon>ReciboLecheListForm.cs</DependentUpon>
     </Compile>
     <Compile Include="TransportistaListForm.cs">
       <SubType>Form</SubType>
@@ -347,11 +359,17 @@
     <EmbeddedResource Include="RemitoEntradaLecheEditorForm.resx">
       <DependentUpon>RemitoEntradaLecheEditorForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ReciboLecheEditorForm.resx">
+      <DependentUpon>ReciboLecheEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TransportistaEditorForm.resx">
       <DependentUpon>TransportistaEditorForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="RemitoEntradaLecheListForm.resx">
       <DependentUpon>RemitoEntradaLecheListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReciboLecheListForm.resx">
+      <DependentUpon>ReciboLecheListForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TransportistaListForm.resx">
       <DependentUpon>TransportistaListForm.cs</DependentUpon>
