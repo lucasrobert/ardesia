@@ -72,6 +72,12 @@
     <Compile Include="ReciboLecheEditorForm.Designer.cs">
       <DependentUpon>ReciboLecheEditorForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="TinaEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TinaEditorForm.Designer.cs">
+      <DependentUpon>TinaEditorForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="TransportistaEditorForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,6 +95,12 @@
     </Compile>
     <Compile Include="ReciboLecheListForm.Designer.cs">
       <DependentUpon>ReciboLecheListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TinaListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TinaListForm.Designer.cs">
+      <DependentUpon>TinaListForm.cs</DependentUpon>
     </Compile>
     <Compile Include="TransportistaListForm.cs">
       <SubType>Form</SubType>
@@ -362,6 +374,9 @@
     <EmbeddedResource Include="ReciboLecheEditorForm.resx">
       <DependentUpon>ReciboLecheEditorForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="TinaEditorForm.resx">
+      <DependentUpon>TinaEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TransportistaEditorForm.resx">
       <DependentUpon>TransportistaEditorForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -370,6 +385,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ReciboLecheListForm.resx">
       <DependentUpon>ReciboLecheListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TinaListForm.resx">
+      <DependentUpon>TinaListForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TransportistaListForm.resx">
       <DependentUpon>TransportistaListForm.cs</DependentUpon>
