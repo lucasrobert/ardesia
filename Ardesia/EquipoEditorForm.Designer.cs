@@ -126,7 +126,7 @@
             // 
             // fechaInicioTimePicker
             // 
-            this.fechaInicioTimePicker.Location = new System.Drawing.Point(149, 84);
+            this.fechaInicioTimePicker.Location = new System.Drawing.Point(166, 87);
             this.fechaInicioTimePicker.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.fechaInicioTimePicker.Name = "fechaInicioTimePicker";
             this.fechaInicioTimePicker.Size = new System.Drawing.Size(233, 23);
@@ -152,7 +152,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(149, 121);
+            this.textBox1.Location = new System.Drawing.Point(166, 121);
             this.textBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(233, 23);
