@@ -30,64 +30,23 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CiudadListForm));
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.ColumnId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnCP = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.ColumnProvincia = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.paisColumn = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.deleteSimpleButton = new DevExpress.XtraEditors.SimpleButton();
             this.editSimpleButton = new DevExpress.XtraEditors.SimpleButton();
             this.addSimpleButton = new DevExpress.XtraEditors.SimpleButton();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.textEditFiltro = new DevExpress.XtraEditors.TextEdit();
+            this.gridControlCiudad = new DevExpress.XtraGrid.GridControl();
+            this.gridViewCiudad = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.gridColumnIdCiudad = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumnNombreCiudad = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumnCodigoPostal = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumnProvincia = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumnPais = new DevExpress.XtraGrid.Columns.GridColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditFiltro.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControlCiudad)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewCiudad)).BeginInit();
             this.SuspendLayout();
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ColumnId,
-            this.ColumnNombre,
-            this.ColumnCP,
-            this.ColumnProvincia,
-            this.paisColumn});
-            this.dataGridView1.Location = new System.Drawing.Point(14, 39);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(876, 370);
-            this.dataGridView1.TabIndex = 0;
-            // 
-            // ColumnId
-            // 
-            this.ColumnId.HeaderText = "ID";
-            this.ColumnId.Name = "ColumnId";
-            this.ColumnId.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.ColumnId.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // ColumnNombre
-            // 
-            this.ColumnNombre.HeaderText = "Nombre";
-            this.ColumnNombre.Name = "ColumnNombre";
-            // 
-            // ColumnCP
-            // 
-            this.ColumnCP.HeaderText = "CP";
-            this.ColumnCP.Name = "ColumnCP";
-            // 
-            // ColumnProvincia
-            // 
-            this.ColumnProvincia.HeaderText = "Provincia";
-            this.ColumnProvincia.Name = "ColumnProvincia";
-            // 
-            // paisColumn
-            // 
-            this.paisColumn.HeaderText = "Pais";
-            this.paisColumn.Name = "paisColumn";
-            this.paisColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.paisColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             // 
             // imageList1
             // 
@@ -96,14 +55,6 @@
             this.imageList1.Images.SetKeyName(0, "plus-circle.png");
             this.imageList1.Images.SetKeyName(1, "cross-circle.png");
             this.imageList1.Images.SetKeyName(2, "pencil.png");
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(58, 7);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(237, 23);
-            this.textBox1.TabIndex = 5;
             // 
             // label1
             // 
@@ -120,7 +71,7 @@
             this.deleteSimpleButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.deleteSimpleButton.ImageOptions.ImageIndex = 1;
             this.deleteSimpleButton.ImageOptions.ImageList = this.imageList1;
-            this.deleteSimpleButton.Location = new System.Drawing.Point(772, 426);
+            this.deleteSimpleButton.Location = new System.Drawing.Point(772, 341);
             this.deleteSimpleButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.deleteSimpleButton.Name = "deleteSimpleButton";
             this.deleteSimpleButton.Size = new System.Drawing.Size(118, 27);
@@ -133,7 +84,7 @@
             this.editSimpleButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.editSimpleButton.ImageOptions.ImageIndex = 2;
             this.editSimpleButton.ImageOptions.ImageList = this.imageList1;
-            this.editSimpleButton.Location = new System.Drawing.Point(651, 426);
+            this.editSimpleButton.Location = new System.Drawing.Point(651, 341);
             this.editSimpleButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.editSimpleButton.Name = "editSimpleButton";
             this.editSimpleButton.Size = new System.Drawing.Size(114, 27);
@@ -146,47 +97,112 @@
             this.addSimpleButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.addSimpleButton.ImageOptions.ImageIndex = 0;
             this.addSimpleButton.ImageOptions.ImageList = this.imageList1;
-            this.addSimpleButton.Location = new System.Drawing.Point(526, 426);
+            this.addSimpleButton.Location = new System.Drawing.Point(526, 341);
             this.addSimpleButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.addSimpleButton.Name = "addSimpleButton";
             this.addSimpleButton.Size = new System.Drawing.Size(118, 27);
             this.addSimpleButton.TabIndex = 56;
             this.addSimpleButton.Text = "&Agregar";
             // 
+            // textEditFiltro
+            // 
+            this.textEditFiltro.Location = new System.Drawing.Point(62, 12);
+            this.textEditFiltro.Name = "textEditFiltro";
+            this.textEditFiltro.Size = new System.Drawing.Size(237, 22);
+            this.textEditFiltro.TabIndex = 59;
+            // 
+            // gridControlCiudad
+            // 
+            this.gridControlCiudad.Location = new System.Drawing.Point(17, 40);
+            this.gridControlCiudad.MainView = this.gridViewCiudad;
+            this.gridControlCiudad.Name = "gridControlCiudad";
+            this.gridControlCiudad.Size = new System.Drawing.Size(875, 286);
+            this.gridControlCiudad.TabIndex = 60;
+            this.gridControlCiudad.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridViewCiudad});
+            // 
+            // gridViewCiudad
+            // 
+            this.gridViewCiudad.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.gridColumnIdCiudad,
+            this.gridColumnNombreCiudad,
+            this.gridColumnCodigoPostal,
+            this.gridColumnProvincia,
+            this.gridColumnPais});
+            this.gridViewCiudad.GridControl = this.gridControlCiudad;
+            this.gridViewCiudad.Name = "gridViewCiudad";
+            // 
+            // gridColumnIdCiudad
+            // 
+            this.gridColumnIdCiudad.Caption = "ID";
+            this.gridColumnIdCiudad.Name = "gridColumnIdCiudad";
+            this.gridColumnIdCiudad.Visible = true;
+            this.gridColumnIdCiudad.VisibleIndex = 0;
+            // 
+            // gridColumnNombreCiudad
+            // 
+            this.gridColumnNombreCiudad.Caption = "Nombre";
+            this.gridColumnNombreCiudad.Name = "gridColumnNombreCiudad";
+            this.gridColumnNombreCiudad.Visible = true;
+            this.gridColumnNombreCiudad.VisibleIndex = 1;
+            // 
+            // gridColumnCodigoPostal
+            // 
+            this.gridColumnCodigoPostal.Caption = "CP";
+            this.gridColumnCodigoPostal.Name = "gridColumnCodigoPostal";
+            this.gridColumnCodigoPostal.Visible = true;
+            this.gridColumnCodigoPostal.VisibleIndex = 2;
+            // 
+            // gridColumnProvincia
+            // 
+            this.gridColumnProvincia.Caption = "Provincia";
+            this.gridColumnProvincia.Name = "gridColumnProvincia";
+            this.gridColumnProvincia.Visible = true;
+            this.gridColumnProvincia.VisibleIndex = 3;
+            // 
+            // gridColumnPais
+            // 
+            this.gridColumnPais.Caption = "Pais";
+            this.gridColumnPais.Name = "gridColumnPais";
+            this.gridColumnPais.Visible = true;
+            this.gridColumnPais.VisibleIndex = 4;
+            // 
             // CiudadListForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(904, 468);
+            this.ClientSize = new System.Drawing.Size(904, 383);
+            this.Controls.Add(this.gridControlCiudad);
+            this.Controls.Add(this.textEditFiltro);
             this.Controls.Add(this.deleteSimpleButton);
             this.Controls.Add(this.editSimpleButton);
             this.Controls.Add(this.addSimpleButton);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dataGridView1);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "CiudadListForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ciudades";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditFiltro.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControlCiudad)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewCiudad)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnId;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnNombre;
-        private System.Windows.Forms.DataGridViewComboBoxColumn ColumnCP;
-        private System.Windows.Forms.DataGridViewComboBoxColumn ColumnProvincia;
-        private System.Windows.Forms.DataGridViewComboBoxColumn paisColumn;
         private System.Windows.Forms.ImageList imageList1;
         private DevExpress.XtraEditors.SimpleButton deleteSimpleButton;
         private DevExpress.XtraEditors.SimpleButton editSimpleButton;
         private DevExpress.XtraEditors.SimpleButton addSimpleButton;
+        private DevExpress.XtraEditors.TextEdit textEditFiltro;
+        private DevExpress.XtraGrid.GridControl gridControlCiudad;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridViewCiudad;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumnIdCiudad;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumnNombreCiudad;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumnCodigoPostal;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumnProvincia;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumnPais;
     }
 }
