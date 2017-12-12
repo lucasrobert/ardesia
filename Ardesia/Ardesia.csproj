@@ -65,6 +65,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ControlDiarioEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ControlDiarioEditorForm.Designer.cs">
+      <DependentUpon>ControlDiarioEditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlDiarioListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ControlDiarioListForm.Designer.cs">
+      <DependentUpon>ControlDiarioListForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="RemitoEntradaLecheEditorForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -397,6 +409,12 @@
     <Compile Include="PrincipalForm.Designer.cs">
       <DependentUpon>PrincipalForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ControlDiarioEditorForm.resx">
+      <DependentUpon>ControlDiarioEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlDiarioListForm.resx">
+      <DependentUpon>ControlDiarioListForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="RemitoEntradaLecheEditorForm.resx">
       <DependentUpon>RemitoEntradaLecheEditorForm.cs</DependentUpon>
     </EmbeddedResource>
