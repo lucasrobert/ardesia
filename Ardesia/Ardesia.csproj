@@ -65,6 +65,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PlanProduccionSemanalListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PlanProduccionSemanalListForm.Designer.cs">
+      <DependentUpon>PlanProduccionSemanalListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlanProduccionSemanalEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PlanProduccionSemanalEditorForm.Designer.cs">
+      <DependentUpon>PlanProduccionSemanalEditorForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="ControlDiarioEditorForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -409,6 +421,12 @@
     <Compile Include="PrincipalForm.Designer.cs">
       <DependentUpon>PrincipalForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="PlanProduccionSemanalListForm.resx">
+      <DependentUpon>PlanProduccionSemanalListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlanProduccionSemanalEditorForm.resx">
+      <DependentUpon>PlanProduccionSemanalEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ControlDiarioEditorForm.resx">
       <DependentUpon>ControlDiarioEditorForm.cs</DependentUpon>
     </EmbeddedResource>
