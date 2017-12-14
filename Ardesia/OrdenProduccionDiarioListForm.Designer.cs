@@ -1,6 +1,6 @@
 ﻿namespace Ardesia
 {
-    partial class ParteDiarioProduccionListForm
+    partial class OrdenProduccionDiarioListForm
     {
         /// <summary>
         /// Required designer variable.
@@ -29,21 +29,21 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ParteDiarioProduccionListForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OrdenProduccionDiarioListForm));
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.deleteSimpleButton = new DevExpress.XtraEditors.SimpleButton();
             this.editSimpleButton = new DevExpress.XtraEditors.SimpleButton();
             this.addSimpleButton = new DevExpress.XtraEditors.SimpleButton();
-            this.gridControlParteDiarioProduccion = new DevExpress.XtraGrid.GridControl();
-            this.gridViewParteDiarioProduccion = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.gridColumnIdParteDiarioProduccion = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridControlOrdenProduccionDiario = new DevExpress.XtraGrid.GridControl();
+            this.gridViewOrdenProduccionDiario = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.gridColumnIdOrdenProduccionDiario = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumnFechaHora = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumnIdEmpleado = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumnIdOrdenProduccionEmpleado = new DevExpress.XtraGrid.Columns.GridColumn();
             this.textEditFiltro = new DevExpress.XtraEditors.TextEdit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControlParteDiarioProduccion)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridViewParteDiarioProduccion)).BeginInit();
+            this.gridColumnIdEmpleado = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumnIdPlanProduccionSemanal = new DevExpress.XtraGrid.Columns.GridColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControlOrdenProduccionDiario)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewOrdenProduccionDiario)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEditFiltro.Properties)).BeginInit();
             this.SuspendLayout();
             // 
@@ -103,32 +103,32 @@
             this.addSimpleButton.TabIndex = 56;
             this.addSimpleButton.Text = "&Agregar";
             // 
-            // gridControlParteDiarioProduccion
+            // gridControlOrdenProduccionDiario
             // 
-            this.gridControlParteDiarioProduccion.Location = new System.Drawing.Point(15, 41);
-            this.gridControlParteDiarioProduccion.MainView = this.gridViewParteDiarioProduccion;
-            this.gridControlParteDiarioProduccion.Name = "gridControlParteDiarioProduccion";
-            this.gridControlParteDiarioProduccion.Size = new System.Drawing.Size(875, 306);
-            this.gridControlParteDiarioProduccion.TabIndex = 61;
-            this.gridControlParteDiarioProduccion.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridViewParteDiarioProduccion});
+            this.gridControlOrdenProduccionDiario.Location = new System.Drawing.Point(15, 41);
+            this.gridControlOrdenProduccionDiario.MainView = this.gridViewOrdenProduccionDiario;
+            this.gridControlOrdenProduccionDiario.Name = "gridControlOrdenProduccionDiario";
+            this.gridControlOrdenProduccionDiario.Size = new System.Drawing.Size(875, 306);
+            this.gridControlOrdenProduccionDiario.TabIndex = 61;
+            this.gridControlOrdenProduccionDiario.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridViewOrdenProduccionDiario});
             // 
-            // gridViewParteDiarioProduccion
+            // gridViewOrdenProduccionDiario
             // 
-            this.gridViewParteDiarioProduccion.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.gridColumnIdParteDiarioProduccion,
+            this.gridViewOrdenProduccionDiario.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.gridColumnIdOrdenProduccionDiario,
             this.gridColumnFechaHora,
             this.gridColumnIdEmpleado,
-            this.gridColumnIdOrdenProduccionEmpleado});
-            this.gridViewParteDiarioProduccion.GridControl = this.gridControlParteDiarioProduccion;
-            this.gridViewParteDiarioProduccion.Name = "gridViewParteDiarioProduccion";
+            this.gridColumnIdPlanProduccionSemanal});
+            this.gridViewOrdenProduccionDiario.GridControl = this.gridControlOrdenProduccionDiario;
+            this.gridViewOrdenProduccionDiario.Name = "gridViewOrdenProduccionDiario";
             // 
-            // gridColumnIdParteDiarioProduccion
+            // gridColumnIdOrdenProduccionDiario
             // 
-            this.gridColumnIdParteDiarioProduccion.Caption = "ID";
-            this.gridColumnIdParteDiarioProduccion.Name = "gridColumnIdParteDiarioProduccion";
-            this.gridColumnIdParteDiarioProduccion.Visible = true;
-            this.gridColumnIdParteDiarioProduccion.VisibleIndex = 0;
+            this.gridColumnIdOrdenProduccionDiario.Caption = "ID";
+            this.gridColumnIdOrdenProduccionDiario.Name = "gridColumnIdOrdenProduccionDiario";
+            this.gridColumnIdOrdenProduccionDiario.Visible = true;
+            this.gridColumnIdOrdenProduccionDiario.VisibleIndex = 0;
             // 
             // gridColumnFechaHora
             // 
@@ -137,20 +137,6 @@
             this.gridColumnFechaHora.Visible = true;
             this.gridColumnFechaHora.VisibleIndex = 1;
             // 
-            // gridColumnIdEmpleado
-            // 
-            this.gridColumnIdEmpleado.Caption = "Empleado";
-            this.gridColumnIdEmpleado.Name = "gridColumnIdEmpleado";
-            this.gridColumnIdEmpleado.Visible = true;
-            this.gridColumnIdEmpleado.VisibleIndex = 2;
-            // 
-            // gridColumnIdOrdenProduccionEmpleado
-            // 
-            this.gridColumnIdOrdenProduccionEmpleado.Caption = "Orden produccion diario";
-            this.gridColumnIdOrdenProduccionEmpleado.Name = "gridColumnIdOrdenProduccionEmpleado";
-            this.gridColumnIdOrdenProduccionEmpleado.Visible = true;
-            this.gridColumnIdOrdenProduccionEmpleado.VisibleIndex = 3;
-            // 
             // textEditFiltro
             // 
             this.textEditFiltro.Location = new System.Drawing.Point(63, 13);
@@ -158,24 +144,38 @@
             this.textEditFiltro.Size = new System.Drawing.Size(237, 22);
             this.textEditFiltro.TabIndex = 62;
             // 
-            // ParteDiarioProduccionListForm
+            // gridColumnIdEmpleado
+            // 
+            this.gridColumnIdEmpleado.Caption = "Empleado";
+            this.gridColumnIdEmpleado.Name = "gridColumnIdEmpleado";
+            this.gridColumnIdEmpleado.Visible = true;
+            this.gridColumnIdEmpleado.VisibleIndex = 2;
+            // 
+            // gridColumnIdPlanProduccionSemanal
+            // 
+            this.gridColumnIdPlanProduccionSemanal.Caption = "Plan producción semanal";
+            this.gridColumnIdPlanProduccionSemanal.Name = "gridColumnIdPlanProduccionSemanal";
+            this.gridColumnIdPlanProduccionSemanal.Visible = true;
+            this.gridColumnIdPlanProduccionSemanal.VisibleIndex = 3;
+            // 
+            // OrdenProduccionDiarioListForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(904, 405);
             this.Controls.Add(this.textEditFiltro);
-            this.Controls.Add(this.gridControlParteDiarioProduccion);
+            this.Controls.Add(this.gridControlOrdenProduccionDiario);
             this.Controls.Add(this.deleteSimpleButton);
             this.Controls.Add(this.editSimpleButton);
             this.Controls.Add(this.addSimpleButton);
             this.Controls.Add(this.label1);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.Name = "ParteDiarioProduccionListForm";
+            this.Name = "OrdenProduccionDiarioListForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Parte diario producción";
-            this.Load += new System.EventHandler(this.ParteDiarioProduccionListForm_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.gridControlParteDiarioProduccion)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridViewParteDiarioProduccion)).EndInit();
+            this.Text = "Orden producción diario";
+            this.Load += new System.EventHandler(this.OrdenProduccionDiarioListForm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.gridControlOrdenProduccionDiario)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewOrdenProduccionDiario)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEditFiltro.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -188,12 +188,12 @@
         private DevExpress.XtraEditors.SimpleButton deleteSimpleButton;
         private DevExpress.XtraEditors.SimpleButton editSimpleButton;
         private DevExpress.XtraEditors.SimpleButton addSimpleButton;
-        private DevExpress.XtraGrid.GridControl gridControlParteDiarioProduccion;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridViewParteDiarioProduccion;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumnIdParteDiarioProduccion;
+        private DevExpress.XtraGrid.GridControl gridControlOrdenProduccionDiario;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridViewOrdenProduccionDiario;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumnIdOrdenProduccionDiario;
         private DevExpress.XtraEditors.TextEdit textEditFiltro;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumnFechaHora;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumnIdEmpleado;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumnIdOrdenProduccionEmpleado;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumnIdPlanProduccionSemanal;
     }
 }
