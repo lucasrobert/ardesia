@@ -178,7 +178,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "ParteDiarioProduccionEditorForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Plan producción semanal";
+            this.Text = "Parte diario producción";
             this.Load += new System.EventHandler(this.ParteDiarioProduccionEditorForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dateEditFecha.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEditFecha.Properties)).EndInit();

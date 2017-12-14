@@ -71,6 +71,12 @@
     <Compile Include="ParteDiarioProduccionEditorForm.Designer.cs">
       <DependentUpon>ParteDiarioProduccionEditorForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ParteDiarioProduccionlListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ParteDiarioProduccionlListForm.Designer.cs">
+      <DependentUpon>ParteDiarioProduccionlListForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="PlanProduccionSemanalListForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -429,6 +435,9 @@
     </Compile>
     <EmbeddedResource Include="ParteDiarioProduccionEditorForm.resx">
       <DependentUpon>ParteDiarioProduccionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParteDiarioProduccionlListForm.resx">
+      <DependentUpon>ParteDiarioProduccionlListForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PlanProduccionSemanalListForm.resx">
       <DependentUpon>PlanProduccionSemanalListForm.cs</DependentUpon>
