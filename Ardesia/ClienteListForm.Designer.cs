@@ -43,12 +43,13 @@
             this.Provincia = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.paisColumn = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.deleteSimpleButton = new DevExpress.XtraEditors.SimpleButton();
             this.editSimpleButton = new DevExpress.XtraEditors.SimpleButton();
             this.addSimpleButton = new DevExpress.XtraEditors.SimpleButton();
+            this.textEditFiltro = new DevExpress.XtraEditors.TextEdit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditFiltro.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -142,14 +143,6 @@
             this.imageList1.Images.SetKeyName(1, "cross-circle.png");
             this.imageList1.Images.SetKeyName(2, "pencil.png");
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(58, 7);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(237, 23);
-            this.textBox1.TabIndex = 5;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -198,15 +191,22 @@
             this.addSimpleButton.TabIndex = 56;
             this.addSimpleButton.Text = "&Agregar";
             // 
+            // textEditFiltro
+            // 
+            this.textEditFiltro.Location = new System.Drawing.Point(62, 8);
+            this.textEditFiltro.Name = "textEditFiltro";
+            this.textEditFiltro.Size = new System.Drawing.Size(237, 22);
+            this.textEditFiltro.TabIndex = 60;
+            // 
             // ClienteListForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1030, 468);
+            this.Controls.Add(this.textEditFiltro);
             this.Controls.Add(this.deleteSimpleButton);
             this.Controls.Add(this.editSimpleButton);
             this.Controls.Add(this.addSimpleButton);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -214,6 +214,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Clientes";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditFiltro.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -222,7 +223,6 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnId;
@@ -239,5 +239,6 @@
         private DevExpress.XtraEditors.SimpleButton deleteSimpleButton;
         private DevExpress.XtraEditors.SimpleButton editSimpleButton;
         private DevExpress.XtraEditors.SimpleButton addSimpleButton;
+        private DevExpress.XtraEditors.TextEdit textEditFiltro;
     }
 }
